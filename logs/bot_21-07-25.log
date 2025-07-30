@@ -1,0 +1,127 @@
+[2025-07-21T01:36:19Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=b219b3ebd809407c9fc345f29c14ebdd] [mode=START] [err=-]: ⏲️ Time offset set to -105 ms
+[2025-07-21T01:36:19Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=b219b3ebd809407c9fc345f29c14ebdd] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T01:36:19Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=b219b3ebd809407c9fc345f29c14ebdd] [mode=MAIN] [err=-]: 💥 Fatal error: PreHedgeWatcher.__init__() got an unexpected keyword argument 'rest_client'
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 107, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 89, in main
+    orchestrator = Orchestrator(
+                   ^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\orchestrator.py", line 29, in __init__
+    self.tp_watcher     = PreHedgeWatcher(
+                          ^^^^^^^^^^^^^^^^
+TypeError: PreHedgeWatcher.__init__() got an unexpected keyword argument 'rest_client'
+[2025-07-21T01:38:14Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=START] [err=-]: ⏲️ Time offset set to -103 ms
+[2025-07-21T01:38:14Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T01:38:14Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-21T01:38:14Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=START] [err=-]: Orchestrator started
+[2025-07-21T01:38:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-21T01:38:15Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=STARTUP] [err=-]: Startup detected ONE leg → PRE-HEDGE mode
+[2025-07-21T01:38:16Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-21T01:38:16Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-21T01:38:16Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-21T01:38:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=-] [err=-]: 🎯 [PreHEDGE] placing TP: {'instId': 'DOGE-USDT-SWAP', 'instType': 'SWAP', 'tdMode': 'cross', 'ordType': 'conditional', 'posSide': 'short', 'side': 'buy', 'algoClOrdId': 'PSDOGEUSDTSWAP', 'tpTriggerPx': '0.24517350', 'tpOrdPx': '-1', 'closeFraction': '1', 'reduceOnly': True}
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=-] [err=-]: 🎯 [PreHEDGE] TP placed @ 0.24517350
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=-] [err=-]: ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=-] [err=-]: 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=HEDGE] [err=-]: ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=HEDGE] [err=-]: 🔍 [HEDGE] initial position detected: -0.0500
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=HEDGE] [err=-]: 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=HEDGE] [err=-]: 🎯 [HEDGE] placed hedge ordId=2703128190408507392
+[2025-07-21T01:38:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=HEDGE] [err=-]: [HEDGE] waiting for fill up to +5.0s
+[2025-07-21T01:38:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=FILL] [err=-]: ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.07@0.26525
+[2025-07-21T01:38:18Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=d46a73fc52a44ad1bd6807616a66f7f8] [mode=ORDER] [err=-]: → ORDER mode
+[2025-07-21T01:42:53Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=START] [err=-]: ⏲️ Time offset set to -105 ms
+[2025-07-21T01:42:54Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T01:42:54Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-21T01:42:54Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=START] [err=-]: Orchestrator started
+[2025-07-21T01:42:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-21T01:42:55Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-21T01:42:55Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-21T01:42:55Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-21T01:42:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-21T01:42:57Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=6d4f4494519441ec9044d046a40974f1] [mode=ORDER] [err=-]: → ORDER mode
+[2025-07-21T02:06:48Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=START] [err=-]: ⏲️ Time offset set to -98 ms
+[2025-07-21T02:06:49Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T02:06:49Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-21T02:06:49Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=START] [err=-]: Orchestrator started
+[2025-07-21T02:06:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-21T02:06:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-21T02:06:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-21T02:06:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-21T02:06:51Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-21T02:06:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=ORDER] [err=-]: → ORDER mode
+[2025-07-21T02:06:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:06:53Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703185755452526592@0.26909156, SELL 2703185755486081024@0.27315844
+[2025-07-21T02:06:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=75665bc2ff0e4922b0a7d67cf0958ce8] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-21T02:08:05Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=START] [err=-]: ⏲️ Time offset set to -107 ms
+[2025-07-21T02:08:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T02:08:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-21T02:08:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=START] [err=-]: Orchestrator started
+[2025-07-21T02:08:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-21T02:08:07Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-21T02:08:07Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-21T02:08:08Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-21T02:08:08Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-21T02:08:09Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: → ORDER mode
+[2025-07-21T02:08:09Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:08:10Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703188346961973248@0.26556819, SELL 2703188347096190976@0.26958181
+[2025-07-21T02:08:20Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-07-21T02:08:21Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703188346961973248
+[2025-07-21T02:08:21Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703188347096190976
+[2025-07-21T02:08:21Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:08:22Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703188740219916288@0.26556819, SELL 2703188740689678336@0.26958181
+[2025-07-21T02:08:32Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-07-21T02:08:32Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703188740219916288
+[2025-07-21T02:08:33Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703188740689678336
+[2025-07-21T02:08:33Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:08:34Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703189137135292416@0.26561781, SELL 2703189137638608896@0.26963219
+[2025-07-21T02:08:44Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-07-21T02:08:44Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703189137135292416
+[2025-07-21T02:08:45Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703189137638608896
+[2025-07-21T02:08:45Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:08:46Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703189534419767296@0.26569225, SELL 2703189535090855936@0.26970775
+[2025-07-21T02:08:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-07-21T02:08:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703189534419767296
+[2025-07-21T02:08:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703189535090855936
+[2025-07-21T02:08:56Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🔄 [OrderMode] starting order loop
+[2025-07-21T02:08:58Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🎯 [OrderMode] placed FOK: BUY 2703189927207948288@0.26576669, SELL 2703189938046029824@0.26978331
+[2025-07-21T02:09:00Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=FILL] [err=-]: ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2677
+[2025-07-21T02:09:00Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: 🛑 [OrderMode] cancelled 2703189927207948288
+[2025-07-21T02:09:00Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=PREHEDGE] [err=-]: → PRE-HEDGE mode
+[2025-07-21T02:09:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=-] [err=-]: 🎯 [PreHEDGE] placing TP: {'instId': 'DOGE-USDT-SWAP', 'instType': 'SWAP', 'tdMode': 'cross', 'ordType': 'conditional', 'posSide': 'short', 'side': 'buy', 'algoClOrdId': 'PSDOGEUSDTSWAP', 'tpTriggerPx': '0.26502300', 'tpOrdPx': '-1', 'closeFraction': '1', 'reduceOnly': True}
+[2025-07-21T02:09:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=-] [err=-]: 🎯 [PreHEDGE] TP placed @ 0.26502300
+[2025-07-21T02:09:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=-] [err=-]: ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[2025-07-21T02:09:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=ORDER] [err=-]: ✅ [OrderMode] filled 2703189938046029824, switching to HEDGE
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=-] [err=-]: 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=HEDGE] [err=-]: ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=HEDGE] [err=-]: 🔍 [HEDGE] initial position detected: -0.0500
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=HEDGE] [err=-]: 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=HEDGE] [err=-]: 🎯 [HEDGE] placed hedge ordId=2703190120145932288
+[2025-07-21T02:09:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=HEDGE] [err=-]: [HEDGE] waiting for fill up to +5.0s
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=FILL] [err=-]: ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.1@0.2678
+[2025-07-21T02:09:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=TPSL] [err=-]: → TPSL mode
+[2025-07-21T02:11:00Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=4518c4350f5b4e059e0bcd3e4c185396] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-21T02:11:04Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=START] [err=-]: ⏲️ Time offset set to -100 ms
+[2025-07-21T02:11:04Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-21T02:11:04Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-21T02:11:04Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=START] [err=-]: Orchestrator started
+[2025-07-21T02:11:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-21T02:11:05Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-21T02:11:05Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=ORCHESTRATOR] [err=-]: → All legs closed → back to ORDER mode
+[2025-07-21T02:11:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-21T02:11:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-21T02:11:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-21T02:11:06Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-21T02:11:08Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=TPSL] [err=-]: → TPSL mode
+[2025-07-21T02:12:08Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0aeb50aa3d9a4538b2f89eab7ed5067f] [mode=SHUTDOWN] [err=-]: Shutdown initiated

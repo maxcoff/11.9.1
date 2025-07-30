@@ -1,0 +1,250 @@
+[2025-07-18T21:30:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d90e82d94cb14847b957a17c8fe34303] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-18T21:30:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d90e82d94cb14847b957a17c8fe34303] [mode=-] [err=-]: ❌ [TPSL] loop error: 
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\tpsl_monitor.py", line 80, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\tpsl_monitor.py", line 134, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-18T21:30:58Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d90e82d94cb14847b957a17c8fe34303] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-18T21:30:58Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d90e82d94cb14847b957a17c8fe34303] [mode=-] [err=-]: ❌ [TPSL] loop error: 
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\tpsl_monitor.py", line 80, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\tpsl_monitor.py", line 134, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-18T22:03:45Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': '81debbdb'}, retry in 1s
+[2025-07-18T22:03:49Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'bf1ae9fe'}, retry in 2s
+[2025-07-18T22:03:54Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': '3b44e01f'}, retry in 4s
+[2025-07-18T22:04:01Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': '5aaba97c'}, retry in 8s
+[2025-07-18T22:04:09Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2696898528720244736', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1752876249944'}], 'inTime': '1752876249943880', 'msg': 'All operations failed', 'outTime': '1752876249945527'}
+[2025-07-18T22:04:09Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2696898528720244736: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-18T22:04:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2696898528653135872', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1752876250281'}], 'inTime': '1752876250280554', 'msg': 'All operations failed', 'outTime': '1752876250282248'}
+[2025-07-18T22:04:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2696898528653135872: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-18T22:04:12Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=d9d99fee8017477797e7d5477b7e3ef0] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': '97822ed9'}, retry in 16s
+[2025-07-18T22:04:28Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'd02e0662'}, retry in 1s
+[2025-07-18T22:04:31Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'c4e63afb'}, retry in 2s
+[2025-07-18T22:04:36Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'b1823549'}, retry in 4s
+[2025-07-18T22:04:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'c82d3652'}, retry in 8s
+[2025-07-18T22:04:52Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2696899944717275137', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1752876292409'}], 'inTime': '1752876292408808', 'msg': 'All operations failed', 'outTime': '1752876292411279'}
+[2025-07-18T22:04:52Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2696899944717275137: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-18T22:04:54Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'e6950105'}, retry in 16s
+[2025-07-18T22:05:13Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=8f2b7b3a509d499e8dd08347822f4357] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo,instType:SWAP,instId:DOGE-USDT-SWAP doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'efc9f002'}, retry in 32s
+[2025-07-18T22:16:31Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': '48e000d5'}, retry in 1s
+[2025-07-18T22:16:35Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'd5e77042'}, retry in 2s
+[2025-07-18T22:16:39Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: WS subscribe orders-algo failed: {'event': 'error', 'msg': "Wrong URL or channel:orders-algo doesn't exist. Please use the correct URL, channel and parameters referring to API document.", 'code': '60018', 'connId': 'bfe7e12e'}, retry in 4s
+[2025-07-18T22:16:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2696923816850149376', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1752877003435'}], 'inTime': '1752877003434542', 'msg': 'All operations failed', 'outTime': '1752877003436224'}
+[2025-07-18T22:16:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2696923816850149376: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-18T22:16:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2696923817152139264', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1752877003781'}], 'inTime': '1752877003780874', 'msg': 'All operations failed', 'outTime': '1752877003782537'}
+[2025-07-18T22:16:43Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ff71e63fcb104a0c8fd8506658ce2417] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2696923817152139264: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-18T22:23:54Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0bb185677db64bfe89c9a0d54f8fa00f] [mode=MAIN] [err=-]: 💥 Fatal error: WSMonitor.__init__() got an unexpected keyword argument 'ws_url'
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 107, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 75, in main
+    ws_monitor = WSMonitor(
+                 ^^^^^^^^^^
+TypeError: WSMonitor.__init__() got an unexpected keyword argument 'ws_url'
+[2025-07-18T22:24:09Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9aa67d5f36584d518c8962fc88ccb7ec] [mode=MAIN] [err=-]: 💥 Fatal error: WSMonitor.__init__() got an unexpected keyword argument 'ws_url'
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 107, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.8.3\main.py", line 75, in main
+    ws_monitor = WSMonitor(
+                 ^^^^^^^^^^
+TypeError: WSMonitor.__init__() got an unexpected keyword argument 'ws_url'
+[2025-07-18T23:30:24Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=41b24d3c77d54b728fbc671e9a1f7490] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-07-18T23:30:24Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=41b24d3c77d54b728fbc671e9a1f7490] [mode=-] [err=-]: ❌ [PreHEDGE] TP placement failed: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\prehedge_watcher.py", line 106, in _place_tp
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-07-19T13:01:27Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: 403, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 1s
+[2025-07-19T13:01:28Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: 403, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 2s
+[2025-07-19T13:01:29Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PUB] Disconnected: 403, message='Invalid response status', url='wss://ws.okx.com:8443/ws/v5/public', retry in 1s
+[2025-07-19T13:01:30Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: 403, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 4s
+[2025-07-19T13:01:31Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PUB] Disconnected: 403, message='Invalid response status', url='wss://ws.okx.com:8443/ws/v5/public', retry in 2s
+[2025-07-19T13:01:33Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PUB] Disconnected: 403, message='Invalid response status', url='wss://ws.okx.com:8443/ws/v5/public', retry in 4s
+[2025-07-19T13:01:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: 403, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 8s
+[2025-07-19T13:01:37Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PUB] Disconnected: 403, message='Invalid response status', url='wss://ws.okx.com:8443/ws/v5/public', retry in 8s
+[2025-07-19T13:01:42Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: 403, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 16s
+[2025-07-19T13:01:45Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=45ddcff1101f4a98a049cd0afb055186] [mode=WS] [err=-]: 🔄 [WS-PUB] Disconnected: 403, message='Invalid response status', url='wss://ws.okx.com:8443/ws/v5/public', retry in 16s
+[2025-07-19T13:20:50Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 1s
+[2025-07-19T13:20:52Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 2s
+[2025-07-19T13:20:55Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 4s
+[2025-07-19T13:20:59Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 8s
+[2025-07-19T13:21:08Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 16s
+[2025-07-19T13:21:24Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 32s
+[2025-07-19T13:21:57Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=6cd0273ca2ec4968904893fbb678fdfb] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host wspap.okx.cab:8443 ssl:default [Misformatted domain name], retry in 60s
+[2025-07-19T13:34:04Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=51b39281b6e24ffab72ba7de6ab72955] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host ws.smartokx.cab:443 ssl:default [Misformatted domain name], retry in 1s
+[2025-07-19T13:34:05Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=51b39281b6e24ffab72ba7de6ab72955] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host ws.smartokx.cab:443 ssl:default [Misformatted domain name], retry in 2s
+[2025-07-19T13:34:07Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=51b39281b6e24ffab72ba7de6ab72955] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host ws.smartokx.cab:443 ssl:default [Misformatted domain name], retry in 4s
+[2025-07-19T13:34:11Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=51b39281b6e24ffab72ba7de6ab72955] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host ws.smartokx.cab:443 ssl:default [Misformatted domain name], retry in 8s
+[2025-07-19T13:34:19Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=51b39281b6e24ffab72ba7de6ab72955] [mode=WS] [err=-]: 🔄 [WS-PRIV] Disconnected: Cannot connect to host ws.smartokx.cab:443 ssl:default [Misformatted domain name], retry in 16s
+[2025-07-19T13:46:45Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9a988e6914c34b25a8ec94cc7c602973] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-07-19T13:46:45Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9a988e6914c34b25a8ec94cc7c602973] [mode=-] [err=-]: ❌ [PreHEDGE] TP placement failed: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.8.3\prehedge_watcher.py", line 106, in _place_tp
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.8.3\rest_client.py", line 213, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
