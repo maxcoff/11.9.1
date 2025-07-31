@@ -1,0 +1,239 @@
+[2025-07-30T21:14:56Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T21:15:01Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T21:15:06Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T21:15:11Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T21:15:16Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T21:15:21Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
+NoneType: None
+[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-07-30T23:37:53Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 162, in _loop
+    abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero
+[2025-07-30T23:44:50Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/cancel-order
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-30T23:44:50Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2731890068555091968: 
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T00:02:09Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fb282949f7cc41f68aed851809f3e1fd] [mode=MAIN] [err=-]: 💥 Fatal error: Session is closed
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 110, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 97, in main
+    await orchestrator.run()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 82, in run
+    long_q, short_q = await self.get_positions_rest()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 164, in get_positions_rest
+    resp   = await self.rest.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 493, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+[2025-07-31T00:23:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T00:23:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=-] [err=-]: ❌ [TPSL] loop error: 
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T00:23:26Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T00:23:26Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=-] [err=-]: ❌ [TPSL] loop error: 
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError

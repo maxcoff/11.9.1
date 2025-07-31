@@ -1,0 +1,7 @@
+[2025-07-30T19:48:55Z] INFO bot [inst=-] [sess=8decafaad8264d9fb1b2c9d10db279d2] [mode=START] [err=-]: ⏲️ Time offset set to -616 ms
+[2025-07-30T19:48:56Z] ERROR bot [inst=-] [sess=8decafaad8264d9fb1b2c9d10db279d2] [mode=REST] [err=51001]: API error code=51001 response={'code': '51001', 'msg': 'Instrument ID does not exist.'}
+[2025-07-30T19:48:56Z] WARNING bot [inst=-] [sess=8decafaad8264d9fb1b2c9d10db279d2] [mode=START] [err=-]: ⚠️ Initial snapshot failed: API error 51001
+[2025-07-30T19:51:53Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=aa89341806c4476b8d8dd4c581b31e6f] [mode=START] [err=-]: ⏲️ Time offset set to -630 ms
+[2025-07-30T19:51:54Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=aa89341806c4476b8d8dd4c581b31e6f] [mode=START] [err=-]: 📈 Initial snapshot fetched
+[2025-07-30T20:04:18Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=075c29e4635d458193b35d8766640ba7] [mode=START] [err=-]: ⏲️ Time offset set to -637 ms
+[2025-07-30T20:04:19Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=075c29e4635d458193b35d8766640ba7] [mode=START] [err=-]: 📈 Initial snapshot fetched

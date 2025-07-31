@@ -1,0 +1,1 @@
+[2025-07-30T19:48:56Z] ERROR bot [inst=-] [sess=8decafaad8264d9fb1b2c9d10db279d2] [mode=REST] [err=51001]: API error code=51001 response={'code': '51001', 'msg': 'Instrument ID does not exist.'}
