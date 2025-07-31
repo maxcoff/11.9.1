@@ -1373,3 +1373,1287 @@ TimeoutError
 [2025-07-31T01:22:10Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0f170e99d97e409a99381194f6de6a0f] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
 [2025-07-31T01:22:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=0f170e99d97e409a99381194f6de6a0f] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
 [2025-07-31T01:27:37Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=0f170e99d97e409a99381194f6de6a0f] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T09:01:19Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=START] [err=-]: ⏲️ Time offset set to -371 ms
+[2025-07-31T09:01:20Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.22445', '1898.03', '0', '2'], ['0.2245', '1025.07', '0', '2'], ['0.22455', '19.68', '0', '10'], ['0.2246', '39.47', '0', '18'], ['0.22465', '166.08', '0', '12']], 'bids': [['0.22435', '875.08', '0', '2'], ['0.2243', '719.24', '0', '2'], ['0.22425', '0.17', '0', '8'], ['0.2242', '0.12', '0', '1'], ['0.22415', '0.01', '0', '1']], 'ts': '1753952479801'}]}
+[2025-07-31T09:01:20Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=REINVEST] [err=-]: [REINVEST] enabled=True, pct=90.00%, min_lot=0.01
+[2025-07-31T09:01:20Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T09:01:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T09:01:20Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T09:01:21Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T09:01:21Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T09:01:22Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T09:01:22Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T09:01:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T09:32:35Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=REST] [err=-]: Time sync failed: 
+[2025-07-31T09:32:55Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=76c37b83b63f4b17805e5ceb599a2885] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T09:39:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=START] [err=-]: ⏲️ Time offset set to -380 ms
+[2025-07-31T09:39:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.2247', '1038.89', '0', '2'], ['0.22475', '426.24', '0', '2'], ['0.2248', '301.71', '0', '1'], ['0.22485', '8.02', '0', '5'], ['0.2249', '1.99', '0', '7']], 'bids': [['0.22465', '430.82', '0', '2'], ['0.2246', '135.92', '0', '2'], ['0.22455', '575.43', '0', '2'], ['0.2245', '0.17', '0', '8'], ['0.22445', '0.12', '0', '1']], 'ts': '1753954766507'}]}
+[2025-07-31T09:39:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=REINVEST] [err=-]: [REINVEST] enabled=False, pct=90.00%, min_lot=0.01
+[2025-07-31T09:39:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T09:39:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T09:39:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T09:39:28Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T09:39:28Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T09:39:28Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T09:39:29Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T09:39:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T09:46:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T09:46:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T09:46:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T09:48:47Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=ed44724a5cb94958a4a5518352b9f2b1] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T09:48:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:48:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:48:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=START] [err=-]: ⏲️ Time offset set to -367 ms
+[2025-07-31T09:48:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.22505', '250.02', '0', '2'], ['0.2251', '709.22', '0', '4'], ['0.22515', '523.63', '0', '4'], ['0.2252', '3.08', '0', '10'], ['0.22525', '5.51', '0', '18']], 'bids': [['0.22495', '102.52', '0', '2'], ['0.2249', '540.14', '0', '2'], ['0.2248', '434.81', '0', '1'], ['0.22475', '0.17', '0', '8'], ['0.2247', '0.21', '0', '5']], 'ts': '1753955330307'}]}
+[2025-07-31T09:48:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=REINVEST] [err=-]: [REINVEST] enabled=False, pct=90.00%, min_lot=0.01
+[2025-07-31T09:48:50Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T09:48:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T09:48:51Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T09:48:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T09:48:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T09:48:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T09:48:52Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T09:48:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T09:49:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:49:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:49:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:49:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:49:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:49:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:49:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:50:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:50:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:51:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:51:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:52:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:52:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:53:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:53:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:53:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:53:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:53:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:53:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:53:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:53:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:53:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:53:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:54:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:54:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:55:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:55:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:56:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:56:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:57:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:57:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:58:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:58:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:58:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:58:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:58:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:58:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:58:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:58:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:58:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:58:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T09:59:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T09:59:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:00:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:00:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:01:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:01:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:02:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:02:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:03:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:03:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:03:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:03:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:03:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:03:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:03:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:03:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:03:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:03:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:04:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:04:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:05:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:05:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:06:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:06:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:07:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:07:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:08:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:08:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:08:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:08:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:08:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:08:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:08:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:08:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:08:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:08:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:09:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:09:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:10:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:10:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:11:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:11:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:12:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:12:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:13:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:13:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:13:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:13:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:13:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:13:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:13:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:13:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:13:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:13:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:14:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:14:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:15:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:15:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:16:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:16:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:17:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:17:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:18:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:18:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:18:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:18:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:18:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:18:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:18:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:18:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:18:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:18:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:19:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:19:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:20:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:20:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:21:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:21:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:22:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:22:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:23:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:23:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:23:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:23:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:23:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:23:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:23:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:23:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:23:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:23:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:24:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:24:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:25:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:25:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:26:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:26:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:27:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:27:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:27:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:27:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:27:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:27:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:27:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:27:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:27:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:27:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:28:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:28:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:29:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:29:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:30:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:30:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:31:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:31:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:32:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:32:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:32:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:32:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:32:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:32:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:32:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:32:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:32:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:32:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:33:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:33:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:34:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:34:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:35:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:35:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:36:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:36:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:37:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:37:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:37:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:37:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:37:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:37:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:37:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: >>> before sync_rest_time()
+[2025-07-31T10:37:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: <<< after sync_rest_time()
+[2025-07-31T10:37:44Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T10:37:44Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: ❌ [TPSL] loop error: 'NoneType' object has no attribute 'connect'
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 187, in request
+    "OK-ACCESS-KEY":        self.api_key,
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'connect'
+[2025-07-31T10:38:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:38:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:38:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:38:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 654 ms
+[2025-07-31T10:38:38Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=START] [err=-]: ⏲️ Time offset set to -378 ms
+[2025-07-31T10:38:38Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.22405', '135.56', '0', '1'], ['0.2241', '2170.45', '0', '2'], ['0.22415', '1710.7', '0', '2'], ['0.22435', '0.03', '0', '1'], ['0.2244', '40.62', '0', '10']], 'bids': [['0.224', '280.68', '0', '18'], ['0.22395', '607.38', '0', '5'], ['0.2239', '2.47', '0', '1'], ['0.22385', '4.61', '0', '5'], ['0.2238', '1.36', '0', '8']], 'ts': '1753958318206'}]}
+[2025-07-31T10:38:38Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REINVEST] [err=-]: [REINVEST] enabled=False, pct=90.00%, min_lot=0.01
+[2025-07-31T10:38:38Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T10:38:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T10:38:39Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T10:38:40Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T10:38:40Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T10:38:40Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T10:38:40Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T10:38:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T10:38:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:38:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:38:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:38:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 334 ms
+[2025-07-31T10:38:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:38:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:38:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:38:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:39:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:39:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:39:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:39:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:39:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:39:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:39:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:39:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:39:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:39:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:39:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:39:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 335 ms
+[2025-07-31T10:39:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:39:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:39:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:39:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 334 ms
+[2025-07-31T10:39:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:39:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:39:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:39:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 342 ms
+[2025-07-31T10:40:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 522 ms
+[2025-07-31T10:40:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 330 ms
+[2025-07-31T10:40:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:40:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:40:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 336 ms
+[2025-07-31T10:40:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:40:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:40:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:40:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:41:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 361 ms
+[2025-07-31T10:41:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 342 ms
+[2025-07-31T10:41:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 322 ms
+[2025-07-31T10:41:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 341 ms
+[2025-07-31T10:41:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 320 ms
+[2025-07-31T10:41:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:41:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:41:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:41:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 342 ms
+[2025-07-31T10:42:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 335 ms
+[2025-07-31T10:42:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 329 ms
+[2025-07-31T10:42:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 346 ms
+[2025-07-31T10:42:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 355 ms
+[2025-07-31T10:42:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:42:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:42:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:42:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:42:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 338 ms
+[2025-07-31T10:43:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 323 ms
+[2025-07-31T10:43:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:43:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 349 ms
+[2025-07-31T10:43:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:43:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 328 ms
+[2025-07-31T10:43:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:43:58Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:43:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:43:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 336 ms
+[2025-07-31T10:44:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:44:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:44:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:44:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 341 ms
+[2025-07-31T10:44:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:44:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:44:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:44:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:44:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:44:29Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:44:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:44:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 347 ms
+[2025-07-31T10:44:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:44:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:44:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:44:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 328 ms
+[2025-07-31T10:44:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:44:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:44:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:44:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 344 ms
+[2025-07-31T10:45:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:00Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 346 ms
+[2025-07-31T10:45:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 341 ms
+[2025-07-31T10:45:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 333 ms
+[2025-07-31T10:45:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:45:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:45:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:45:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:45:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:45:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 329 ms
+[2025-07-31T10:46:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 344 ms
+[2025-07-31T10:46:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 344 ms
+[2025-07-31T10:46:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 350 ms
+[2025-07-31T10:46:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 349 ms
+[2025-07-31T10:46:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 328 ms
+[2025-07-31T10:46:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:46:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:46:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:46:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 333 ms
+[2025-07-31T10:47:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:47:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 332 ms
+[2025-07-31T10:47:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 507 ms
+[2025-07-31T10:47:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:47:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:46Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 345 ms
+[2025-07-31T10:47:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:47:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:47:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:47:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:48:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 329 ms
+[2025-07-31T10:48:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:17Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:48:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:27Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 330 ms
+[2025-07-31T10:48:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 333 ms
+[2025-07-31T10:48:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:48Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 358 ms
+[2025-07-31T10:48:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:48:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:48:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:48:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 335 ms
+[2025-07-31T10:49:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:49:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:49:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:49:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:49:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:49:19Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:49:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:49:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:49:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:49:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:49:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:49:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 331 ms
+[2025-07-31T10:49:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:49:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:49:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:49:40Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 332 ms
+[2025-07-31T10:49:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:49:50Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:49:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:49:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 328 ms
+[2025-07-31T10:50:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:50:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 336 ms
+[2025-07-31T10:50:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:21Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:50:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 348 ms
+[2025-07-31T10:50:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:50:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:50:52Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:50:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:50:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:51:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 334 ms
+[2025-07-31T10:51:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:13Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:51:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:51:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:34Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 358 ms
+[2025-07-31T10:51:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:44Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 357 ms
+[2025-07-31T10:51:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:51:54Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:51:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:51:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 332 ms
+[2025-07-31T10:52:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:05Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 355 ms
+[2025-07-31T10:52:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:15Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:16Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 524 ms
+[2025-07-31T10:52:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:26Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 342 ms
+[2025-07-31T10:52:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:36Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:37Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 677 ms
+[2025-07-31T10:52:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:47Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 371 ms
+[2025-07-31T10:52:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:52:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:52:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:52:57Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 338 ms
+[2025-07-31T10:53:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:08Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 327 ms
+[2025-07-31T10:53:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 352 ms
+[2025-07-31T10:53:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:28Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:53:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:38Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:39Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 341 ms
+[2025-07-31T10:53:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:49Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 335 ms
+[2025-07-31T10:53:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:53:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:53:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:53:59Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 338 ms
+[2025-07-31T10:54:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:54:09Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:54:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:54:10Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 361 ms
+[2025-07-31T10:54:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:54:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:54:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:54:20Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 343 ms
+[2025-07-31T10:54:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:54:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:54:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:54:31Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 334 ms
+[2025-07-31T10:54:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:54:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:54:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:54:41Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 340 ms
+[2025-07-31T10:54:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:54:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:54:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:54:51Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 359 ms
+[2025-07-31T10:55:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:02Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 354 ms
+[2025-07-31T10:55:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:12Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 365 ms
+[2025-07-31T10:55:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 362 ms
+[2025-07-31T10:55:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:33Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 355 ms
+[2025-07-31T10:55:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:43Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 327 ms
+[2025-07-31T10:55:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:55:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:55:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:55:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 334 ms
+[2025-07-31T10:56:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:04Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 345 ms
+[2025-07-31T10:56:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 349 ms
+[2025-07-31T10:56:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:24Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 502 ms
+[2025-07-31T10:56:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:35Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 339 ms
+[2025-07-31T10:56:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:45Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 335 ms
+[2025-07-31T10:56:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: 🔄 TimeSyncLoop start iteration
+[2025-07-31T10:56:55Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   → attempt #1: calling sync_rest_time()
+[2025-07-31T10:56:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]:   ← attempt #1 succeeded
+[2025-07-31T10:56:56Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=REST] [err=-]: Iteration took 354 ms
+[2025-07-31T10:56:58Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=8e089767da4140f793f1ddc9a2b4d3af] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T10:57:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 647 ms
+[2025-07-31T10:57:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=START] [err=-]: ⏲️ Time offset set to -374 ms
+[2025-07-31T10:57:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.22385', '2132.16', '0', '2'], ['0.2239', '2899.18', '0', '2'], ['0.22395', '472.06', '0', '1'], ['0.22415', '0.15', '0', '2'], ['0.2242', '1.85', '0', '2']], 'bids': [['0.2238', '136.95', '0', '7'], ['0.22375', '935.53', '0', '21'], ['0.2237', '729.33', '0', '19'], ['0.22365', '0.3', '0', '6'], ['0.2236', '45.27', '0', '16']], 'ts': '1753959421501'}]}
+[2025-07-31T10:57:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REINVEST] [err=-]: [REINVEST] enabled=False, pct=90.00%, min_lot=0.01
+[2025-07-31T10:57:01Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T10:57:01Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T10:57:02Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T10:57:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T10:57:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T10:57:03Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T10:57:04Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T10:57:06Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T10:57:11Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 331 ms
+[2025-07-31T10:57:22Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 349 ms
+[2025-07-31T10:57:32Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 346 ms
+[2025-07-31T10:57:42Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 341 ms
+[2025-07-31T10:57:53Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 665 ms
+[2025-07-31T10:58:03Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 336 ms
+[2025-07-31T10:58:14Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=REST] [err=-]: Iteration took 337 ms
+[2025-07-31T10:58:17Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=981b5b4d41ba43cebcf8fc091ae1ce3d] [mode=SHUTDOWN] [err=-]: Shutdown initiated
+[2025-07-31T10:58:24Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=START] [err=-]: ⏲️ Time offset set to -372 ms
+[2025-07-31T10:58:25Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=START] [err=-]: 📈 Initial snapshot fetched: {'code': '0', 'msg': '', 'data': [{'asks': [['0.22355', '376.5', '0', '2'], ['0.2236', '1446.84', '0', '2'], ['0.22365', '540.86', '0', '2'], ['0.2237', '0.01', '0', '1'], ['0.22375', '0.17', '0', '8']], 'bids': [['0.22345', '1221.11', '0', '14'], ['0.2234', '1026.17', '0', '18'], ['0.22335', '75.98', '0', '15'], ['0.2233', '35.53', '0', '11'], ['0.22325', '4.74', '0', '20']], 'ts': '1753959504851'}]}
+[2025-07-31T10:58:25Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REINVEST] [err=-]: [REINVEST] enabled=False, pct=90.00%, min_lot=0.01
+[2025-07-31T10:58:25Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=START] [err=-]: Orchestrator started
+[2025-07-31T10:58:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: 🔄 [REINVEST] waiting for TP fill event…
+[2025-07-31T10:58:25Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=STARTUP] [err=-]: Startup detected TWO legs → enter TPSL mode
+[2025-07-31T10:58:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=WS] [err=-]: ✅ [WS-PRIV] login successful
+[2025-07-31T10:58:26Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=WS] [err=-]: ✅ [WS-PUB] subscribed to tickers
+[2025-07-31T10:58:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to orders
+[2025-07-31T10:58:27Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=WS] [err=-]: ✅ [WS-PRIV] subscribed to positions
+[2025-07-31T10:58:30Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: 🔄 [TPSL] initial sync pass
+[2025-07-31T11:37:22Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:37:22Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:37:25Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: [TPSL] fetch pending failed: 
+[2025-07-31T11:37:25Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: [TPSL] fetch pending failed: 
+[2025-07-31T11:37:25Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-07-31T11:37:25Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: 🔄 [TPSL] reinstall_all → init(long)=0.8@0.22615, hedge(short)=1.6@0.214708125, tp_init=0.2284115, tp_hedge=0.20248192
+[2025-07-31T11:37:32Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=TIMEOUT]:   ⚠ Time sync attempt #1 timed out
+[2025-07-31T11:51:06Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:51:07Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:51:07Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=TIMEOUT]:   ⚠ Time sync attempt #2 timed out
+[2025-07-31T11:51:07Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: [TPSL] fetch pending failed: 
+[2025-07-31T11:51:07Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: [TPSL] fetch pending failed: 
+[2025-07-31T11:51:07Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ⏳ [TPSL] placing OCO(init): {'instId': 'DOGE-USDT-SWAP', 'instType': 'SWAP', 'tdMode': 'cross', 'ordType': 'oco', 'posSide': 'long', 'side': 'sell', 'algoClOrdId': 'LDOGEUSDTSWAP', 'tpTriggerPx': '0.2284115', 'tpOrdPx': '-1', 'slTriggerPx': '0.20248192', 'slOrdPx': '-1', 'closeFraction': 1, 'reduceOnly': True}
+[2025-07-31T11:51:18Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/order-algo
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:51:18Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ❌ [TPSL] OCO(init) failed for LDOGEUSDTSWAP: 
+[2025-07-31T11:51:18Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ⏳ [TPSL] placing Conditional(hedge): {'instId': 'DOGE-USDT-SWAP', 'instType': 'SWAP', 'tdMode': 'cross', 'ordType': 'conditional', 'posSide': 'short', 'side': 'buy', 'algoClOrdId': 'SDOGEUSDTSWAP', 'tpTriggerPx': '0.20248192', 'tpOrdPx': '-1', 'closeFraction': 1, 'reduceOnly': True}
+[2025-07-31T11:51:19Z] WARNING bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=TIMEOUT]:   ⚠ Time sync attempt #3 timed out
+[2025-07-31T11:51:23Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=PERM_FAIL]: ❌ Time sync permanently failed after 3 attempts
+[2025-07-31T11:51:23Z] DEBUG bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Iteration took 841465 ms
+[2025-07-31T11:51:29Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/order-algo
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-07-31T11:51:29Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: 
+[2025-07-31T12:10:14Z] INFO bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=SHUTDOWN] [err=-]: Shutdown initiated

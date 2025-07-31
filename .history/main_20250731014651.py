@@ -3,7 +3,6 @@
 import sys
 import asyncio
 import aiohttp
-from aiohttp import ClientTimeout
 import time
 
 from core.config       import get, get_bool
@@ -42,13 +41,12 @@ async def main():
     ws_url   = ws_url   or "wss://ws.okx.com:8443/ws/v5/private"
 
     # 2) HTTP-сессия и RestClient (он стартует фон-таск синка времени)
-    timeout = ClientTimeout(connect=5, sock_read=10, total=15)
-    session = aiohttp.ClientSession(timeout=timeout)
+    session     = aiohttp.ClientSession()
     rest_client = RestClient(
         api_key    = api_key    or "",
         api_secret = api_secret or "",
         passphrase = passphrase or "",
-        #session    = session,
+        session    = session,
         base_url   = rest_url,
         use_demo   = use_demo
     )
@@ -97,7 +95,7 @@ async def main():
     # 7) Запуск + гарантированное закрытие
     try:        
         await orchestrator.run()
-
+        
     finally:
         # 7a) Корректно останавливаем WS-задачу и закрываем сессию
         await ws_monitor.disconnect()

@@ -43,12 +43,12 @@ async def main():
 
     # 2) HTTP-сессия и RestClient (он стартует фон-таск синка времени)
     timeout = ClientTimeout(connect=5, sock_read=10, total=15)
-    session = aiohttp.ClientSession(timeout=timeout)
+    session     = aiohttp.ClientSession(timeout=timeout)
     rest_client = RestClient(
         api_key    = api_key    or "",
         api_secret = api_secret or "",
         passphrase = passphrase or "",
-        #session    = session,
+        session    = session,
         base_url   = rest_url,
         use_demo   = use_demo
     )

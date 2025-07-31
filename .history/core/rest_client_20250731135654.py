@@ -123,7 +123,7 @@ class RestClient:
                 # Метрика: сколько длился этот цикл
                 elapsed = time.time() * 1000 - start_ms
                 self.statsd.timing("latency_ms", elapsed)
-                self.logger.debug(f"Iteration took {int(elapsed)} ms",extra={"mode":"REST"})
+                #self.logger.debug(f"Iteration took {int(elapsed)} ms",extra={"mode":"REST"})
                 await asyncio.sleep(self._sync_interval)
                 continue
 
@@ -138,7 +138,7 @@ class RestClient:
             # 4) Латенси-метрика всего цикла
             elapsed = time.time() * 1000 - start_ms
             self.statsd.timing("latency_ms", elapsed)
-            #self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
+            self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
 
             # 5) Ждём до следующей итерации
             await asyncio.sleep(self._sync_interval)

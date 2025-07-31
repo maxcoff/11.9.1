@@ -23,9 +23,9 @@ class RestClient:
         api_key: str,
         api_secret: str,
         passphrase: str,
+        session: aiohttp.ClientSession,
         base_url: str,
         use_demo: bool,
-                        
         logger=logger,
         sync_interval=300, 
         offset_threshold=50,
@@ -38,7 +38,7 @@ class RestClient:
         self.api_key     = api_key
         self.api_secret  = api_secret
         self.passphrase  = passphrase
-        
+        self.session     = session
         self.base_url    = base_url.rstrip("/")
         self.use_demo    = use_demo
         self.logger      = logger
@@ -52,12 +52,6 @@ class RestClient:
 
         self._sync_interval    = int(get("TIME_SYNC_INTERVAL")      or "10")
         self._offset_threshold = int(get("TIME_OFFSET_THRESHOLD_MS") or "2000")
-
-        # Если сессию не передали извне — создаём новую с нужным таймаутом        
-        timeout = ClientTimeout(connect=5, sock_read=10, total=15)
-        self.session = ClientSession(timeout=timeout)
-        
-        
 
         # Инициализация StatsD-клиента
         self.statsd = StatsClient(
@@ -77,7 +71,7 @@ class RestClient:
         """
         path    = "/api/v5/public/time"
         url     = f"{self.base_url}{path}"
-        timeout = ClientTimeout(total=10)        
+        timeout = ClientTimeout(total=10)
         async with self.session.get(url, timeout=timeout) as resp:
             resp.raise_for_status()
             data      = await resp.json()
@@ -96,34 +90,28 @@ class RestClient:
 
             # Метрика: начинаем цикл синхронизации
             self.statsd.incr("attempts.total")
-            #self.logger.debug("🔄 TimeSyncLoop start iteration", extra={"mode":"REST"})
 
             # 1) Ретраи с метриками
             for attempt in range(1, self._retry_count + 1):
                 self.statsd.incr("attempts.current")  # каждый заход в retry
                 try:
-                    #self.logger.debug(f"  → attempt #{attempt}: calling sync_rest_time()", extra={"mode":"REST"})
-                    #server_ts = await self.sync_rest_time()
-                    server_ts = await asyncio.wait_for( self.sync_rest_time(), timeout=self._sync_interval)
-                    #self.logger.debug(f"  ← attempt #{attempt} succeeded", extra={"mode":"REST"})                    
+                    server_ts = await self.sync_rest_time()
+                    # Успех
                     self.statsd.incr("results.success")
                     break
-                except asyncio.TimeoutError:
-                    self.logger.warning(f"  ⚠ Time sync attempt #{attempt} timed out", extra={"mode":"REST","errorCode":"TIMEOUT"})
-                except Exception as e:                    
+                except Exception as e:
+                    # Неудача попытки
                     self.statsd.incr("results.failure")
-                    self.logger.warning(f"Time sync attempt {attempt} failed: {e}", extra={"mode": "REST", "errorCode": "ERROR"})
-                backoff = self._retry_backoff * 2 ** (attempt - 1)
-                await asyncio.sleep(backoff)
+                    self.logger.warning(f"Time sync attempt {attempt}/{self._retry_count} failed: {e}", extra={"mode": "REST", "errorCode": "-"})
+                    await asyncio.sleep(self._retry_backoff * 2 ** (attempt - 1))
 
-            # 2) Если всё упало — логируем и идём дальше
+            # 2) Permanent failure?
             if server_ts is None:
                 self.statsd.incr("results.permanent_failure")
-                self.logger.error(f"❌ Time sync permanently failed after {self._retry_count} attempts",extra={"mode":"REST","errorCode":"PERM_FAIL"})
+                self.logger.error(f"Time sync permanently failed after {self._retry_count} attempts",  extra={"mode": "REST", "errorCode": "-"} )
                 # Метрика: сколько длился этот цикл
                 elapsed = time.time() * 1000 - start_ms
                 self.statsd.timing("latency_ms", elapsed)
-                self.logger.debug(f"Iteration took {int(elapsed)} ms",extra={"mode":"REST"})
                 await asyncio.sleep(self._sync_interval)
                 continue
 
@@ -138,9 +126,8 @@ class RestClient:
             # 4) Латенси-метрика всего цикла
             elapsed = time.time() * 1000 - start_ms
             self.statsd.timing("latency_ms", elapsed)
-            #self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
 
-            # 5) Ждём до следующей итерации
+            # 5) Готовимся к следующей итерации
             await asyncio.sleep(self._sync_interval)
 
     def _iso_ts(self) -> str:
@@ -194,7 +181,7 @@ class RestClient:
                 headers["x-simulated-trading"] = "1"
 
             timeout = ClientTimeout(total=10)
-            try:                
+            try:
                 async with self.session.request(
                     method,
                     url,
@@ -291,5 +278,5 @@ class RestClient:
             try:
                 await self._sync_task
             except asyncio.CancelledError:
-                pass        
+                pass
         await self.session.close()

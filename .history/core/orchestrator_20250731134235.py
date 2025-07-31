@@ -319,7 +319,7 @@ class Orchestrator:
         if self.prehedge_task and not self.prehedge_task.done():
             self.prehedge_task.cancel()
 
-        await self.tpsl.stop()
+        self.tpsl.stop()
         await self.ws_monitor.disconnect()
         await self.rest.close()
 

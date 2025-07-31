@@ -25,7 +25,8 @@ class RestClient:
         passphrase: str,
         base_url: str,
         use_demo: bool,
-                        
+        session: Optional[ClientSession] = None,
+        session_timeout: float = 10.0,                
         logger=logger,
         sync_interval=300, 
         offset_threshold=50,
@@ -38,7 +39,7 @@ class RestClient:
         self.api_key     = api_key
         self.api_secret  = api_secret
         self.passphrase  = passphrase
-        
+        self.session     = session
         self.base_url    = base_url.rstrip("/")
         self.use_demo    = use_demo
         self.logger      = logger
@@ -53,10 +54,13 @@ class RestClient:
         self._sync_interval    = int(get("TIME_SYNC_INTERVAL")      or "10")
         self._offset_threshold = int(get("TIME_OFFSET_THRESHOLD_MS") or "2000")
 
-        # Если сессию не передали извне — создаём новую с нужным таймаутом        
-        timeout = ClientTimeout(connect=5, sock_read=10, total=15)
-        self.session = ClientSession(timeout=timeout)
-        
+        # Если сессия не передали извне — создаём новую с нужным таймаутом
+        if session is None:
+            timeout = ClientTimeout(total=session_timeout)
+            self.session = ClientSession(timeout=timeout)
+        else:
+            # Если сессия передали, надеемся что там тоже выставлен таймаут
+            self.session = session
         
 
         # Инициализация StatsD-клиента
@@ -77,7 +81,8 @@ class RestClient:
         """
         path    = "/api/v5/public/time"
         url     = f"{self.base_url}{path}"
-        timeout = ClientTimeout(total=10)        
+        timeout = ClientTimeout(total=10)
+        assert self.session is not None, "Session must be initialized"
         async with self.session.get(url, timeout=timeout) as resp:
             resp.raise_for_status()
             data      = await resp.json()
@@ -96,16 +101,16 @@ class RestClient:
 
             # Метрика: начинаем цикл синхронизации
             self.statsd.incr("attempts.total")
-            #self.logger.debug("🔄 TimeSyncLoop start iteration", extra={"mode":"REST"})
+            self.logger.debug("🔄 TimeSyncLoop start iteration", extra={"mode":"REST"})
 
             # 1) Ретраи с метриками
             for attempt in range(1, self._retry_count + 1):
                 self.statsd.incr("attempts.current")  # каждый заход в retry
                 try:
-                    #self.logger.debug(f"  → attempt #{attempt}: calling sync_rest_time()", extra={"mode":"REST"})
+                    self.logger.debug(f"  → attempt #{attempt}: calling sync_rest_time()", extra={"mode":"REST"})
                     #server_ts = await self.sync_rest_time()
                     server_ts = await asyncio.wait_for( self.sync_rest_time(), timeout=self._sync_interval)
-                    #self.logger.debug(f"  ← attempt #{attempt} succeeded", extra={"mode":"REST"})                    
+                    self.logger.debug(f"  ← attempt #{attempt} succeeded", extra={"mode":"REST"})                    
                     self.statsd.incr("results.success")
                     break
                 except asyncio.TimeoutError:
@@ -138,7 +143,7 @@ class RestClient:
             # 4) Латенси-метрика всего цикла
             elapsed = time.time() * 1000 - start_ms
             self.statsd.timing("latency_ms", elapsed)
-            #self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
+            self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
 
             # 5) Ждём до следующей итерации
             await asyncio.sleep(self._sync_interval)
@@ -194,7 +199,8 @@ class RestClient:
                 headers["x-simulated-trading"] = "1"
 
             timeout = ClientTimeout(total=10)
-            try:                
+            try:
+                assert self.session is not None, "Session must be initialized"
                 async with self.session.request(
                     method,
                     url,
@@ -291,5 +297,6 @@ class RestClient:
             try:
                 await self._sync_task
             except asyncio.CancelledError:
-                pass        
+                pass
+        assert self.session is not None, "Session must be initialized"
         await self.session.close()

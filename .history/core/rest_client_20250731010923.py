@@ -1,7 +1,7 @@
 # rest_client.py
 
 import aiohttp
-from aiohttp import ClientTimeout, ClientResponseError, ClientSession
+from aiohttp import ClientTimeout, ClientResponseError
 import asyncio
 import time
 import hmac
@@ -11,7 +11,6 @@ import json
 import urllib.parse
 from datetime import datetime, timezone, timedelta
 from typing import Optional, Dict, Any
-from statsd import StatsClient
 
 from core.config import get
 from core.logger import logger
@@ -23,48 +22,23 @@ class RestClient:
         api_key: str,
         api_secret: str,
         passphrase: str,
+        session: aiohttp.ClientSession,
         base_url: str,
         use_demo: bool,
-                        
-        logger=logger,
-        sync_interval=300, 
-        offset_threshold=50,
-        retry_count=3, 
-        retry_backoff=1.0,
-        statsd_host: str = "127.0.0.1", # Хардкоооод
-        statsd_port: int = 8125,
-        statsd_prefix: str = "bot.timesync"
+        logger=logger
     ):
         self.api_key     = api_key
         self.api_secret  = api_secret
         self.passphrase  = passphrase
-        
+        self.session     = session
         self.base_url    = base_url.rstrip("/")
         self.use_demo    = use_demo
         self.logger      = logger
-        self._sync_interval    = sync_interval       # сек между основными циклами
-        self._offset_threshold = offset_threshold    # мс – порог для лога об изменении
-        self._retry_count      = retry_count         # число попыток
-        self._retry_backoff    = retry_backoff       # базовый backoff в сек
-        self.time_offset       = 0
 
         self.time_offset = 0  # текущее смещение в мс
 
         self._sync_interval    = int(get("TIME_SYNC_INTERVAL")      or "10")
         self._offset_threshold = int(get("TIME_OFFSET_THRESHOLD_MS") or "2000")
-
-        # Если сессию не передали извне — создаём новую с нужным таймаутом        
-        timeout = ClientTimeout(connect=5, sock_read=10, total=15)
-        self.session = ClientSession(timeout=timeout)
-        
-        
-
-        # Инициализация StatsD-клиента
-        self.statsd = StatsClient(
-            host=statsd_host,
-            port=statsd_port,
-            prefix=statsd_prefix
-        )        
 
         # запускаем фоновую синхронизацию времени
         loop = asyncio.get_running_loop()
@@ -77,7 +51,7 @@ class RestClient:
         """
         path    = "/api/v5/public/time"
         url     = f"{self.base_url}{path}"
-        timeout = ClientTimeout(total=10)        
+        timeout = ClientTimeout(total=10)
         async with self.session.get(url, timeout=timeout) as resp:
             resp.raise_for_status()
             data      = await resp.json()
@@ -88,59 +62,25 @@ class RestClient:
         """
         Фон: каждые self._sync_interval сек дергаем серверное время,
         считаем новый offset и обновляем, если разница > threshold.
-        При этом для sync_rest_time делаем ретраи.
         """
         while True:
-            start_ms = time.time() * 1000
-            server_ts = None
+            try:
+                server_ts   = await self.sync_rest_time()
+                local_ts    = int(time.time() * 1000)
+                new_offset  = server_ts - local_ts                
 
-            # Метрика: начинаем цикл синхронизации
-            self.statsd.incr("attempts.total")
-            #self.logger.debug("🔄 TimeSyncLoop start iteration", extra={"mode":"REST"})
-
-            # 1) Ретраи с метриками
-            for attempt in range(1, self._retry_count + 1):
-                self.statsd.incr("attempts.current")  # каждый заход в retry
-                try:
-                    #self.logger.debug(f"  → attempt #{attempt}: calling sync_rest_time()", extra={"mode":"REST"})
-                    #server_ts = await self.sync_rest_time()
-                    server_ts = await asyncio.wait_for( self.sync_rest_time(), timeout=self._sync_interval)
-                    #self.logger.debug(f"  ← attempt #{attempt} succeeded", extra={"mode":"REST"})                    
-                    self.statsd.incr("results.success")
-                    break
-                except asyncio.TimeoutError:
-                    self.logger.warning(f"  ⚠ Time sync attempt #{attempt} timed out", extra={"mode":"REST","errorCode":"TIMEOUT"})
-                except Exception as e:                    
-                    self.statsd.incr("results.failure")
-                    self.logger.warning(f"Time sync attempt {attempt} failed: {e}", extra={"mode": "REST", "errorCode": "ERROR"})
-                backoff = self._retry_backoff * 2 ** (attempt - 1)
-                await asyncio.sleep(backoff)
-
-            # 2) Если всё упало — логируем и идём дальше
-            if server_ts is None:
-                self.statsd.incr("results.permanent_failure")
-                self.logger.error(f"❌ Time sync permanently failed after {self._retry_count} attempts",extra={"mode":"REST","errorCode":"PERM_FAIL"})
-                # Метрика: сколько длился этот цикл
-                elapsed = time.time() * 1000 - start_ms
-                self.statsd.timing("latency_ms", elapsed)
-                self.logger.debug(f"Iteration took {int(elapsed)} ms",extra={"mode":"REST"})
-                await asyncio.sleep(self._sync_interval)
-                continue
-
-            # 3) Успешная корректировка офсета
-            local_ts   = int(time.time() * 1000)
-            new_offset = server_ts - local_ts
-            if abs(new_offset - self.time_offset) > self._offset_threshold:
-                old = self.time_offset
-                self.time_offset = new_offset
-                self.logger.info(f"Time offset updated {old} → {new_offset} ms", extra={"mode": "REST"} )
-
-            # 4) Латенси-метрика всего цикла
-            elapsed = time.time() * 1000 - start_ms
-            self.statsd.timing("latency_ms", elapsed)
-            #self.logger.debug(f"Iteration took {int(elapsed)} ms", extra={"mode":"REST"})
-
-            # 5) Ждём до следующей итерации
+                if abs(new_offset - self.time_offset) > self._offset_threshold:
+                    old = self.time_offset
+                    self.time_offset = new_offset
+                    self.logger.info(
+                        f"Time offset updated {old} → {new_offset} ms",
+                        extra={"mode": "REST"}
+                    )
+            except Exception as e:
+                self.logger.warning(
+                    f"Time sync failed: {e}",
+                    extra={"mode": "REST", "errorCode": "-"}
+                )
             await asyncio.sleep(self._sync_interval)
 
     def _iso_ts(self) -> str:
@@ -194,7 +134,7 @@ class RestClient:
                 headers["x-simulated-trading"] = "1"
 
             timeout = ClientTimeout(total=10)
-            try:                
+            try:
                 async with self.session.request(
                     method,
                     url,
@@ -291,5 +231,5 @@ class RestClient:
             try:
                 await self._sync_task
             except asyncio.CancelledError:
-                pass        
+                pass
         await self.session.close()

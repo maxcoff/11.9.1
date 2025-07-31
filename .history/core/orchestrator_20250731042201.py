@@ -314,12 +314,12 @@ class Orchestrator:
 
         if self.order_task and not self.order_task.done():
             self.order_task.cancel()
-        if self._reinvest_task and not self._reinvest_task.done():
-            self._reinvest_task.cancel()
+        #if self._reinvest_task and not self._reinvest_task.done():
+        #    self._reinvest_task.cancel()
         if self.prehedge_task and not self.prehedge_task.done():
             self.prehedge_task.cancel()
 
-        await self.tpsl.stop()
+        self.tpsl.stop()
         await self.ws_monitor.disconnect()
         await self.rest.close()
 

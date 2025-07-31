@@ -61,11 +61,9 @@ class TpslMonitor:
         """Return True while TPSL monitor is actively watching."""
         return self._active
 
-    async def stop(self) -> None:
+    def stop(self) -> None:
         """Deactivate TPSL monitoring and clear pending fill event."""
         self._active = False
-        assert self._task is not None, "Session must be initialized"
-        await self._task
         self.tp_filled_evt.clear()
 
     def last_tp_fill(self) -> Tuple[float, float, float]:
