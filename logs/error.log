@@ -1,78 +1,792 @@
-[2025-07-30T21:14:56Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T21:15:01Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T21:15:06Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T21:15:11Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T21:15:16Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T21:15:21Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3101e47bb5274d568bd2c169828a8660] [mode=-] [err=-]: Чето делаем в основном цикле
-NoneType: None
-[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
-[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
-[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=1]: API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
-[2025-07-30T23:37:34Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
-[2025-07-30T23:37:53Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=-] [err=-]: ❌ [TPSL] loop error: float division by zero
+[2025-08-03T01:20:19] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 162, in _loop
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:21] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:23] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:25] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:27] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:30] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:32] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:34] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:36] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:38] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:40] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:42] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:44] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:46] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:48] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:50] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:52] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:55] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:57] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:20:59] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:01] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:03] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:05] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:07] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:09] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:11] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:13] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:15] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:17] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:19] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:21] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:23] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:26] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:28] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:30] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:32] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:34] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:36] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:38] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:40] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:42] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:44] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:46] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:48] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:50] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:52] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:54] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:57] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:21:59] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:01] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:03] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:05] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:07] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:09] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:11] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:13] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:15] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:17] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:19] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:22] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:24] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:26] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:28] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:30] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:32] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:34] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:36] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:38] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:40] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:42] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:45] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:47] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:49] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:51] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:53] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:55] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:57] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:22:59] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:01] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:04] ERROR bot [inst=DOGE-USDT-SWAP] [sess=9e849c8efc0a42bd892926d27361c4c7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:12] ERROR bot [inst=DOGE-USDT-SWAP] [sess=4b8aa77178a449e7bf7a20a273f36b9a] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:14] ERROR bot [inst=DOGE-USDT-SWAP] [sess=4b8aa77178a449e7bf7a20a273f36b9a] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:16] ERROR bot [inst=DOGE-USDT-SWAP] [sess=4b8aa77178a449e7bf7a20a273f36b9a] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:18] ERROR bot [inst=DOGE-USDT-SWAP] [sess=4b8aa77178a449e7bf7a20a273f36b9a] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:23:21] ERROR bot [inst=DOGE-USDT-SWAP] [sess=4b8aa77178a449e7bf7a20a273f36b9a] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_last_price(self.inst)
+                    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'WSMonitor' object has no attribute 'get_last_price'. Did you mean: 'get_mark_price'?
+[2025-08-03T01:25:05] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:25:07] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:25:09] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:25:11] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:25:13] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:25:16] ERROR bot [inst=DOGE-USDT-SWAP] [sess=c85fe7e7b5e44fe98910533f772651c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:31:46] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3a213298c3614d48a07cbc6e80b02c51] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:31:49] ERROR bot [inst=DOGE-USDT-SWAP] [sess=3a213298c3614d48a07cbc6e80b02c51] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    last_px = await self.ws.get_mark_price(self.inst)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:34:00] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ca5c230e07864e1a9f70e0c8f33a9cf7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 155, in _delayed_loss_check
+    pnl = (Decimal(last_px) - self.entry_price) / self.entry_price
+           ^^^^^^^^^^^^^^^^
+TypeError: conversion from coroutine to Decimal is not supported
+[2025-08-03T01:34:02] ERROR bot [inst=DOGE-USDT-SWAP] [sess=ca5c230e07864e1a9f70e0c8f33a9cf7] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 155, in _delayed_loss_check
+    pnl = (Decimal(last_px) - self.entry_price) / self.entry_price
+           ^^^^^^^^^^^^^^^^
+TypeError: conversion from coroutine to Decimal is not supported
+[2025-08-03T01:40:00] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f95937e5618846bbbf08961ad16800ec] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[instrument]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {instrument!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:40:02] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f95937e5618846bbbf08961ad16800ec] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[instrument]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {instrument!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:40:04] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f95937e5618846bbbf08961ad16800ec] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[instrument]
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {instrument!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:42:02] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f052c1632f874f05b844aedc0a7b0b9c] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[inst]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {inst!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:42:04] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f052c1632f874f05b844aedc0a7b0b9c] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[inst]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {inst!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:42:06] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f052c1632f874f05b844aedc0a7b0b9c] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 346, in get_last_price
+    return self.latest_price[inst]
+           ~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: 'DOGE-USDT-SWAP'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_last_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\ws_monitor.py", line 348, in get_last_price
+    raise RuntimeError(f"No trade data for {inst!r} yet")
+RuntimeError: No trade data for 'DOGE-USDT-SWAP' yet
+[2025-08-03T01:59:12] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=-] [err=-]: ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 174, in _loop
     abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 ZeroDivisionError: float division by zero
-[2025-07-30T23:44:50Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/cancel-order
+[2025-08-03T01:59:14] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
-    message, payload = await protocol.read()  # type: ignore[union-attr]
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
-    await self._waiter
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:59:16] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
-    await resp.start(conn)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
-    with self._timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-30T23:44:50Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=34dc139062ae41f79ff59bef535d34dc] [mode=ORDER] [err=-]: ❌ [OrderMode] cancel-order failed for 2731890068555091968: 
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:59:18] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
-    message, payload = await protocol.read()  # type: ignore[union-attr]
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
-    await self._waiter
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:59:20] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 21, in cancel_order
-    await self.rest.request(
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
-    await resp.start(conn)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
-    with self._timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T00:02:09Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fb282949f7cc41f68aed851809f3e1fd] [mode=MAIN] [err=-]: 💥 Fatal error: Session is closed
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:59:23] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 110, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T01:59:25] ERROR bot [inst=DOGE-USDT-SWAP] [sess=05258d1887d34e7c817ef4ddf57198c1] [mode=LOOP] [err=-]: Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 147, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[2025-08-03T04:08:26] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-03T04:08:26] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T12:02:59] ERROR bot [mode=-] : ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 176, in _loop
+    abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero
+[2025-08-03T13:47:44] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-03T13:47:44] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T13:47:45] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-03T13:47:45] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:50:57] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:50:57] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:04] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:04] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:11] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:11] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:17] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:17] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:24] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:24] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:31] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:31] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:38] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:38] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:44] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:44] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:51] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:51] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:51:58] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:51:58] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:05] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:05] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:12] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:12] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:18] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:18] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:25] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:25] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:32] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:32] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:39] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:39] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:45] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:45] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:52] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:52] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:52:59] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:52:59] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:06] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:06] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:13] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:13] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:19] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:19] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:26] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:26] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:33] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:33] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:49] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:49] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:53:55] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:53:55] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:54:02] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:54:02] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:54:09] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T13:54:09] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T13:58:40] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-03T13:58:40] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T14:40:22] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T14:40:22] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T14:47:10] ERROR bot [mode=-] : ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 183, in _loop
+    abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero
+[2025-08-03T16:46:13] ERROR bot [mode=MAIN] : 💥 Fatal error: Session is closed
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 136, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -83,15 +797,15 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 97, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 104, in main
     await orchestrator.run()
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 82, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 83, in run
     long_q, short_q = await self.get_positions_rest()
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 164, in get_positions_rest
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 175, in get_positions_rest
     resp   = await self.rest.request(
              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
     async with self.session.request(
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
     self._resp: _RetType = await self._coro
@@ -99,333 +813,110 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 493, in _request
     raise RuntimeError("Session is closed")
 RuntimeError: Session is closed
-[2025-07-31T00:23:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
+[2025-08-03T16:49:15] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2742287770182803456', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1754228954671'}], 'inTime': '1754228954671448', 'msg': 'All operations failed', 'outTime': '1754228954674694'}
+[2025-08-03T16:49:15] ERROR bot [mode=ORDER] : ❌ [OrderMode] cancel-order failed for 2742287770182803456: API error 1
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
-    return await asyncio.shield(resolved_host_task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
+  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-08-03T16:50:44] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T16:50:44] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T16:50:53] ERROR bot [mode=-] : ❌ [REINVEST] error during _maybe_reinvest
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 235, in _reinvest_loop
+    await self._maybe_reinvest(ep, eq, tp)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 260, in _maybe_reinvest
+    use_amount = realized_pnl * self.reinvest_pct
+                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+[2025-08-03T16:51:09] ERROR bot [mode=-] : ❌ [REINVEST] error during _maybe_reinvest
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 235, in _reinvest_loop
+    await self._maybe_reinvest(ep, eq, tp)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 260, in _maybe_reinvest
+    use_amount = realized_pnl * self.reinvest_pct
+                 ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+TypeError: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'
+[2025-08-03T17:28:02] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T17:28:02] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 112, in _place_tp
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-08-03T17:45:12] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2742400427577630720', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1754232312109'}], 'inTime': '1754232312107666', 'msg': 'All operations failed', 'outTime': '1754232312110343'}
+[2025-08-03T17:45:12] ERROR bot [mode=ORDER] : ❌ [OrderMode] cancel-order failed for 2742400427577630720: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 21, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[2025-08-03T19:05:26] ERROR bot [mode=MAIN] : 💥 Fatal error: Session is closed
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 136, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 104, in main
+    await orchestrator.run()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 83, in run
+    long_q, short_q = await self.get_positions_rest()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 175, in get_positions_rest
+    resp   = await self.rest.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
     async with self.session.request(
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
     self._resp: _RetType = await self._coro
                            ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T00:23:10Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=-] [err=-]: ❌ [TPSL] loop error: 
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
-    return await asyncio.shield(resolved_host_task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
-    lq, lp, sq, sp = await self._get_state()
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
-    resp = await self.rest.request(
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T00:23:26Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/account/positions
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T00:23:26Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=0c22446eb56046e0b25e89e0162ffe01] [mode=-] [err=-]: ❌ [TPSL] loop error: 
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
-    lq, lp, sq, sp = await self._get_state()
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
-    resp = await self.rest.request(
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 138, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T10:37:44Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=f6a95bdd30204ca28ec308c36ec2a7b0] [mode=-] [err=-]: ❌ [TPSL] loop error: 'NoneType' object has no attribute 'connect'
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 130, in _loop
-    lq, lp, sq, sp = await self._get_state()
-                     ^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 184, in _get_state
-    resp = await self.rest.request(
-           ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 187, in request
-    "OK-ACCESS-KEY":        self.api_key,
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-                 ^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'connect'
-[2025-07-31T11:37:22Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
-    message, payload = await protocol.read()  # type: ignore[union-attr]
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
-    await self._waiter
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
-    await resp.start(conn)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
-    with self._timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:37:22Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
-    message, payload = await protocol.read()  # type: ignore[union-attr]
-                       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
-    await self._waiter
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
-    await resp.start(conn)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
-    with self._timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:51:06Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:51:07Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout GET https://www.okx.com/api/v5/trade/orders-algo-pending
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:51:18Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/order-algo
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:51:18Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ❌ [TPSL] OCO(init) failed for LDOGEUSDTSWAP: 
-[2025-07-31T11:51:23Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=PERM_FAIL]: ❌ Time sync permanently failed after 3 attempts
-[2025-07-31T11:51:29Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=REST] [err=-]: Timeout POST https://www.okx.com/api/v5/trade/order-algo
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
-    conn = await self._connector.connect(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
-    proto = await self._create_connection(req, traces, timeout)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
-    _, proto = await self._create_direct_connection(req, traces, timeout)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
-    hosts = await self._resolve_host(host, port, traces=traces)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
-    await future
-asyncio.exceptions.CancelledError
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 198, in request
-    async with self.session.request(
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
-    self._resp: _RetType = await self._coro
-                           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
-    with timer:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
-    raise asyncio.TimeoutError from exc_val
-TimeoutError
-[2025-07-31T11:51:29Z] ERROR bot [inst=DOGE-USDT-SWAP] [sess=fe8832af908f45a88328368ede3fda4d] [mode=-] [err=-]: ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: 
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 493, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+[2025-08-03T19:06:38] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:06:38] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:09:52] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:09:52] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:09:59] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:09:59] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:00] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:00] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:06] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:06] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:06] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:06] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:13] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:13] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:13] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:13] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:20] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:20] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:20] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:20] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:26] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:26] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:27] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:27] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:33] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:33] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:34] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:34] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:41] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:41] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:10:47] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:10:47] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:11:10] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[2025-08-03T19:11:10] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for LDOGEUSDTSWAP: API error 1
+[2025-08-03T19:11:10] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-03T19:11:10] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: API error 1
