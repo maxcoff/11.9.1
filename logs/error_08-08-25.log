@@ -1,0 +1,15 @@
+[08-08  00:54:50] ERROR bot [mode=-] : ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 225, in _loop
+    abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero
+[08-08  00:54:51] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[08-08  00:54:51] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 163, in _place_tp
+    response = await self.rest.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1

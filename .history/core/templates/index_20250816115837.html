@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>OKX-Bot </title>
+  <style>
+    body   { font-family: Arial; margin: 1rem; }    
+    #fullLog { height: 400px; overflow-y: scroll; border: 1px solid #ccc;
+               padding: .5rem; white-space: pre-wrap; background:#000; color:#0f0; }
+    #counter { font-size: 1.5rem; font-weight: bold; margin-bottom: .5rem; }
+    #statusIndicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    background-color: #888; /* по умолчанию серый */
+    }
+    .running { background-color: #35c759 !important; } /* зелёный */
+  </style>
+</head>
+<body>
+  <div id="counter">0</div>
+  <pre id="fullLog">Connecting...\n</pre>
+  <div>
+  <span id="statusIndicator"></span>
+  <span id="taskState">idle</span>
+  </div> 
+  <h3>Task States</h3>
+  <table id="tasksTable" border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div>
+    <button id="startTest">Start test</button>
+    <button id="stopTest">Stop test</button>
+    <button id="stopApp">Stop app</button>
+  </div>
+  <script>
+    const fullLog = document.getElementById('fullLog');
+    const ws = new WebSocket(`ws://${location.host}/ws`);
+    const taskState = document.getElementById('taskState');
+    const indicator  = document.getElementById('statusIndicator');
+    const tasksTableBody = document.querySelector('#tasksTable tbody');
+    const taskStates = {}; // { name: state }
+
+    function addLog(msg) {fullLog.textContent += msg + '\n'; fullLog.scrollTop = fullLog.scrollHeight; }
+    function setTaskState(s) {  taskState.textContent = s;  indicator.className = (s === 'running') ? 'running' : '';}
+    function renderTasks() {
+      tasksTableBody.innerHTML = Object.entries(taskStates)
+        .map(([name, state]) => {
+          const color = {
+            running: 'green',
+            finished: 'orange',
+            cancelled: 'red',
+            error: 'crimson',
+            not_started: 'gray',
+            unknown: 'gray'
+          }[state] || 'white';
+          const btnLabel = (state === 'running') ? 'Stop' : 'Start';
+          return `<tr>
+                    <td>${name}</td>
+                    <td style="color:${color}">${state}</td>
+                    <td><button onclick="sendTaskCommand('${btnLabel.toLowerCase()}', '${name}')">${btnLabel}</button></td>
+                  </tr>`;
+        })
+        .join('');
+    }
+    function sendTaskCommand(action, name) {
+      ws.send(JSON.stringify({ action: action, name: name }));
+    }
+
+    ws.onmessage = (event) => {
+      const data = event.data;
+
+      // формат: TASKSTATE:имя:состояние — мгновенный пуш
+      if (data.startsWith('TASKSTATE:')) {
+        const [, name, state] = data.split(':');
+        taskStates[name] = state;
+        setTaskState(state);
+        renderTasks();
+        return;
+      }
+
+      // если сервер шлёт JSON со всеми задачами
+      try {
+        const msg = JSON.parse(data);
+
+        //addLog(JSON.stringify(msg, null, 2));  // cырые данные в лог для отладки
+        if (msg.type === 'tasks') {
+          msg.data.forEach(({ name, state }) => {
+            taskStates[name] = state;
+          });
+          renderTasks();
+          return;
+        }
+      } catch {
+        // не JSON — значит это обычный лог
+      }
+
+      // всё, что не попало в условия, записываем как лог
+      addLog(data);
+    };
+
+    ws.onopen = () => addLog('WS connected');
+    async function sendCmd(action) {
+      await fetch('/cmd', {method:'POST', headers: {'Content-Type':'application/json'},
+                           body: JSON.stringify({action})});
+    }
+    document.getElementById('startTest').onclick = () => sendCmd('start_test');
+    document.getElementById('stopTest').onclick  = () => sendCmd('stop_test');
+    document.getElementById('stopApp').onclick   = () => sendCmd('stop_app');
+  </script>
+</body>
+</html>

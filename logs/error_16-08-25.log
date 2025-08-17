@@ -1,0 +1,334 @@
+[16-08  15:07:19] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '2779770860274503680', 'sCode': '51400', 'sMsg': 'Order cancellation failed as the order has been filled, canceled or does not exist.', 'ts': '1755346038213'}], 'inTime': '1755346038213013', 'msg': 'All operations failed', 'outTime': '1755346038215074'}
+[16-08  15:07:19] ERROR bot [mode=ORDER] : ❌ [OrderMode] cancel-order failed for 2779770860274503680: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 26, in cancel_order
+    await self.rest.request(
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[16-08  21:51:14] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 106, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  21:54:07] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 106, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:21:20] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 106, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:24:50] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 106, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:50:58] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 106, in wait
+    task = self._tasks.get(name)
+        ^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:56:06] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 114, in main
+    try:
+        ^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 165, in <module>
+    f"acquired={acquired}, waiters={waiters}, "
+    ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:57:32] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 116, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 173, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[16-08  23:57:33] ERROR bot [mode=LOOP] : Loop-level exception

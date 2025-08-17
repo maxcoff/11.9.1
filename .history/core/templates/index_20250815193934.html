@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>OKX-Bot </title>
+  <style>
+    body { margin: 0; font-family: monospace; background:#111; color:#0f0; }    
+    #fullLog { height: 400px; overflow-y: scroll; border: 1px solid #ccc;
+               padding: .5rem; white-space: pre-wrap; background:#000; color:#0f0; }
+    #counter { font-size: 1.5rem; font-weight: bold; margin-bottom: .5rem; }
+    #statusIndicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    background-color: #888; /* по умолчанию серый */
+    }
+    .running { background-color: #35c759 !important; } /* зелёный */
+  </style>
+</head>
+<body>
+  <div id="counter">0</div>
+  <pre id="fullLog">Connecting...\n</pre>
+  <div>
+  <span id="statusIndicator"></span>
+  <span id="taskState">idle</span>
+  </div> 
+  <button id="startTest">Start test</button>
+  <button id="stopTest">Stop test</button>
+  <button id="stopApp">Stop app</button>
+  <script>
+    const fullLog = document.getElementById('fullLog');
+    const ws = new WebSocket(`ws://${location.host}/ws`);
+    const taskState = document.getElementById('taskState');
+    const indicator  = document.getElementById('statusIndicator');
+    function addLog(msg) {fullLog.textContent += msg + '\n'; fullLog.scrollTop = fullLog.scrollHeight; }
+    function setTaskState(s) {  taskState.textContent = s;  indicator.className = (s === 'running') ? 'running' : '';}
+
+    
+    ws.onmessage = (e) => {
+      const data = e.data;
+      if (data.startsWith('TASKSTATE:')) {
+        setTaskState(data.split(':')[1]);
+      } else {
+        addLog(data);
+      }
+    };
+    ws.onopen = () => addLog('WS connected');
+    document.getElementById('startTest').onclick = () => sendCmd('start_test');
+    document.getElementById('stopTest').onclick  = () => sendCmd('stop_test');
+    document.getElementById('stopApp').onclick   = () => sendCmd('stop_app');
+  </script>
+</body>
+</html>

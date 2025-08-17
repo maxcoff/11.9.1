@@ -1,0 +1,92 @@
+# core/http_server.py
+import asyncio, logging
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, WebSocket, WebSocketDisconnect
+from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import HTMLResponse
+from core.logger import logger, formatter
+
+# WebSocket-менеджер
+class LogBroadcaster:
+    def __init__(self):
+        self.active: set[WebSocket] = set()
+
+    async def connect(self, ws: WebSocket):
+        await ws.accept()
+        self.active.add(ws)
+
+    def disconnect(self, ws: WebSocket):
+        self.active.discard(ws)
+
+    async def push(self, msg: str):
+        for ws in list(self.active):
+            try:
+                await ws.send_text(msg)
+            except WebSocketDisconnect:
+                self.active.remove(ws)
+
+broadcaster = LogBroadcaster()
+
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    #  лог uvicorn_________________
+    #uvicorn_logger = logging.getLogger("uvicorn")    
+    #handler = _WSLogHandler(broadcaster)
+    #uvicorn_logger.addHandler(handler)
+    #uvicorn_logger.setLevel(logging.INFO)
+    # лог root__________________
+    #handler = _WSLogHandler(broadcaster)
+    #handler.setLevel(logging.DEBUG)
+    #root_logger = logging.getLogger()
+    #root_logger.addHandler(handler)
+    #root_logger.setLevel(logging.DEBUG)
+    # лог из логгера________________
+    ws_handler = _WSLogHandler(broadcaster)
+    ws_handler.setFormatter(formatter) 
+    ws_handler.setLevel(logging.DEBUG)
+    # Подцепляем к логгеру "bot"
+    bot_logger = logging.getLogger("bot")
+    bot_logger.addHandler(ws_handler)
+    try:
+        yield
+    finally:
+        bot_logger.removeHandler(ws_handler)
+        #root_logger.removeHandler(handler)
+        #uvicorn_logger.removeHandler(handler)
+
+app = FastAPI(lifespan=lifespan)
+templates = Jinja2Templates(directory="core/templates")
+
+class _WSLogHandler(logging.Handler):
+    def __init__(self, broadcaster: LogBroadcaster):
+        super().__init__()
+        self.broadcaster = broadcaster
+    def emit(self, record):
+        msg = self.format(record)
+        asyncio.create_task(self.broadcaster.push(msg))
+
+
+
+
+@app.websocket("/ws")
+async def ws_log(ws: WebSocket):
+    await broadcaster.connect(ws)
+    try:
+        while True:
+            await ws.receive_text()
+    except WebSocketDisconnect:
+        broadcaster.disconnect(ws)
+
+@app.get("/", response_class=HTMLResponse)
+async def index():
+    return templates.TemplateResponse("index.html", {"request": {}})
+
+# public-функция для запуска сервера
+async def run_server(host="192.168.100.254", port=8000):
+    import uvicorn
+    config = uvicorn.Config("core.http_server:app", host=host, port=port, reload=True)
+    server = uvicorn.Server(config)
+    await server.serve()

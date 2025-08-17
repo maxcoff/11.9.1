@@ -1,0 +1,204 @@
+[12-08  21:08:41] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[12-08  21:08:43] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'clOrdId': 'SDOGEUSDTSWAP', 'ordId': '', 'sCode': '51016', 'sMsg': 'Client order ID already exists. ', 'tag': '', 'ts': '1755022122989'}], 'inTime': '1755022122960082', 'msg': 'All operations failed', 'outTime': '1755022122963522'}
+[12-08  21:08:43] ERROR bot [mode=ORDER] : ❌ [OrderMode] place error: API error 1
+[12-08  21:11:36] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[12-08  21:20:54] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.0s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[12-08  21:47:39] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[12-08  22:34:00] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1353, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1109, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 87, in start_connection
+    sock, _, _ = await _staggered.staggered_race(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\_staggered.py", line 165, in staggered_race
+    done = await _wait_one(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\_staggered.py", line 46, in _wait_one
+    return await wait_next
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[12-08 22:39:34] ERROR bot: [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1353, in _create_direct_connection
+    transp, proto = await self._wrap_create_connection(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1109, in _wrap_create_connection
+    sock = await aiohappyeyeballs.start_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\impl.py", line 87, in start_connection
+    sock, _, _ = await _staggered.staggered_race(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\_staggered.py", line 165, in staggered_race
+    done = await _wait_one(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohappyeyeballs\_staggered.py", line 46, in _wait_one
+    return await wait_next
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError

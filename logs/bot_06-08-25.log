@@ -1,0 +1,1012 @@
+[2025-08-06T00:23:53] INFO bot [mode=START] : ⏲️ Time offset set to 230 ms
+[2025-08-06T00:23:54] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T00:23:55] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T00:23:55] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T00:23:55] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T00:23:56] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T00:23:56] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T00:23:56] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T00:23:56] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T00:23:58] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=23.55@0.2388, hedge(short)=51.15@0.1993, tp_init=0.241188, tp_hedge=0.16498292
+[2025-08-06T00:23:59] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2748949778791481344'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2748949790065770496'}]
+[2025-08-06T00:23:59] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T00:24:00] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T00:24:00] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.16498292
+[2025-08-06T00:38:15] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=36.56@0.19875
+[2025-08-06T00:38:15] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T00:38:16] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T00:38:16] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T00:38:16] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T00:38:16] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T00:38:16] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T00:38:16] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T00:38:16] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T00:38:19] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T00:38:19] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(23.5500,0.0000)
+[2025-08-06T00:38:19] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T00:38:22] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=47.1000
+[2025-08-06T00:38:22] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2749030829109071872
+[2025-08-06T00:38:22] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T00:38:22] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=43.14@0.19865
+[2025-08-06T00:38:23] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T00:38:23] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T00:38:23] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=23.55@0.2388, hedge(short)=47.1@0.1986539171974523, tp_init=0.241188, tp_hedge=0.15784044
+[2025-08-06T00:38:24] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2749001874630852608'}]
+[2025-08-06T00:38:24] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T00:38:25] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.15784044
+[2025-08-06T00:38:25] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T00:38:25] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T00:39:58] INFO bot [mode=START] : ⏲️ Time offset set to 239 ms
+[2025-08-06T00:39:58] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T00:39:59] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T00:39:59] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T00:39:59] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T00:40:00] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T00:40:00] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T00:40:00] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T00:40:00] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T00:40:03] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=23.55@0.2388, hedge(short)=51.37@0.1985, tp_init=0.241188, tp_hedge=0.1637782
+[2025-08-06T00:40:03] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2749030894919565312'}]
+[2025-08-06T00:40:04] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T00:40:04] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T00:40:04] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.1637782
+[2025-08-06T00:41:50] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.47@0.19845
+[2025-08-06T01:39:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.47@0.1987
+[2025-08-06T02:01:00] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T02:01:00] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T02:01:01] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T03:46:04] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T03:46:04] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T03:46:05] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T03:46:07] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T03:51:19] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T07:42:48] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T07:42:48] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=22.61@0.2388, hedge(short)=51.37@0.1985, tp_init=0.241188, tp_hedge=0.16623433
+[2025-08-06T07:42:48] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2749034230297214976'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2749034241235959808'}]
+[2025-08-06T07:42:49] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T07:42:49] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.16623433
+[2025-08-06T08:25:29] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T11:57:25] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T12:12:40] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T12:12:40] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=22.61@0.2388, hedge(short)=51.37@0.1985, tp_init=0.241188, tp_hedge=0.16623433
+[2025-08-06T12:12:40] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2749885349168758784'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2749885337626034176'}]
+[2025-08-06T12:12:41] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T12:12:41] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.16623433
+[2025-08-06T12:30:25] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T12:30:25] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T12:30:26] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T12:34:48] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T12:42:37] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T12:43:32] ERROR bot [mode=WS] : 🔄 [WS-PRIV] Disconnected: 502, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 1s
+[2025-08-06T12:43:34] ERROR bot [mode=WS] : 🔄 [WS-PRIV] Disconnected: 502, message='Invalid response status', url='wss://wspap.okx.com:8443/ws/v5/private', retry in 2s
+[2025-08-06T12:43:38] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T12:43:38] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T12:43:38] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T13:53:29] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T13:53:35] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T14:27:15] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T16:17:15] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:17:35] INFO bot [mode=REST] : Time offset updated 239 → -889 ms
+[2025-08-06T16:17:45] INFO bot [mode=REST] : Time offset updated -889 → 179 ms
+[2025-08-06T16:18:29] INFO bot [mode=REST] : Time offset updated 179 → -905 ms
+[2025-08-06T16:19:00] INFO bot [mode=REST] : Time offset updated -905 → 192 ms
+[2025-08-06T16:49:32] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:49:50] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:52:57] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:53:08] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:53:29] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:55:27] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T16:56:09] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T17:28:42] INFO bot [mode=REST] : Time offset updated 192 → -1106 ms
+[2025-08-06T17:28:52] INFO bot [mode=REST] : Time offset updated -1106 → 177 ms
+[2025-08-06T17:36:02] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T17:36:33] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T17:39:40] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T19:12:05] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T19:12:05] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T19:12:06] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T19:30:04] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T19:31:38] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T19:56:38] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T20:29:14] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1059, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\streams.py", line 644, in read
+    await self._waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 690, in _request
+    await resp.start(conn)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client_reqrep.py", line 1054, in start
+    with self._timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[2025-08-06T20:37:08] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T20:47:12] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T20:47:23] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T20:49:22] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T21:04:42] INFO bot [mode=REST] : Time offset updated 177 → -1068 ms
+[2025-08-06T21:04:45] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T21:04:52] INFO bot [mode=REST] : Time offset updated -1068 → 159 ms
+[2025-08-06T21:06:00] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T21:06:10] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T21:37:13] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T21:37:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T21:37:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T21:54:29] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[2025-08-06T22:27:46] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:27:46] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=22.61@0.2388, hedge(short)=51.37@0.1985, tp_init=0.241188, tp_hedge=0.16623433
+[2025-08-06T22:27:46] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=8.22@0.2072
+[2025-08-06T22:27:46] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:27:46] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T22:27:46] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:27:46] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:27:46] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2750428654914846720'}]
+[2025-08-06T22:27:47] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T22:27:47] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.241188
+[2025-08-06T22:27:47] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.24118800
+[2025-08-06T22:27:47] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:27:47] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T22:27:47] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[2025-08-06T22:27:47] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: API error 1
+[2025-08-06T22:27:47] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=6.33@0.2077
+[2025-08-06T22:27:47] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:27:48] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T22:27:48] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T22:27:49] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751667100771995648@0.20581969, SELL 2751667100906213376@0.20893031
+[2025-08-06T22:27:49] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:27:49] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0000)
+[2025-08-06T22:27:49] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:27:52] WARNING bot [mode=HEDGE] : [HEDGE] ups, first leg lost → skipping hedge
+[2025-08-06T22:27:55] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.20895
+[2025-08-06T22:27:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751667100771995648
+[2025-08-06T22:27:55] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T22:27:55] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:27:55] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:27:56] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0143
+[2025-08-06T22:27:56] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751667100906213376, ORDER mode turn off
+[2025-08-06T22:27:56] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20686050
+[2025-08-06T22:27:56] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:27:56] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:27:56] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:27:56] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[2025-08-06T22:27:56] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:27:59] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[2025-08-06T22:27:59] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.1@0.20815
+[2025-08-06T22:27:59] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751667426484867072
+[2025-08-06T22:27:59] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:27:59] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:28:04] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:28:04] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.05@0.20895, hedge(long)=0.1@0.20815, tp_init=0.2068605, tp_hedge=0.20851877
+[2025-08-06T22:28:05] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751667310027685888'}]
+[2025-08-06T22:28:05] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2068605
+[2025-08-06T22:28:06] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.20851877
+[2025-08-06T22:28:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.209
+[2025-08-06T22:28:10] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
+[2025-08-06T22:28:10] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.209
+[2025-08-06T22:28:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 229, in _reinvest_loop
+    await self.reinvestor.handle_tp_fill((ep, eq, Decimal(str(tp_price)), side))
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 43, in handle_tp_fill
+    await self._do_reinvest(snapshot)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 49, in _do_reinvest
+    ep, eq, tp, side = map(Decimal, snapshot)
+    ^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+[2025-08-06T22:28:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.1@0.2087
+[2025-08-06T22:28:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:10] INFO bot [mode=ORCHESTRATOR] : → All legs closed → back to ORDER mode
+[2025-08-06T22:28:10] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T22:28:10] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T22:28:12] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751667845982375936@0.20644, SELL 2751667846250811392@0.20956
+[2025-08-06T22:28:20] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2096
+[2025-08-06T22:28:20] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751667845982375936
+[2025-08-06T22:28:20] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T22:28:20] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:28:20] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:28:21] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751667846250811392, ORDER mode turn off
+[2025-08-06T22:28:21] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20750400
+[2025-08-06T22:28:21] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:28:21] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:28:21] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:28:21] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[2025-08-06T22:28:21] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:28:24] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[2025-08-06T22:28:24] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.04@0.2077
+[2025-08-06T22:28:24] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2077
+[2025-08-06T22:28:24] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:24] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:24] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751668268566892544
+[2025-08-06T22:28:24] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:28:26] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.1000,0.0000), REST(L,S)=(0.1000,0.0000)
+[2025-08-06T22:28:27] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.1000,0.0000), REST(L,S)=(0.1000,0.0000)
+[2025-08-06T22:28:29] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.1000,0.0000), REST(L,S)=(0.1000,0.0000)
+[2025-08-06T22:28:31] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.1000,0.0000), REST(L,S)=(0.1000,0.0000)
+[2025-08-06T22:28:31] WARNING bot [mode=HEDGE] : ⚠️ [HEDGE] fill timeout after 5.0s
+[2025-08-06T22:28:31] INFO bot [mode=HEDGE] : → HEDGE.run() done, идем в TPSL
+[2025-08-06T22:28:32] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T22:28:32] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:28:32] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:28:32] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20977700
+[2025-08-06T22:28:32] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:28:32] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:28:32] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:28:32] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.1000,0.0000)
+[2025-08-06T22:28:32] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:28:35] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.2000
+[2025-08-06T22:28:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.2@0.20815
+[2025-08-06T22:28:35] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751668643671887872
+[2025-08-06T22:28:35] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:28:36] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:28:40] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:28:40] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.1@0.2077, hedge(short)=0.2@0.20815, tp_init=0.209777, tp_hedge=0.20764295
+[2025-08-06T22:28:41] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751668527785132032'}]
+[2025-08-06T22:28:41] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.209777
+[2025-08-06T22:28:42] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20764295
+[2025-08-06T22:28:48] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.1@0.207
+[2025-08-06T22:28:48] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[2025-08-06T22:28:48] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.207
+[2025-08-06T22:28:48] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.19@0.20725
+[2025-08-06T22:28:48] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:48] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:28:49] INFO bot [mode=ORCHESTRATOR] : → All legs closed → back to ORDER mode
+[2025-08-06T22:28:49] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T22:28:49] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T22:28:50] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751669131989536768@0.20557156, SELL 2751669131754655744@0.20867844
+[2025-08-06T22:28:55] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2087
+[2025-08-06T22:28:55] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T22:28:55] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:28:55] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:28:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751669131989536768
+[2025-08-06T22:28:55] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20661300
+[2025-08-06T22:28:55] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:28:55] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:28:55] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:28:55] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[2025-08-06T22:28:55] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:28:56] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751669131754655744, ORDER mode turn off
+[2025-08-06T22:28:57] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0128
+[2025-08-06T22:28:58] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[2025-08-06T22:28:59] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.1@0.20815
+[2025-08-06T22:28:59] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751669419785900032
+[2025-08-06T22:28:59] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:28:59] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:29:04] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:29:04] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.05@0.2087, hedge(long)=0.1@0.20815, tp_init=0.206613, tp_hedge=0.20876958
+[2025-08-06T22:29:05] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751669305107103744'}]
+[2025-08-06T22:29:06] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.206613
+[2025-08-06T22:29:06] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.20876958
+[2025-08-06T22:29:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.209
+[2025-08-06T22:29:10] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
+[2025-08-06T22:29:10] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.209
+[2025-08-06T22:29:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.1@0.20785
+[2025-08-06T22:29:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:29:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:29:11] INFO bot [mode=ORCHESTRATOR] : → All legs closed → back to ORDER mode
+[2025-08-06T22:29:11] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T22:29:11] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T22:29:13] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751669874280681472@0.20644, SELL 2751669891494105088@0.20956
+[2025-08-06T22:29:23] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T22:29:23] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751669874280681472
+[2025-08-06T22:29:23] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751669891494105088
+[2025-08-06T22:29:23] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T22:29:25] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751670301663481856@0.20768063, SELL 2751670295388803072@0.21081938
+[2025-08-06T22:29:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.20765
+[2025-08-06T22:29:30] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751670295388803072
+[2025-08-06T22:29:31] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751670301663481856, ORDER mode turn off
+[2025-08-06T22:29:31] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T22:29:31] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:29:31] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:29:31] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20972650
+[2025-08-06T22:29:31] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:29:31] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:29:31] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:29:31] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[2025-08-06T22:29:31] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:29:34] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[2025-08-06T22:29:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.09@0.20735
+[2025-08-06T22:29:35] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751670638717751296
+[2025-08-06T22:29:35] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:29:35] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:29:40] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:29:40] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.20765, hedge(short)=0.1@0.20735, tp_init=0.2097265, tp_hedge=0.20589296
+[2025-08-06T22:29:40] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751670524173172736'}]
+[2025-08-06T22:29:41] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2097265
+[2025-08-06T22:29:41] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20589296
+[2025-08-06T22:31:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.04@0.20975
+[2025-08-06T22:31:35] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[2025-08-06T22:31:35] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.20975
+[2025-08-06T22:31:35] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\position_snapshot.py", line 86, in _on_ws_position
+    px   = float(pos.get("avgPx", 0))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+[2025-08-06T22:31:36] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T22:31:36] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:31:36] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:31:36] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T22:31:36] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T22:31:36] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:31:36] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T22:31:36] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:31:36] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[2025-08-06T22:31:36] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:31:36] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0075
+[2025-08-06T22:31:39] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[2025-08-06T22:31:39] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.21005
+[2025-08-06T22:31:40] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751674819566424064
+[2025-08-06T22:31:40] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:31:40] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:31:40] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:31:40] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.1@0.20735, hedge(long)=0.2@0.21005, tp_init=0.2052765, tp_hedge=0.21372619
+[2025-08-06T22:31:41] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751670851496656896'}]
+[2025-08-06T22:31:42] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2052765
+[2025-08-06T22:31:42] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.21372619
+[2025-08-06T22:32:20] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T22:32:20] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T22:32:25] INFO bot [mode=START] : ⏲️ Time offset set to 62 ms
+[2025-08-06T22:32:26] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T22:32:27] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T22:32:27] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T22:32:27] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T22:32:27] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T22:32:28] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T22:32:28] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T22:32:28] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T22:32:30] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.1@0.20735, hedge(long)=0.2@0.21005, tp_init=0.2052765, tp_hedge=0.21372619
+[2025-08-06T22:32:32] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T22:32:32] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751674896651206656'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2751674911817809920'}]
+[2025-08-06T22:32:32] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2052765
+[2025-08-06T22:32:33] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.21372619
+[2025-08-06T22:33:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.2056
+[2025-08-06T22:33:10] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
+[2025-08-06T22:33:10] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.2056
+[2025-08-06T22:33:10] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 229, in _reinvest_loop
+    await self.reinvestor.handle_tp_fill((ep, eq, Decimal(str(tp_price)), side))
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 43, in handle_tp_fill
+    await self._do_reinvest(snapshot)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 49, in _do_reinvest
+    ep, eq, tp, side = map(Decimal, snapshot)
+    ^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+[2025-08-06T22:33:11] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T22:33:11] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T22:33:11] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T22:33:11] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T22:33:11] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T22:33:11] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T22:33:11] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T22:33:14] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T22:33:14] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.2000,0.0000)
+[2025-08-06T22:33:14] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T22:33:17] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.4000
+[2025-08-06T22:33:17] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.4@0.2069
+[2025-08-06T22:33:17] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751678100854329344
+[2025-08-06T22:33:17] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T22:33:18] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T22:33:18] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T22:33:18] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.21005, hedge(short)=0.4@0.2069, tp_init=0.2121505, tp_hedge=0.20290778
+[2025-08-06T22:33:19] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751676601853886464'}]
+[2025-08-06T22:33:20] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2121505
+[2025-08-06T22:33:20] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20290778
+[2025-08-06T22:38:15] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T22:44:40] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T22:44:40] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T22:44:45] INFO bot [mode=START] : ⏲️ Time offset set to 166 ms
+[2025-08-06T22:44:46] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T22:44:46] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T22:44:46] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T22:44:47] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T22:44:47] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T22:44:48] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T22:44:48] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T22:44:48] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T22:44:50] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.21005, hedge(short)=0.4@0.2069, tp_init=0.2121505, tp_hedge=0.20290778
+[2025-08-06T22:44:51] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751678175388975104'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2751678206057725952'}]
+[2025-08-06T22:44:51] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2121505
+[2025-08-06T22:44:51] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T22:44:52] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20290778
+[2025-08-06T23:08:34] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:08:34] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:08:36] INFO bot [mode=START] : ⏲️ Time offset set to 160 ms
+[2025-08-06T23:08:37] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:08:38] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:08:38] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:08:38] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T23:08:38] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:08:39] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:08:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:08:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:08:41] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.21005, hedge(short)=0.4@0.2069, tp_init=0.2121505, tp_hedge=0.20290778
+[2025-08-06T23:08:42] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751701387103518720'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2751701398881124352'}]
+[2025-08-06T23:08:43] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:08:43] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2121505
+[2025-08-06T23:08:43] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20290778
+[2025-08-06T23:09:20] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.2@0.2094
+[2025-08-06T23:09:20] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[2025-08-06T23:09:20] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.2094
+[2025-08-06T23:09:20] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 229, in _reinvest_loop
+    await self.reinvestor.handle_tp_fill((ep, eq, Decimal(str(tp_price)), side))
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 43, in handle_tp_fill
+    await self._do_reinvest(snapshot)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 49, in _do_reinvest
+    ep, eq, tp, side = map(Decimal, snapshot)
+    ^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+[2025-08-06T23:09:20] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:09:20] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:09:20] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:09:20] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:09:20] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:09:20] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:09:20] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:12:04] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:12:04] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:12:08] INFO bot [mode=START] : ⏲️ Time offset set to 152 ms
+[2025-08-06T23:12:08] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:12:09] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:12:09] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:12:09] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[2025-08-06T23:12:10] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:12:10] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:12:10] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:12:10] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:12:12] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:12:12] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:12:13] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:12:13] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:12:13] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:12:13] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:12:14] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:12:36] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.34@0.2085
+[2025-08-06T23:12:37] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:12:37] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:12:38] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751757301997424640@0.20577031, SELL 2751757313238159360@0.21097969
+[2025-08-06T23:12:48] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T23:12:48] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751757301997424640
+[2025-08-06T23:12:49] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751757313238159360
+[2025-08-06T23:12:49] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:12:50] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751757707603398656@0.20483219, SELL 2751757707301408768@0.21001781
+[2025-08-06T23:12:55] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2086
+[2025-08-06T23:12:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751757707603398656
+[2025-08-06T23:12:56] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751757707301408768, ORDER mode turn off
+[2025-08-06T23:13:09] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:13:09] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:13:12] INFO bot [mode=START] : ⏲️ Time offset set to 163 ms
+[2025-08-06T23:13:12] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:13:13] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:13:13] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:13:13] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[2025-08-06T23:13:14] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:13:16] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:13:16] INFO bot [mode=-] : [PREHEDGE] позиций нет → выход
+[2025-08-06T23:13:16] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:13:18] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:13:24] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:13:24] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:13:25] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751758897108013056@0.20384469, SELL 2751758897510666240@0.20900531
+[2025-08-06T23:13:30] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:13:30] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:13:30] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:13:31] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751758897108013056
+[2025-08-06T23:13:31] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2069
+[2025-08-06T23:13:31] INFO bot [mode=ORDER] : 🧹 [OrderMode] cleaning leftover 2751758897510666240
+[2025-08-06T23:13:31] INFO bot [mode=ORDER] : ✅ [OrderMode] filled black_sheep, ORDER mode turn off
+[2025-08-06T23:13:32] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:13:32] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:13:33] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751759167221190656@0.20416562, SELL 2751759167623843840@0.20933437
+[2025-08-06T23:13:43] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2082
+[2025-08-06T23:13:43] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T23:13:43] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 56, in run
+    await self._place_tp()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 107, in _place_tp
+    raise ValueError("entry_price is None in _place_tp()")
+ValueError: entry_price is None in _place_tp()
+[2025-08-06T23:13:43] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:13:43] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:13:43] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751759167221190656
+[2025-08-06T23:13:44] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20611800
+[2025-08-06T23:13:44] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:13:44] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:13:44] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751759167623843840, ORDER mode turn off
+[2025-08-06T23:13:54] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2054
+[2025-08-06T23:13:55] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:13:55] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:13:56] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751759941993025536@0.20270906, SELL 2751759942563450880@0.20784094
+[2025-08-06T23:14:06] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T23:14:07] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751759941993025536
+[2025-08-06T23:14:07] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751759942563450880
+[2025-08-06T23:14:07] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:14:08] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751760335083196416@0.20490625, SELL 2751760335653621760@0.21009375
+[2025-08-06T23:14:13] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2082
+[2025-08-06T23:14:13] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751760335653621760
+[2025-08-06T23:14:14] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751760335083196416, ORDER mode turn off
+[2025-08-06T23:14:27] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.2079
+[2025-08-06T23:14:28] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:14:28] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:14:29] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751761024257675264@0.20544938, SELL 2751761024693882880@0.21065063
+[2025-08-06T23:14:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.20785
+[2025-08-06T23:14:31] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751761024693882880
+[2025-08-06T23:14:31] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751761024257675264, ORDER mode turn off
+[2025-08-06T23:14:40] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:14:40] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:14:47] INFO bot [mode=START] : ⏲️ Time offset set to 161 ms
+[2025-08-06T23:14:48] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:14:49] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:14:49] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:14:49] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:14:50] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:14:50] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:14:50] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:14:54] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:14:57] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:14:57] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:14:58] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751762016026021888@0.20515312, SELL 2751762026763440128@0.21034687
+[2025-08-06T23:15:05] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2071
+[2025-08-06T23:15:06] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751762026763440128
+[2025-08-06T23:15:06] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751762016026021888, ORDER mode turn off
+[2025-08-06T23:15:06] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T23:15:06] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:15:06] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:15:06] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20917100
+[2025-08-06T23:15:06] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:15:06] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:15:09] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:15:09] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[2025-08-06T23:15:09] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:15:12] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[2025-08-06T23:15:12] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751762496626151424
+[2025-08-06T23:15:12] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:15:12] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.09@0.20735
+[2025-08-06T23:15:13] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:15:16] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T23:15:16] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.2071, hedge(short)=0.1@0.20735, tp_init=0.209171, tp_hedge=0.2064412
+[2025-08-06T23:15:16] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751762293363654656'}]
+[2025-08-06T23:15:17] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.209171
+[2025-08-06T23:15:17] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.20895
+[2025-08-06T23:15:17] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[2025-08-06T23:15:17] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.20895
+[2025-08-06T23:15:17] INFO bot [mode=REINVEST] : [REINVEST] realized=0.0000925 -> use=0.00009250
+[2025-08-06T23:15:17] WARNING bot [mode=-] : [REINVEST] нет ровно одной хедж-ноги
+[2025-08-06T23:15:17] INFO bot [mode=REINVEST] : [REINVEST] realized=0.0000925 -> use=0.00009250
+[2025-08-06T23:15:17] WARNING bot [mode=-] : [REINVEST] нет ровно одной хедж-ноги
+[2025-08-06T23:15:17] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:15:18] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:15:18] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:15:18] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:15:18] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:15:18] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:15:18] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:15:18] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T23:15:18] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:15:18] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[2025-08-06T23:15:18] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:15:19] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0102
+[2025-08-06T23:15:21] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[2025-08-06T23:15:22] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.18@0.21005
+[2025-08-06T23:15:22] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751762810494308352
+[2025-08-06T23:15:22] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:15:22] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:15:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.2063
+[2025-08-06T23:15:35] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:15:35] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:15:35] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:15:36] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.21214545
+[2025-08-06T23:15:36] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:15:36] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T23:15:36] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:15:36] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.2000,0.0000)
+[2025-08-06T23:15:36] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:15:39] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.4000
+[2025-08-06T23:15:39] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751763385852153856
+[2025-08-06T23:15:39] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:15:39] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.4@0.20685
+[2025-08-06T23:15:39] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:17:56] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:17:56] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:18:06] INFO bot [mode=START] : ⏲️ Time offset set to 160 ms
+[2025-08-06T23:18:06] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:18:07] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:18:07] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:18:07] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T23:18:08] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:18:08] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:18:08] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:18:08] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:18:10] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.210045, hedge(short)=0.4@0.20685, tp_init=0.21214545, tp_hedge=0.20281307
+[2025-08-06T23:18:11] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751763273555722240'}]
+[2025-08-06T23:18:12] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.21214545
+[2025-08-06T23:18:12] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:18:12] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20281307
+[2025-08-06T23:18:41] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.2@0.20785
+[2025-08-06T23:18:41] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:18:41] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:18:41] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:18:42] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:18:42] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:18:42] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:18:42] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:18:43] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.4@0.2084
+[2025-08-06T23:18:44] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:18:44] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:18:45] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751769637680369664@0.20428906, SELL 2751769637948805120@0.20946094
+[2025-08-06T23:18:49] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:18:49] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:18:51] INFO bot [mode=START] : ⏲️ Time offset set to 165 ms
+[2025-08-06T23:18:52] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:18:52] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:18:52] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:18:53] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:18:55] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:18:55] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:18:56] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:18:57] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:19:01] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:19:01] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:19:02] INFO bot [mode=ORDER] : 🧹 [OrderMode] cancelling pending: ['2751769637948805120', '2751769637680369664']
+[2025-08-06T23:19:02] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751769637948805120
+[2025-08-06T23:19:02] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751769637680369664
+[2025-08-06T23:19:03] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751770231962914816@0.20404219, SELL 2751770242666778624@0.20920781
+[2025-08-06T23:19:13] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T23:19:14] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751770231962914816
+[2025-08-06T23:19:14] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751770242666778624
+[2025-08-06T23:19:14] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:19:15] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751770635119415296@0.20631344, SELL 2751770635052306432@0.21153656
+[2025-08-06T23:19:25] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T23:19:25] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751770635119415296
+[2025-08-06T23:19:26] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751770635052306432
+[2025-08-06T23:19:26] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:19:27] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751771032269672448@0.20774531, SELL 2751771032504553472@0.21300469
+[2025-08-06T23:19:37] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[2025-08-06T23:19:37] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751771032269672448
+[2025-08-06T23:19:38] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751771032504553472
+[2025-08-06T23:19:38] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:19:39] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751771426198704128@0.20873281, SELL 2751771427104673792@0.21401719
+[2025-08-06T23:19:40] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2087
+[2025-08-06T23:19:40] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[2025-08-06T23:19:40] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:19:40] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:19:40] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751771427104673792
+[2025-08-06T23:19:41] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.21078700
+[2025-08-06T23:19:41] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:19:41] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:19:41] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751771426198704128, ORDER mode turn off
+[2025-08-06T23:19:43] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:19:43] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[2025-08-06T23:19:43] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:19:46] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[2025-08-06T23:19:47] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751771700103532544
+[2025-08-06T23:19:47] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:19:47] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.2093
+[2025-08-06T23:19:47] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:19:50] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.21085
+[2025-08-06T23:19:50] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:19:50] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:19:50] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:19:51] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20720700
+[2025-08-06T23:19:51] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:19:51] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T23:19:51] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:19:51] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[2025-08-06T23:19:51] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:19:53] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0194
+[2025-08-06T23:19:54] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[2025-08-06T23:19:54] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751771947567468544
+[2025-08-06T23:19:54] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:19:54] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.212
+[2025-08-06T23:19:54] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:19:57] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[2025-08-06T23:19:57] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.1@0.2093, hedge(long)=0.2@0.212, tp_init=0.207207, tp_hedge=0.21568519
+[2025-08-06T23:19:57] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751771835271036928'}]
+[2025-08-06T23:19:58] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.207207
+[2025-08-06T23:19:58] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.21568519
+[2025-08-06T23:20:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.20665
+[2025-08-06T23:20:30] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
+[2025-08-06T23:20:30] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.20665
+[2025-08-06T23:20:30] INFO bot [mode=REINVEST] : [REINVEST] realized=0.000265 -> use=0.0002650
+[2025-08-06T23:20:30] WARNING bot [mode=-] : [REINVEST] нет ровно одной хедж-ноги, short_q = 0.1, long_q = 0.2
+[2025-08-06T23:20:30] INFO bot [mode=REINVEST] : [REINVEST] realized=0.000265 -> use=0.0002650
+[2025-08-06T23:20:30] WARNING bot [mode=-] : [REINVEST] нет ровно одной хедж-ноги, short_q = 0.1, long_q = 0.2
+[2025-08-06T23:20:30] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:20:31] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:20:31] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:20:31] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:20:31] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:20:31] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:20:31] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:20:31] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[2025-08-06T23:20:31] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[2025-08-06T23:20:31] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.2000,0.0000)
+[2025-08-06T23:20:31] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[2025-08-06T23:20:34] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.4000
+[2025-08-06T23:20:34] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751773302394769408
+[2025-08-06T23:20:34] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[2025-08-06T23:20:34] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.4@0.20715
+[2025-08-06T23:20:35] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[2025-08-06T23:28:09] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[2025-08-06T23:34:20] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:34:20] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:34:23] INFO bot [mode=START] : ⏲️ Time offset set to 164 ms
+[2025-08-06T23:34:23] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:34:24] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:34:24] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:34:25] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[2025-08-06T23:34:25] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:34:25] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:34:25] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:34:26] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:34:28] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.212, hedge(short)=0.4@0.20715, tp_init=0.21412, tp_hedge=0.20145965
+[2025-08-06T23:34:29] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751772075151671296'}]
+[2025-08-06T23:34:29] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.21412
+[2025-08-06T23:34:29] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:34:30] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.20145965
+[2025-08-06T23:43:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.17@0.20625
+[2025-08-06T23:43:30] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[2025-08-06T23:43:30] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.20625
+[2025-08-06T23:43:30] WARNING bot [mode=-] : [REINVEST] снимок позиции пуст – пропуск
+[2025-08-06T23:43:30] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:43:31] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[2025-08-06T23:43:31] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:43:31] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:43:31] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:43:31] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:43:31] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:43:31] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:47:42] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:47:42] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[2025-08-06T23:47:45] INFO bot [mode=START] : ⏲️ Time offset set to 164 ms
+[2025-08-06T23:47:45] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[2025-08-06T23:47:46] INFO bot [mode=START] : Orchestrator started
+[2025-08-06T23:47:46] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[2025-08-06T23:47:47] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[2025-08-06T23:47:47] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[2025-08-06T23:47:47] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[2025-08-06T23:47:47] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[2025-08-06T23:47:48] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[2025-08-06T23:47:50] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[2025-08-06T23:47:50] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[2025-08-06T23:47:50] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[2025-08-06T23:47:50] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[2025-08-06T23:47:50] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[2025-08-06T23:47:50] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[2025-08-06T23:47:51] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[2025-08-06T23:52:06] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.4@0.20695
+[2025-08-06T23:52:06] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[2025-08-06T23:52:06] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[2025-08-06T23:52:07] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751836805633724416@0.20419031, SELL 2751836817981755392@0.20935969
+[2025-08-06T23:52:10] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.20745
+[2025-08-06T23:52:11] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751836805633724416
+[2025-08-06T23:52:11] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751836817981755392, ORDER mode turn off
+[2025-08-06T23:52:16] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[2025-08-06T23:52:16] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[06-08  23:52:20] INFO bot [mode=START] : ⏲️ Time offset set to 146 ms
+[06-08  23:52:20] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[06-08  23:52:21] INFO bot [mode=START] : Orchestrator started
+[06-08  23:52:21] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[06-08  23:52:21] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[06-08  23:52:22] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[06-08  23:52:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[06-08  23:52:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[06-08  23:52:23] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[06-08  23:52:24] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[06-08  23:52:24] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[06-08  23:52:25] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20537550
+[06-08  23:52:25] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[06-08  23:52:25] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[06-08  23:52:26] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[06-08  23:53:33] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2051
+[06-08  23:53:34] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[06-08  23:53:34] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:53:35] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751839754967633920@0.20251156, SELL 2751839755303178240@0.20763844
+[06-08  23:53:45] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:53:45] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751839754967633920
+[06-08  23:53:46] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751839755303178240
+[06-08  23:53:46] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:53:47] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751840153023860736@0.20246219, SELL 2751840153258741760@0.20758781
+[06-08  23:53:51] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.20505
+[06-08  23:53:52] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751840153023860736
+[06-08  23:53:52] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751840153258741760, ORDER mode turn off
+[06-08  23:54:19] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[06-08  23:54:19] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[06-08  23:54:21] INFO bot [mode=START] : ⏲️ Time offset set to 123 ms
+[06-08  23:54:21] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[06-08  23:54:22] INFO bot [mode=START] : Orchestrator started
+[06-08  23:54:22] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[06-08  23:54:23] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[06-08  23:54:23] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[06-08  23:54:23] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[06-08  23:54:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[06-08  23:54:24] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[06-08  23:54:26] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[06-08  23:54:26] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[06-08  23:54:26] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20299950
+[06-08  23:54:26] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[06-08  23:54:26] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[06-08  23:54:27] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[06-08  23:56:44] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2063
+[06-08  23:56:45] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[06-08  23:56:45] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:56:46] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751846156146626560@0.2044125, SELL 2751846156314398720@0.2095875
+[06-08  23:56:48] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[06-08  23:56:48] INFO bot [mode=SHUTDOWN] : Shutdown complete
+[06-08  23:56:50] INFO bot [mode=START] : ⏲️ Time offset set to 163 ms
+[06-08  23:56:51] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[06-08  23:56:51] INFO bot [mode=START] : Orchestrator started
+[06-08  23:56:51] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[06-08  23:56:52] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[06-08  23:56:52] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[06-08  23:56:53] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[06-08  23:56:53] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[06-08  23:56:56] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[06-08  23:57:00] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[06-08  23:57:00] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:57:00] INFO bot [mode=ORDER] : 🧹 [OrderMode] cancelling pending: ['2751846156314398720']
+[06-08  23:57:00] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751846156314398720
+[06-08  23:57:01] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751846676710084608@0.20436313, SELL 2751846677347618816@0.20953688
+[06-08  23:57:11] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:57:12] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751846676710084608
+[06-08  23:57:12] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751846677347618816
+[06-08  23:57:12] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:57:13] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751847069666037760@0.20433844, SELL 2751847069699592192@0.20951156
+[06-08  23:57:23] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:57:23] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847069666037760
+[06-08  23:57:24] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847069699592192
+[06-08  23:57:24] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:57:25] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751847461984456704@0.20419031, SELL 2751847462252892160@0.20935969
+[06-08  23:57:35] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:57:35] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847461984456704
+[06-08  23:57:35] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847462252892160
+[06-08  23:57:35] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:57:36] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751847859839356928@0.205005, SELL 2751847860040683520@0.210195
+[06-08  23:57:46] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:57:47] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847859839356928
+[06-08  23:57:47] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751847860040683520
+[06-08  23:57:47] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:57:51] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751848346244403200@0.20569625, SELL 2751848346311512064@0.21090375
+[06-08  23:58:01] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[06-08  23:58:01] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751848346244403200
+[06-08  23:58:02] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751848346311512064
+[06-08  23:58:02] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[06-08  23:58:03] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2751848739166801920@0.20715281, SELL 2751848749702893568@0.21239719
+[06-08  23:58:05] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.20715
+[06-08  23:58:06] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2751848749702893568
+[06-08  23:58:06] INFO bot [mode=PREHEDGE] : → PRE-HEDGE mode
+[06-08  23:58:06] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[06-08  23:58:06] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[06-08  23:58:06] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2751848739166801920, ORDER mode turn off
+[06-08  23:58:07] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.20922150
+[06-08  23:58:07] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[06-08  23:58:07] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[06-08  23:58:09] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[06-08  23:58:09] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[06-08  23:58:09] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[06-08  23:58:12] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[06-08  23:58:13] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751849075952635904
+[06-08  23:58:13] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[06-08  23:58:13] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.2082
+[06-08  23:58:13] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[06-08  23:58:17] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[06-08  23:58:17] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.20715, hedge(short)=0.1@0.2082, tp_init=0.2092215, tp_hedge=0.2080839
+[06-08  23:58:18] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2751848870878199808'}]
+[06-08  23:58:18] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2092215
+[06-08  23:58:18] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.2080839
+[06-08  23:58:20] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.03@0.20975
+[06-08  23:58:20] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[06-08  23:58:20] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.20975
+[06-08  23:58:20] INFO bot [mode=REINVEST] : [REINVEST] realized=0.0001300 -> use=0.00013000
+[06-08  23:58:20] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 229, in _reinvest_loop
+    await self.reinvestor.handle_tp_fill((ep, eq, Decimal(str(tp_price)), side))
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 43, in handle_tp_fill
+    await self._do_reinvest(snapshot)
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 77, in _do_reinvest
+    if mark <= 0:
+       ^^^^^^^^^
+TypeError: '<=' not supported between instances of 'coroutine' and 'int'
+[06-08  23:58:20] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[06-08  23:58:20] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[06-08  23:58:20] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[06-08  23:58:21] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51088'] on POST /api/v5/trade/order-algo
+[06-08  23:58:21] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: code=-1, msg=
+[06-08  23:58:21] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[06-08  23:58:21] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[06-08  23:58:21] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[06-08  23:58:21] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[06-08  23:58:21] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[06-08  23:58:22] INFO bot [mode=HEDGE] : ⏱ [PREHEDGE] spike filtered: pnl back to 0.0142
+[06-08  23:58:24] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[06-08  23:58:24] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751849467398639616
+[06-08  23:58:24] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[06-08  23:58:24] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.21005
+[06-08  23:58:25] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[06-08  23:58:31] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.04@0.20775
+[06-08  23:58:31] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[06-08  23:58:31] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[06-08  23:58:31] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[06-08  23:58:32] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.21215050
+[06-08  23:58:32] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[06-08  23:58:32] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[06-08  23:58:32] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[06-08  23:58:32] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.2000,0.0000)
+[06-08  23:58:32] INFO bot [mode=HEDGE] : ⏱ [HEDGE] spike-filter: waiting 3.00s
+[06-08  23:58:35] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.4000
+[06-08  23:58:35] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2751849828544991232
+[06-08  23:58:35] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[06-08  23:58:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.4@0.20715
+[06-08  23:58:35] INFO bot [mode=TPSL] : Two positions → TPSL mode active

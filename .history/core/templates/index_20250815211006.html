@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>OKX-Bot </title>
+  <style>
+    body   { font-family: Arial; margin: 1rem; }    
+    #fullLog { height: 400px; overflow-y: scroll; border: 1px solid #ccc;
+               padding: .5rem; white-space: pre-wrap; background:#000; color:#0f0; }
+    #counter { font-size: 1.5rem; font-weight: bold; margin-bottom: .5rem; }
+    #statusIndicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    background-color: #888; /* по умолчанию серый */
+    }
+    .running { background-color: #35c759 !important; } /* зелёный */
+  </style>
+</head>
+<body>
+  <div id="counter">0</div>
+  <pre id="fullLog">Connecting...\n</pre>
+  <div>
+  <span id="statusIndicator"></span>
+  <span id="taskState">idle</span>
+  </div> 
+  <h3>Task States</h3>
+  <table id="tasksTable" border="1" cellspacing="0" cellpadding="5">
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div>
+    <button id="startTest">Start test</button>
+    <button id="stopTest">Stop test</button>
+    <button id="stopApp">Stop app</button>
+  </div>
+  <script>
+    const fullLog = document.getElementById('fullLog');
+    const ws = new WebSocket(`ws://${location.host}/ws`);
+    const taskState = document.getElementById('taskState');
+    const indicator  = document.getElementById('statusIndicator');
+    const tasksTableBody = document.querySelector('#tasksTable tbody');
+    const taskStates = {}; // { name: state }
+
+    function addLog(msg) {fullLog.textContent += msg + '\n'; fullLog.scrollTop = fullLog.scrollHeight; }
+    function setTaskState(s) {  taskState.textContent = s;  indicator.className = (s === 'running') ? 'running' : '';}
+    function renderTasks() {
+      tasksTableBody.innerHTML = Object.entries(taskStates)
+        .map(([name, state]) => {
+          const color = {
+            running: 'orange',
+            finished: 'green',
+            cancelled: 'red',
+            error: 'crimson'
+          }[state] || 'white';
+          return `<tr>
+                    <td>${name}</td>
+                    <td style="color:${color}">${state}</td>
+                  </tr>`;
+        })
+        .join('');
+    }
+
+    ws.addEventListener('message', (event) => {
+      const data = event.data;
+      if (data.startsWith('TASKSTATE:')) {
+        const [, name, state] = data.split(':');
+        taskStates[name] = state;
+        renderTasks();
+      }
+    });
+    
+    ws.onmessage = (e) => {
+      const data = e.data;
+      if (data.startsWith('TASKSTATE:')) {
+        setTaskState(data.split(':')[1]);
+      } else {
+        addLog(data);
+      }
+    };
+    ws.onopen = () => addLog('WS connected');
+    async function sendCmd(action) {
+      await fetch('/cmd', {method:'POST', headers: {'Content-Type':'application/json'},
+                           body: JSON.stringify({action})});
+    }
+    document.getElementById('startTest').onclick = () => sendCmd('start_test');
+    document.getElementById('stopTest').onclick  = () => sendCmd('stop_test');
+    document.getElementById('stopApp').onclick   = () => sendCmd('stop_app');
+  </script>
+</body>
+</html>

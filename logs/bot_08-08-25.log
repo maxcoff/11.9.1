@@ -1,0 +1,2381 @@
+[08-08  00:04:06] INFO bot [mode=START] : ⏲️ Time offset set to 760 ms
+[08-08  00:04:06] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:04:07] INFO bot [mode=START] : Orchestrator started
+[08-08  00:04:07] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:04:08] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:04:08] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:04:08] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:04:08] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:04:09] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:04:11] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:04:12] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754728254702174208'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754728265875800064'}]
+[08-08  00:04:12] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:04:12] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:04:12] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:04:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:04:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:04:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:05:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:05:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:05:10] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  00:07:30] INFO bot [mode=START] : ⏲️ Time offset set to 737 ms
+[08-08  00:07:30] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:07:31] INFO bot [mode=START] : Orchestrator started
+[08-08  00:07:31] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:07:31] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:07:32] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:07:32] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:07:32] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:07:33] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:07:34] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:07:35] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754760253617815552'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754760264724332544'}]
+[08-08  00:07:36] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:07:36] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:07:36] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:07:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:07:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:07:47] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:07:47] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:07:53] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:07:53] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:07:59] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:07:59] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:08:04] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:08:04] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:08:10] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:08:10] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:08:16] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:08:16] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:08:22] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:08:22] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:08:31] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  00:09:11] INFO bot [mode=START] : ⏲️ Time offset set to 762 ms
+[08-08  00:09:11] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:09:12] INFO bot [mode=START] : Orchestrator started
+[08-08  00:09:12] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:09:12] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:09:13] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:09:13] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:09:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:09:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:09:16] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:09:16] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754767088722722816'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754767100970090496'}]
+[08-08  00:09:17] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:09:17] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:09:17] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:09:27] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  00:14:40] INFO bot [mode=START] : ⏲️ Time offset set to 759 ms
+[08-08  00:14:41] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:14:41] INFO bot [mode=START] : Orchestrator started
+[08-08  00:14:41] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:14:42] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:14:42] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:14:42] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:14:43] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:14:43] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:14:45] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:14:46] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754770480908025856'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754770492148760576'}]
+[08-08  00:14:46] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:14:46] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:14:46] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:14:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:14:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:14:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:14:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:21] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:21] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:44] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:44] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:15:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:15:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:07] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:07] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:30] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:30] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:47] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:47] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:53] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:53] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:16:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:16:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:04] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:04] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:10] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:10] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:16] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:16] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:21] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:21] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:27] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:27] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:33] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:33] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:39] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:39] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:44] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:44] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:17:56] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:17:56] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:02] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:02] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:07] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:07] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:13] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:13] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:19] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:19] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:30] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:30] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:36] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:36] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:42] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:42] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:47] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:47] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:53] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:53] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:18:59] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:18:59] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:05] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:05] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:10] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:10] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:16] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:16] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:22] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:22] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:27] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:27] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:33] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:33] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:39] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:39] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:45] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:45] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:19:56] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:19:56] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:02] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:02] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:20:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:20:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:28] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:28] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:21:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:21:58] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:22:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:22:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:22:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:23:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:23:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:24:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:24:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:25:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:25:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:26:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:26:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:27:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:27:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:28:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:28:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:29:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:29:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:30:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:30:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:07] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:07] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:13] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:13] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:30] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:30] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:47] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:47] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:53] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:53] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:31:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:31:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:04] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:04] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:10] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:10] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:16] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:16] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:21] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:21] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:27] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:27] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:33] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:33] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:44] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:44] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:32:56] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:32:56] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:07] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:07] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:13] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:13] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:19] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:19] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:25] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:25] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:30] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:30] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:36] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:36] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:42] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:33:42] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:33:52] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  00:34:07] INFO bot [mode=START] : ⏲️ Time offset set to 758 ms
+[08-08  00:34:08] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:34:09] INFO bot [mode=START] : Orchestrator started
+[08-08  00:34:09] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:34:09] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:34:09] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:34:10] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:34:10] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:34:10] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:34:12] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:34:13] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754781532630630400'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754781543938473984'}]
+[08-08  00:34:13] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:34:14] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:34:14] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:34:19] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:19] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:25] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:25] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:36] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:36] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:42] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:42] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:48] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:48] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:53] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:53] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:34:59] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:34:59] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:05] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:05] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:16] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:16] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:22] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:22] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:28] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:28] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:39] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:39] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:45] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:45] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:35:56] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:35:56] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:02] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:02] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:19] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:19] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:25] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:25] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:36] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:36] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:42] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:42] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:48] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:48] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:36:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:36:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:05] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:05] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:28] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:28] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:37:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:37:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:38:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:38:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:39:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:39:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:48] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:48] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:40:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:40:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:41:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:41:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:42:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:42:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:43:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:43:53] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  00:43:56] INFO bot [mode=START] : ⏲️ Time offset set to 759 ms
+[08-08  00:43:56] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  00:43:57] INFO bot [mode=START] : Orchestrator started
+[08-08  00:43:57] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  00:43:58] INFO bot [mode=STARTUP] : Startup detected TWO legs → enter TPSL mode
+[08-08  00:43:58] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  00:43:58] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  00:43:58] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  00:43:59] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  00:44:01] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:44:02] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754820697632096256'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2754820708738613248'}]
+[08-08  00:44:02] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:44:02] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  00:44:02] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:44:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:25] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:25] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:48] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:48] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:44:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:44:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:05] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:05] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:11] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:11] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:22] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:22] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:28] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:28] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:45] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:45] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:45:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:45:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:02] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:02] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:25] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:25] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:31] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:31] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:48] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:48] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:46:54] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:46:54] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:00] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:00] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:47:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:47:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:37] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:37] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:48:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:48:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:49:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:49:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:04] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:04] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:21] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:21] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:43] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:43] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:49] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:49] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:50:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:50:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:06] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:06] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:12] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:12] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:18] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:18] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:24] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:24] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:35] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:35] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:41] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:41] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:52] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:52] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:51:58] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:51:58] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:04] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:04] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:09] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:09] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:15] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:15] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:21] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:21] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:27] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:27] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:44] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:44] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:52:55] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:52:55] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:01] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:01] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:11] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[08-08  00:53:17] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:17] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:23] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:23] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:29] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:29] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:34] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:34] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:40] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:40] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:46] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:46] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:51] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:51] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:53:57] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:53:57] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:03] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:03] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:08] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:08] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:14] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:14] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 1 pending algos
+[08-08  00:54:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.0, expected=0.2282171, diff=100.0000%
+  threshold=5.0000%
+[08-08  00:54:20] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[08-08  00:54:20] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.4@0.2116425, hedge(long)=0.8@0.2195, tp_init=0.20952608, tp_hedge=0.2282171
+[08-08  00:54:21] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754840451830857728'}]
+[08-08  00:54:21] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.20952608
+[08-08  00:54:21] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.2282171
+[08-08  00:54:27] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:27] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:33] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:33] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:38] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:38] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:44] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  00:54:44] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.20952, expected=0.20952608, diff=0.0029%
+  hedge: api=0.22821, expected=0.2282171, diff=0.0031%
+  threshold=5.0000%
+[08-08  00:54:49] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.4@0.2221
+[08-08  00:54:50] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[08-08  00:54:50] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[08-08  00:54:50] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[08-08  00:54:50] DEBUG bot [mode=TPSL] : [TPSL] fetched 1 pending algos
+[08-08  00:54:50] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.0, expected=0.0, diff=inf%
+  hedge: api=0.22821, expected=0.44016839, diff=48.1539%
+  threshold=5.0000%
+[08-08  00:54:50] ERROR bot [mode=-] : ❌ [TPSL] loop error: float division by zero
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 225, in _loop
+    abs(current.get(cid_init, 0)  - tp_init)  / tp_init  > self.threshold
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+ZeroDivisionError: float division by zero
+[08-08  00:54:50] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.8@0.22235
+[08-08  00:54:50] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[08-08  00:54:51] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[08-08  00:54:51] ERROR bot [mode=-] : ❌ [PreHEDGE] TP placement failed: API error 1
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 163, in _place_tp
+    response = await self.rest.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[08-08  00:54:51] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[08-08  00:54:51] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[08-08  00:54:51] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[08-08  00:54:51] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[08-08  00:54:52] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2754862250860007424@0.220275, SELL 2754862251161997312@0.224725
+[08-08  00:54:53] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.22025
+[08-08  00:54:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754862251161997312
+[08-08  00:54:54] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2754862250860007424, ORDER mode turn off
+[08-08  01:12:05] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.01@0.2216
+[08-08  01:12:05] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[08-08  01:12:05] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[08-08  01:12:06] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2754896959933566976@0.21955725, SELL 2754896970033451008@0.22399275
+[08-08  01:12:13] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.04@0.22285
+[08-08  01:12:14] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754896959933566976
+[08-08  01:12:14] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2754896970033451008, ORDER mode turn off
+[08-08  01:13:21] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  01:13:25] INFO bot [mode=START] : ⏲️ Time offset set to 756 ms
+[08-08  01:13:26] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  01:13:26] INFO bot [mode=START] : Orchestrator started
+[08-08  01:13:26] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  01:13:27] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[08-08  01:13:27] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  01:13:27] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  01:13:28] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  01:13:28] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  01:13:33] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  01:13:38] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  01:13:46] INFO bot [mode=START] : ⏲️ Time offset set to 758 ms
+[08-08  01:13:46] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  01:13:47] INFO bot [mode=START] : Orchestrator started
+[08-08  01:13:47] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  01:13:47] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[08-08  01:13:48] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  01:13:48] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  01:13:48] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  01:13:49] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  01:13:50] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[08-08  01:13:50] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[08-08  01:13:51] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[08-08  01:13:51] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.22063140
+[08-08  01:13:51] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[08-08  01:13:51] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[08-08  01:13:52] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  01:14:18] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2204
+[08-08  01:14:18] INFO bot [mode=ORDER] : → ORDER mode , self.hedged = False
+[08-08  01:14:18] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[08-08  01:14:20] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2754901444550512640@0.21817125, SELL 2754901444617621504@0.22257875
+[08-08  01:14:30] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[08-08  01:14:30] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754901444550512640
+[08-08  01:14:31] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754901444617621504
+[08-08  01:14:31] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[08-08  01:14:32] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2754901841935650816@0.2201265, SELL 2754901842271195136@0.2245735
+[08-08  01:14:42] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[08-08  01:14:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754901841935650816
+[08-08  01:14:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754901842271195136
+[08-08  01:14:42] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[08-08  01:14:43] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2754902235998900224@0.22094325, SELL 2754902236267335680@0.22540675
+[08-08  01:14:53] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.223
+[08-08  01:14:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2754902236267335680
+[08-08  01:14:54] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2754902235998900224, ORDER mode turn off
+[08-08  01:15:58] WARNING bot [mode=-] : ⚠️ TPSL loop terminated: HTTP session closed
+[08-08  01:16:01] INFO bot [mode=START] : ⏲️ Time offset set to 756 ms
+[08-08  01:16:02] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[08-08  01:16:03] INFO bot [mode=START] : Orchestrator started
+[08-08  01:16:03] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  01:16:03] INFO bot [mode=STARTUP] : Startup detected ONE leg → PRE-HEDGE mode
+[08-08  01:16:03] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[08-08  01:16:03] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[08-08  01:16:04] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[08-08  01:16:04] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[08-08  01:16:06] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[08-08  01:16:06] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[08-08  01:16:06] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit: pnl=-0.0130
+[08-08  01:16:06] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[08-08  01:16:07] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.22523000
+[08-08  01:16:07] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[08-08  01:16:07] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[08-08  01:16:07] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[08-08  01:16:07] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[08-08  01:16:07] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[08-08  01:16:07] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2754905045310164992
+[08-08  01:16:07] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[08-08  01:16:07] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.2216
+[08-08  01:16:08] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[08-08  01:16:08] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.0500,0.1000), REST(L,S)=(0.0500,0.1000)
+[08-08  01:16:08] INFO bot [mode=HEDGE] : ✅ [HEDGE] hedge confirmed
+[08-08  01:16:08] INFO bot [mode=HEDGE] : → HEDGE.run() done, идем в TPSL
+[08-08  01:16:13] DEBUG bot [mode=TPSL] : [TPSL] fetched 1 pending algos
+[08-08  01:16:13] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.0, expected=0.22523, diff=100.0000%
+  hedge: api=0.0, expected=0.21896689, diff=100.0000%
+  threshold=5.0000%
+[08-08  01:16:13] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[08-08  01:16:13] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.223, hedge(short)=0.1@0.2216, tp_init=0.22523, tp_hedge=0.21896689
+[08-08  01:16:14] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2754905034415226880'}]
+[08-08  01:16:14] INFO bot [mode=TPSL] : Two positions → TPSL mode active
+[08-08  01:16:14] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.22523
+[08-08  01:16:15] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.21896689
+[08-08  01:16:20] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  01:16:20] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.22523, expected=0.22523, diff=0.0000%
+  hedge: api=0.21896, expected=0.21896689, diff=0.0031%
+  threshold=5.0000%
+[08-08  01:16:26] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  01:16:26] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.22355, expected=0.22523, diff=0.7459%
+  hedge: api=0.21896, expected=0.21896689, diff=0.0031%
+  threshold=5.0000%
+[08-08  01:16:32] DEBUG bot [mode=TPSL] : [TPSL] fetched 2 pending algos
+[08-08  01:16:32] DEBUG bot [mode=-] : 🔍 [TPSL] mismatch debug:
+  init: api=0.22355, expected=0.22523, diff=0.7459%
+  hedge: api=0.21896, expected=0.21896689, diff=0.0031%
+  threshold=5.0000%
+[08-08  01:16:35] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.2236
+[08-08  01:16:35] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
+[08-08  01:16:35] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.2236
+[08-08  01:16:35] INFO bot [mode=REINVEST] : [REINVEST] realized=0.000030 * percent = 1.0 -> use=0.0000300
+[08-08  01:16:35] INFO bot [mode=-] : [REINVEST] close_qty <= min_lot, пропуск
+[08-08  01:16:35] INFO bot [mode=REINVEST] : [REINVEST] realized=0.000030 * percent = 1.0 -> use=0.0000300
+[08-08  01:16:35] INFO bot [mode=-] : [REINVEST] close_qty <= min_lot, пропуск
+[08-08  01:16:35] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[08-08  01:16:35] INFO bot [mode=REPREHEDGE] : → TPSL → PRE-HEDGE RE mode
+[08-08  01:16:35] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[08-08  01:16:35] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[08-08  01:16:36] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.21938400
+[08-08  01:16:36] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
+[08-08  01:16:36] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
+[08-08  01:16:36] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
+[08-08  01:16:36] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[08-08  01:16:36] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[08-08  01:16:36] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2754906032179564546
+[08-08  01:16:36] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[08-08  01:16:36] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.22395
+[08-08  01:16:37] INFO bot [mode=TPSL] : Two positions → TPSL mode active
