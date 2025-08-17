@@ -1053,3 +1053,13 @@ Traceback (most recent call last):
 RecursionError: maximum recursion depth exceeded
 [17-08  12:16:19] INFO bot [mode=START] : ⏲️ Time offset set to -917 ms
 [17-08  12:16:20] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[17-08  12:16:20] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
+[17-08  12:16:21] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[17-08  12:16:24] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.23725, hedge(short)=0.4@0.235465, tp_init=0.2396225, tp_hedge=0.23271844
+[17-08  12:16:25] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2782322656819625984'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2782322667892588544'}]
+[17-08  12:16:25] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[17-08  12:16:26] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2396225
+[17-08  12:16:26] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23271844
