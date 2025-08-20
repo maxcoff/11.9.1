@@ -1,15 +1,276 @@
-[17-08  00:04:18] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:04:18] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:04:18] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:04:18] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:04:18] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:04:18] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:04:18] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:04:18] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:04:18] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:04:18] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:04:18] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:04:18] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:10:52] INFO bot [mode=START] : ⏲️ Time offset set to -75 ms
+[20-08  02:10:52] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:10:54] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:10:54] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:10:55] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:10:55] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:10:58] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:10:59] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789804714351710208@0.22609125, SELL 2789804714485927936@0.23065875
+[20-08  02:11:06] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2283
+[20-08  02:11:07] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789804714485927936
+[20-08  02:11:07] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:11:07] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.228300000000000002930988785010413266718387603759765625, side=long, qty=0.05
+[20-08  02:11:07] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:11:07] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[20-08  02:11:07] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22831  | direction=1 |  pnl=0.00004380201489267222462913611553 | threshold=0.00015
+[20-08  02:11:07] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22831  | direction=1 |  pnl=0.00004380201489267222462913611553 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23058300
+[20-08  02:11:08] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:08] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:08] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:09] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:09] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.2283  | direction=1 |  pnl=-1.283832144113190201090412370E-17 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:10] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:10] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:11] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:11] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:12] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:13] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:13] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:14] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:14] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:15] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22828  | direction=1 |  pnl=-0.00008760402978538296422259562675 | threshold=0.00015
+[20-08  02:11:15] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0001, порог=0.0002, событие_убытка=False
+[20-08  02:11:15] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22814  | direction=1 |  pnl=-0.0007008322382829738455306770908 | threshold=0.00015
+[20-08  02:11:15] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=False
+[20-08  02:11:15] INFO bot [mode=-] : 🚨 [PreHEDGE] Достигнут порог убытка: pnl=-0.0007 (threshold=0.0002)
+[20-08  02:11:15] DEBUG bot [mode=-] : 🚨 [PreHEDGE] событие_убытка=True
+[20-08  02:11:15] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[20-08  02:11:15] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[20-08  02:11:15] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[20-08  02:11:15] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22814  | direction=1 |  pnl=-0.0007008322382829738455306770908 | threshold=0.00015
+[20-08  02:11:15] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:15] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.22795
+[20-08  02:11:15] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2789805251994374144
+[20-08  02:11:15] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[20-08  02:11:15] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:15] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:16] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:16] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:17] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:17] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:18] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:18] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:19] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:19] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22813  | direction=1 |  pnl=-0.0007446342531756589084812543382 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22803  | direction=1 |  pnl=-0.001182654402102509537987026813 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22803  | direction=1 |  pnl=-0.001182654402102509537987026813 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22803  | direction=1 |  pnl=-0.001182654402102509537987026813 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:20] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:20] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:21] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:21] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:22] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:22] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:23] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:23] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:24] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:24] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:24] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:24] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:24] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:24] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:25] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:25] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:25] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22802  | direction=1 |  pnl=-0.001226456416995194600937604060 | threshold=0.00015
+[20-08  02:11:25] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0012, порог=0.0002, событие_убытка=True
+[20-08  02:11:25] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22794  | direction=1 |  pnl=-0.001576872536136675104542222039 | threshold=0.00015
+[20-08  02:11:25] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0016, порог=0.0002, событие_убытка=True
+[20-08  02:11:25] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:11:25] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:11:25] DEBUG bot [mode=-] : [PNL DEBUG] side=long | entry_price=0.228300000000000002930988785010413266718387603759765625 | mark_px=0.22794  | direction=1 |  pnl=-0.001576872536136675104542222039 | threshold=0.00015
+[20-08  02:11:25] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0016, порог=0.0002, событие_убытка=True
+[20-08  02:11:25] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:11:25] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[20-08  02:11:25] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  02:11:25] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  02:11:25] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:11:25] INFO bot [mode=-] : [TPSL] off
+[20-08  02:11:25] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:11:25] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:11:25] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -20,11 +281,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 116, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -34,7 +295,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 173, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -55,31 +316,50 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  00:04:18] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:04:21] INFO bot [mode=START] : ⏲️ Time offset set to -970 ms
-[17-08  00:04:22] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:04:23] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:04:23] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:04:23] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:04:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:04:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:04:26] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:04:27] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780839050662199296'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780839064922832896'}]
-[17-08  00:04:28] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:04:28] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:04:28] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:05:27] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:05:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:05:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:05:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:05:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:05:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:05:27] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:05:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:05:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:05:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:05:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:05:27] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:14:54] INFO bot [mode=START] : ⏲️ Time offset set to -76 ms
+[20-08  02:14:54] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:14:56] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:14:57] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:14:57] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:14:57] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:14:58] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.2283, hedge(short)=0.1@0.22795, tp_init=0.230583, tp_hedge=0.22632808
+[20-08  02:14:59] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789804999339753472'}]
+[20-08  02:14:59] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAPOCO) @ 0.230583
+[20-08  02:15:00] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAPCOND) @ 0.22632808
+[20-08  02:15:09] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.229
+[20-08  02:15:10] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:15:10] INFO bot [mode=-] : [TPSL] off
+[20-08  02:15:12] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:15:12] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2279500000000000137223565843669348396360874176025390625, side=short, qty=0.1
+[20-08  02:15:12] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:15:12] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0040, порог=0.0002, событие_убытка=False
+[20-08  02:15:12] INFO bot [mode=-] : 🚨 [PreHEDGE] Достигнут порог убытка: pnl=-0.0040 (threshold=0.0002)
+[20-08  02:15:12] DEBUG bot [mode=-] : 🚨 [PreHEDGE] событие_убытка=True
+[20-08  02:15:13] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.22567050
+[20-08  02:15:13] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[20-08  02:15:13] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:15:13] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[20-08  02:15:13] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
+[20-08  02:15:13] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
+[20-08  02:15:13] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2789813241774395392
+[20-08  02:15:13] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[20-08  02:15:14] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.14@0.22905
+[20-08  02:15:19] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  02:15:25] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[20-08  02:15:25] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.1@0.22795, hedge(long)=0.2@0.22905, tp_init=0.2256705, tp_hedge=0.23121041
+[20-08  02:15:26] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789813230946566144'}]
+[20-08  02:15:27] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAPOCO) @ 0.2256705
+[20-08  02:15:27] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAPCOND) @ 0.23121041
+[20-08  02:17:08] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:17:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:17:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:17:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  02:17:08] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:17:08] INFO bot [mode=-] : [TPSL] off
+[20-08  02:17:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  02:17:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:17:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:17:08] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -90,11 +370,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 116, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -104,7 +384,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 173, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -125,31 +405,214 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  00:05:27] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:07:51] INFO bot [mode=START] : ⏲️ Time offset set to -976 ms
-[17-08  00:07:51] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:07:52] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:07:53] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:07:53] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:07:53] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:07:54] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:07:56] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:07:57] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780852652051873792'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780852665641418752'}]
-[17-08  00:07:57] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:07:57] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:07:58] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:09:41] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:09:41] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:09:41] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:09:41] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:09:41] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:09:41] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:09:41] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:09:41] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:09:41] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:09:41] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:09:41] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:09:41] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:17:23] INFO bot [mode=START] : ⏲️ Time offset set to -76 ms
+[20-08  02:17:23] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:17:25] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:17:26] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:17:26] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:17:29] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:17:30] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789817825041371136@0.22569525, SELL 2789817825175588864@0.23025475
+[20-08  02:17:33] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.228
+[20-08  02:17:33] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:17:33] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2280000000000000082156503822261583991348743438720703125, side=long, qty=0.05
+[20-08  02:17:33] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:17:33] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[20-08  02:17:34] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23028000
+[20-08  02:17:34] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[20-08  02:17:34] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:17:40] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:17:40] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0010, событие_убытка=False
+[20-08  02:17:40] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0000, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:41] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:42] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:43] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:44] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0005, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:45] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:46] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:47] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:48] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:49] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:50] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:50] DEBUG bot [mode=-] : [PreHEDGE] PnL=0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:50] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0003, порог=0.0010, событие_убытка=False
+[20-08  02:17:50] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0003, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:51] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:52] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:53] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:54] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:54] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:54] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0004, порог=0.0010, событие_убытка=False
+[20-08  02:17:56] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:56] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:57] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:58] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:59] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:59] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:59] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:17:59] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0007, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] DEBUG bot [mode=-] : [PreHEDGE] PnL=-0.0011, порог=0.0010, событие_убытка=False
+[20-08  02:18:00] INFO bot [mode=-] : 🚨 [PreHEDGE] Достигнут порог убытка: pnl=-0.0011 (threshold=0.0010)
+[20-08  02:18:00] DEBUG bot [mode=-] : 🚨 [PreHEDGE] событие_убытка=True
+[20-08  02:18:00] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[20-08  02:18:00] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[20-08  02:18:00] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[20-08  02:18:00] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2789818851874099200
+[20-08  02:18:00] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[20-08  02:18:00] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.22765
+[20-08  02:18:06] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  02:18:16] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  02:18:27] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  02:18:33] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[20-08  02:18:33] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.228, hedge(short)=0.1@0.22765, tp_init=0.23028, tp_hedge=0.22602975
+[20-08  02:18:34] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789817950981406720'}]
+[20-08  02:18:35] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAPOCO) @ 0.23028
+[20-08  02:18:35] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAPCOND) @ 0.22602975
+[20-08  02:19:19] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:19:19] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:19:19] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:19:19] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[20-08  02:19:19] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  02:19:19] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  02:19:19] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:19:19] INFO bot [mode=-] : [TPSL] off
+[20-08  02:19:19] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:19:19] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:19:19] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -160,11 +623,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 116, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -174,7 +637,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 174, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -195,31 +658,65 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  00:09:41] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:15:21] INFO bot [mode=START] : ⏲️ Time offset set to -906 ms
-[17-08  00:15:22] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:15:23] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:15:24] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:15:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:15:24] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:15:25] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:15:27] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:15:28] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780859687711621120'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780859701200502784'}]
-[17-08  00:15:28] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:15:28] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:15:29] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:16:02] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:16:02] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:16:02] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:16:02] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:16:02] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:16:02] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:16:02] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:16:02] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:16:02] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:16:02] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:16:02] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:16:02] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:19:30] INFO bot [mode=START] : ⏲️ Time offset set to -77 ms
+[20-08  02:19:31] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:19:33] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:19:33] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:19:34] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:19:34] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:19:36] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:19:38] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789822115445264384@0.22421025, SELL 2789822115713699840@0.22873975
+[20-08  02:19:40] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2264
+[20-08  02:19:40] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:19:40] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.226399999999999990141219541328609921038150787353515625, side=short, qty=0.05
+[20-08  02:19:40] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:19:41] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[20-08  02:19:42] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.22413600
+[20-08  02:19:42] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[20-08  02:19:42] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:23:34] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2241
+[20-08  02:23:34] DEBUG bot [mode=-] : [TPSL] on_fill_event: cid=PSDOGEUSDTSWAP side=buy posSide=short fillPx=0.2241(str) fillSz=0.05(str) 
+[20-08  02:23:34] DEBUG bot [mode=-] : [TPSL] drop: entry_cid/entry_side не заданы
+[20-08  02:23:35] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:23:37] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789830128646279168@0.22183425, SELL 2789830138544836608@0.22631575
+[20-08  02:23:47] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[20-08  02:23:47] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789830128646279168
+[20-08  02:23:48] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789830138544836608
+[20-08  02:23:48] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:23:49] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789830535359549440@0.22173525, SELL 2789830536835944448@0.22621475
+[20-08  02:23:57] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.22385
+[20-08  02:23:58] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789830535359549440
+[20-08  02:23:58] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:23:58] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.22384999999999999342747969421907328069210052490234375, side=short, qty=0.05
+[20-08  02:23:58] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:23:58] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[20-08  02:23:59] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.22161150
+[20-08  02:23:59] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[20-08  02:23:59] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:27:19] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.05@0.2216
+[20-08  02:27:19] DEBUG bot [mode=-] : [TPSL] on_fill_event: cid=PSDOGEUSDTSWAP side=buy posSide=short fillPx=0.2216(str) fillSz=0.05(str) 
+[20-08  02:27:19] DEBUG bot [mode=-] : [TPSL] drop: entry_cid/entry_side не заданы
+[20-08  02:27:19] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:27:20] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789837633799639040@0.21935925, SELL 2789837644033740801@0.22379075
+[20-08  02:27:31] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[20-08  02:27:31] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789837633799639040
+[20-08  02:27:31] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789837644033740801
+[20-08  02:27:31] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:27:32] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789838042962382848@0.21926025, SELL 2789838043197263872@0.22368975
+[20-08  02:27:42] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
+[20-08  02:27:43] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838042962382848
+[20-08  02:27:43] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838043197263872
+[20-08  02:27:43] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:27:44] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789838445548457984@0.21911175, SELL 2789838445884002304@0.22353825
+[20-08  02:27:45] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:27:45] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:27:45] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:27:45] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'order_mode'
+[20-08  02:27:45] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[20-08  02:27:45] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  02:27:45] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:27:45] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:27:45] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -230,11 +727,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 116, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -244,7 +741,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 174, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -265,173 +762,125 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  00:16:03] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:17:10] INFO bot [mode=START] : ⏲️ Time offset set to -895 ms
-[17-08  00:17:11] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:17:11] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:17:12] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:17:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:17:13] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:17:13] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:17:15] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:17:16] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780874818982068224'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780874829987921920'}]
-[17-08  00:17:16] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:17:16] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:17:16] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:30:14] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:30:14] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:30:14] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:30:14] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:30:14] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:30:14] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:30:14] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:30:14] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:30:14] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:30:14] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:30:14] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:30:14] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:27:48] INFO bot [mode=START] : ⏲️ Time offset set to -76 ms
+[20-08  02:27:48] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:27:50] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:27:50] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:27:51] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:27:51] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:27:54] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:27:54] INFO bot [mode=ORDER] : 🧹 [OrderMode] cancelling pending: ['2789838445884002304', '2789838445548457984']
+[20-08  02:27:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838445884002304
+[20-08  02:27:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838445548457984
+[20-08  02:27:56] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789838821962076160@0.21901275, SELL 2789838822129848320@0.22343725
+[20-08  02:28:27] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:28:27] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:28:28] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:28:56] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 60.0s, retry
+[20-08  02:28:56] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838821962076160
+[20-08  02:28:56] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2789838822129848320
+[20-08  02:28:56] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[20-08  02:29:12] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 108, in wait
-    if task:
-        ^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 asyncio.exceptions.CancelledError
 
-During handling of the above exception, another exception occurred:
+The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  00:30:14] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:30:17] INFO bot [mode=START] : ⏲️ Time offset set to -896 ms
-[17-08  00:30:17] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:30:18] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:30:19] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:30:19] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:30:19] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:30:19] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:30:22] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:30:22] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780878436988698624'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780878448028106752'}]
-[17-08  00:30:23] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:30:23] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:30:23] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:33:09] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:33:09] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:33:09] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:33:09] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:33:09] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:33:09] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:33:09] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:33:09] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:33:09] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:33:09] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:33:09] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:33:09] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[20-08  02:29:14] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2789840893411381248@0.21841875, SELL 2789841441221038080@0.22283125
+[20-08  02:29:45] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:29:46] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:29:46] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:29:47] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  02:29:47] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2228499999999999925393012745189480483531951904296875, side=short, qty=0.05
+[20-08  02:29:47] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  02:29:51] INFO bot [mode=-] : 🚨 [PreHEDGE] Достигнут порог убытка: pnl=-0.0285 (threshold=0.0010)
+[20-08  02:29:51] DEBUG bot [mode=-] : 🚨 [PreHEDGE] событие_убытка=True
+[20-08  02:30:02] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  02:30:02] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/trade/orders-algo-pending, attempt 1/4, sleeping 1.0s before retry
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 109, in wait
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
 asyncio.exceptions.CancelledError
 
-During handling of the above exception, another exception occurred:
+The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  00:33:09] ERROR bot [mode=LOOP] : Loop-level exception
-[17-08  00:33:12] INFO bot [mode=START] : ⏲️ Time offset set to -898 ms
-[17-08  00:33:13] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:33:13] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:33:14] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:33:15] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:33:15] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:33:15] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:33:17] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:33:18] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780904825804636160'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780904836743380992'}]
-[17-08  00:33:18] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:33:18] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:33:18] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  00:34:09] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  00:34:19] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  00:57:51] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  00:57:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  00:57:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  00:57:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  00:57:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  00:57:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  00:57:51] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  00:57:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  00:57:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  00:57:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  00:57:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  00:57:51] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[20-08  02:30:13] WARNING bot [mode=REST] :   ⚠ Time sync attempt #2 timed out
+[20-08  02:30:13] DEBUG bot [mode=-] : [PreHEDGE] TP не обнаружен => пропускаем отмену
+[20-08  02:30:14] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.21950725
+[20-08  02:30:14] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.10%
+[20-08  02:30:14] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  02:30:14] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[20-08  02:30:14] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.0500)
+[20-08  02:30:14] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.1000
+[20-08  02:30:14] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2789843462741348352
+[20-08  02:30:14] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[20-08  02:30:14] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.1@0.23655
+[20-08  02:30:20] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  02:30:26] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[20-08  02:30:26] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.05@0.22285, hedge(long)=0.1@0.23655, tp_init=0.21950725, tp_hedge=0.25227909
+[20-08  02:30:26] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789843451779301376'}]
+[20-08  02:30:27] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAPOCO) @ 0.21950725
+[20-08  02:30:27] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAPCOND) @ 0.25227909
+[20-08  02:52:15] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:52:15] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:52:15] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:52:15] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[20-08  02:52:15] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  02:52:15] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  02:52:15] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:52:15] INFO bot [mode=-] : [TPSL] off
+[20-08  02:52:15] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:52:15] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:52:15] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -442,11 +891,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 107, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -456,7 +905,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -477,30 +926,30 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  00:57:55] INFO bot [mode=START] : ⏲️ Time offset set to -911 ms
-[17-08  00:57:55] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  00:57:56] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  00:57:57] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  00:57:57] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  00:57:58] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  00:57:58] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  00:58:00] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  00:58:01] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780910718030004224'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780910729203630080'}]
-[17-08  00:58:01] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  00:58:01] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  00:58:01] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  01:06:51] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  01:06:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  01:06:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  01:06:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  01:06:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  01:06:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  01:06:51] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  01:06:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  01:06:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  01:06:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  01:06:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  01:06:51] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:52:18] INFO bot [mode=START] : ⏲️ Time offset set to -76 ms
+[20-08  02:52:19] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:52:20] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:52:21] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:52:21] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:52:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:52:22] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.05@0.22285, hedge(long)=0.1@0.23655, tp_init=0.2161645, tp_hedge=0.25227909
+[20-08  02:52:23] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789843896610406400'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2789843907012280320'}]
+[20-08  02:52:24] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAPOCO) @ 0.2161645
+[20-08  02:52:24] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAPCOND) @ 0.25227909
+[20-08  02:52:37] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  02:52:47] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  02:52:58] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  02:56:18] INFO bot [mode=REST] : Time offset updated -76 → -1149 ms
+[20-08  02:56:28] INFO bot [mode=REST] : Time offset updated -1149 → -75 ms
+[20-08  02:59:16] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  02:59:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  02:59:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  02:59:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  02:59:16] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  02:59:16] INFO bot [mode=-] : [TPSL] off
+[20-08  02:59:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  02:59:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  02:59:16] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
 Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
     return runner.run(main)
@@ -511,100 +960,11 @@ Traceback (most recent call last):
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
     return future.result()
            ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
     await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 107, in wait
-    async def wait(self, name: str):
-    ^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  01:06:54] INFO bot [mode=START] : ⏲️ Time offset set to -897 ms
-[17-08  01:06:54] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  01:06:55] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  01:06:56] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  01:06:56] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  01:06:56] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  01:06:57] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  01:06:59] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  01:06:59] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780960473816842240'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780960484487151616'}]
-[17-08  01:07:00] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  01:07:00] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  01:07:00] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  01:07:08] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  01:07:35] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  01:07:46] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  01:08:22] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  01:08:28] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  01:08:28] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  01:08:28] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  01:08:29] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  01:09:26] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  01:09:26] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  01:09:27] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780981538618163200'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780981527981408256'}]
-[17-08  01:09:27] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  01:09:28] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  01:09:39] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  01:09:39] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  01:09:40] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780983510410805248'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780983499874713600'}]
-[17-08  01:09:40] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  01:09:40] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  01:12:08] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  01:12:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  01:12:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  01:12:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  01:12:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  01:12:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  01:12:08] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  01:12:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  01:12:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  01:12:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
-[17-08  01:12:08] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  01:12:08] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  01:12:08] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 110, in wait
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
     await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
     await asyncio.sleep(self.poll_interval)
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
     return await future
@@ -614,7 +974,7 @@ asyncio.exceptions.CancelledError
 During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
     asyncio.run(main())
   File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
     with Runner(debug=debug, loop_factory=loop_factory) as runner:
@@ -635,431 +995,303 @@ Traceback (most recent call last):
        ^^^^^^^^^^^^^^^^^^^^^
   [Previous line repeated 992 more times]
 RecursionError: maximum recursion depth exceeded
-[17-08  01:12:18] INFO bot [mode=START] : ⏲️ Time offset set to -895 ms
-[17-08  01:12:18] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  01:12:19] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  01:12:20] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  01:12:20] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  01:12:20] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  01:12:21] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  01:12:23] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.2@0.22815, hedge(long)=0.4@0.234045, tp_init=0.2258685, tp_hedge=0.24091329
-[17-08  01:12:24] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2780983933196648448'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2780983943967621120'}]
-[17-08  01:12:24] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2258685
-[17-08  01:12:24] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  01:12:24] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.24091329
-[17-08  02:41:07] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  02:41:21] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  04:35:45] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  04:35:56] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  08:15:23] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.2@0.241
-[17-08  08:15:23] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
-[17-08  08:15:23] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.241
-[17-08  08:15:23] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.01@0.2407
-[17-08  08:15:23] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  08:15:24] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:15:25] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781841061287612416@0.2384415, SELL 2781841061321166848@0.2432585
-[17-08  08:15:28] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2384
-[17-08  08:15:28] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781841061321166848
-[17-08  08:15:29] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:15:29] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:15:29] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit: pnl=-0.0126
-[17-08  08:15:29] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2781841061287612416, ORDER mode turn off
-[17-08  08:15:29] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:15:29] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.24078400
-[17-08  08:15:29] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:15:29] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:15:29] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:15:29] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
-[17-08  08:15:29] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
-[17-08  08:15:30] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781841230032850944
-[17-08  08:15:30] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:15:30] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.239
-[17-08  08:15:34] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  08:15:34] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.2384, hedge(short)=0.1@0.239, tp_init=0.240784, tp_hedge=0.23826333
-[17-08  08:15:35] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781841219003695104'}]
-[17-08  08:15:35] WARNING bot [mode=REST] : [REST] swallow code=1, sCode=['51280'] on POST /api/v5/trade/order-algo
-[17-08  08:15:35] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.240784
-[17-08  08:15:35] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23826333
-[17-08  08:15:36] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.2386
-[17-08  08:15:39] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:15:39] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:15:39] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:15:39] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.24078400
-[17-08  08:15:39] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:15:39] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:15:39] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:15:39] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
-[17-08  08:15:39] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
-[17-08  08:15:40] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781841569301712896
-[17-08  08:15:40] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:15:40] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.07@0.23915
-[17-08  08:15:41] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  08:15:41] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.2384, hedge(short)=0.1@0.239155, tp_init=0.240784, tp_hedge=0.23857197
-[17-08  08:15:42] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781841556393508864'}]
-[17-08  08:15:42] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.240784
-[17-08  08:15:42] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23857197
-[17-08  08:15:43] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.23655
-[17-08  08:15:43] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.23615
-[17-08  08:15:43] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
-[17-08  08:15:43] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.23615
-[17-08  08:15:43] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  08:15:43] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:15:44] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781841705364934656@0.23450625, SELL 2781841707579527168@0.23924375
-[17-08  08:15:54] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:15:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781841705364934656
-[17-08  08:15:55] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781841707579527168
-[17-08  08:15:55] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:15:56] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781842104427794432@0.23445675, SELL 2781842105031774208@0.23919325
-[17-08  08:16:06] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:16:06] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842104427794432
-[17-08  08:16:06] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842105031774208
-[17-08  08:16:06] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:16:08] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781842502551130112@0.23574375, SELL 2781842502416912384@0.24050625
-[17-08  08:16:18] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:16:18] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842502551130112
-[17-08  08:16:18] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842502416912384
-[17-08  08:16:18] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:16:19] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781842901412663296@0.23460525, SELL 2781842901647544320@0.23934475
-[17-08  08:16:30] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:16:30] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842901412663296
-[17-08  08:16:30] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781842901647544320
-[17-08  08:16:30] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:16:31] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781843298932019200@0.23500125, SELL 2781843299267563520@0.23974875
-[17-08  08:16:41] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:16:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781843298932019200
-[17-08  08:16:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781843299267563520
-[17-08  08:16:42] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:16:43] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781843700075253760@0.234729, SELL 2781843700410798080@0.239471
-[17-08  08:16:53] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:16:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781843700075253760
-[17-08  08:16:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781843700410798080
-[17-08  08:16:54] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:16:55] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781844096722194432@0.23683275, SELL 2781844096453758976@0.24161725
-[17-08  08:17:03] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.2368
-[17-08  08:17:03] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:17:03] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:17:03] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781844096453758976
-[17-08  08:17:03] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:17:03] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2781844096722194432, ORDER mode turn off
-[17-08  08:17:04] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23916800
-[17-08  08:17:04] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:17:04] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:17:04] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:17:04] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
-[17-08  08:17:04] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
-[17-08  08:17:04] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781844397504122880
-[17-08  08:17:04] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:17:04] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.23775
-[17-08  08:17:09] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  08:17:09] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.2368, hedge(short)=0.1@0.23775, tp_init=0.239168, tp_hedge=0.23736919
-[17-08  08:17:09] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781844386508521472'}]
-[17-08  08:17:10] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.239168
-[17-08  08:17:10] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51277', 'sMsg': 'TP trigger price cannot be higher than the last price ', 'tag': ''}], 'msg': ''}
-[17-08  08:17:10] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for SDOGEUSDTSWAP: API error 1
-[17-08  08:17:12] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.2366
-[17-08  08:17:12] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
-[17-08  08:17:12] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.2366
-[17-08  08:17:12] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  08:17:14] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:17:14] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:17:14] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:17:15] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23537250
-[17-08  08:17:15] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:17:15] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:17:15] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:17:15] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
-[17-08  08:17:15] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
-[17-08  08:17:15] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781844769186566144
-[17-08  08:17:15] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:17:15] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.23805
-[17-08  08:17:16] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  08:17:16] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.1@0.23775, hedge(long)=0.2@0.23805, tp_init=0.2353725, tp_hedge=0.23945021
-[17-08  08:17:16] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781844758123855872'}]
-[17-08  08:17:17] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAP) @ 0.2353725
-[17-08  08:17:17] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAP) @ 0.23945021
-[17-08  08:17:29] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.23955
-[17-08  08:17:29] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=short side=BUY
-[17-08  08:17:29] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.23955
-[17-08  08:17:29] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  08:17:29] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.16@0.23925
-[17-08  08:17:30] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:17:31] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781845307466764288@0.237006, SELL 2781845307835863040@0.241794
-[17-08  08:17:41] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:17:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781845307466764288
-[17-08  08:17:42] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781845307835863040
-[17-08  08:17:42] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:17:43] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781845703241289728@0.23752575, SELL 2781845703576834048@0.24232425
-[17-08  08:17:53] INFO bot [mode=ORDER] : 🕐 [OrderMode] no fill after 10.0s, retry
-[17-08  08:17:53] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781845703241289728
-[17-08  08:17:54] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781845703576834048
-[17-08  08:17:54] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
-[17-08  08:17:55] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2781846101029081088@0.237006, SELL 2781846101096189952@0.241794
-[17-08  08:18:03] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.05@0.237
-[17-08  08:18:03] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2781846101096189952
-[17-08  08:18:03] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:18:03] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:18:03] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2781846101029081088, ORDER mode turn off
-[17-08  08:18:04] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:18:04] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23937000
-[17-08  08:18:04] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:18:04] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:18:04] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:18:04] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
-[17-08  08:18:04] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
-[17-08  08:18:04] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.2376
-[17-08  08:18:04] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781846420702154752
-[17-08  08:18:04] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:18:06] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  08:18:06] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.05@0.237, hedge(short)=0.1@0.2376, tp_init=0.23937, tp_hedge=0.23687115
-[17-08  08:18:07] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781846407894614016'}]
-[17-08  08:18:07] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.23937
-[17-08  08:18:08] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23687115
-[17-08  08:18:08] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/long closed size=0.05@0.23755
-[17-08  08:18:08] DEBUG bot [mode=-] : [TPSL-DEBUG] is_tp=True entry_side=long side=SELL
-[17-08  08:18:08] INFO bot [mode=-] : [REINVEST-SIGNAL] tp_filled_evt.set() fired, fill_px=0.23755
-[17-08  08:18:08] INFO bot [mode=REINVEST] : [REINVEST] realized=0.0000275 * percent = 1.0 -> use=0.00002750
-[17-08  08:18:08] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  08:18:11] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:18:11] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:18:12] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23522400
-[17-08  08:18:12] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:18:12] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:18:12] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:18:12] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0000,0.1000)
-[17-08  08:18:12] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=buy, size=0.2000
-[17-08  08:18:13] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781846699774365696
-[17-08  08:18:13] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:18:13] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/long closed size=0.2@0.23725
-[17-08  08:31:24] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.1@0.2352
-[17-08  08:31:27] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
-[17-08  08:31:27] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
-[17-08  08:31:27] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
-[17-08  08:31:28] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23962250
-[17-08  08:31:28] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.50%
-[17-08  08:31:28] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? False
-[17-08  08:31:28] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → starting hedge
-[17-08  08:31:28] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.2000,0.0000)
-[17-08  08:31:28] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.4000
-[17-08  08:31:28] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2781873392291467264
-[17-08  08:31:28] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
-[17-08  08:31:28] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.09@0.2354
-[17-08  11:17:57] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  11:18:03] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
-[17-08  11:18:03] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.23725, hedge(short)=0.4@0.235465, tp_init=0.2396225, tp_hedge=0.23271844
-[17-08  11:18:04] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2781873380960321536'}]
-[17-08  11:18:04] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2396225
-[17-08  11:18:04] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23271844
-[17-08  11:35:45] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
-[17-08  11:35:51] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  11:48:53] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
-[17-08  11:52:57] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  12:03:55] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
-[17-08  12:09:21] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
-[17-08  12:10:51] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  12:10:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  12:10:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  12:10:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  12:10:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  12:10:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  12:10:51] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  12:10:51] WARNING bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершилась с исключением: object NoneType can't be used in 'await' expression
-[17-08  12:10:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
-[17-08  12:10:51] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  12:10:51] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  12:10:51] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+[20-08  02:59:20] INFO bot [mode=START] : ⏲️ Time offset set to -76 ms
+[20-08  02:59:20] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  02:59:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  02:59:39] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  02:59:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  02:59:40] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  02:59:45] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  03:02:56] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:03:50] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  03:04:47] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:11:17] INFO bot [mode=REST] : Time offset updated -76 → -1129 ms
+[20-08  03:11:27] INFO bot [mode=REST] : Time offset updated -1129 → -76 ms
+[20-08  03:11:53] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:16:16] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  03:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  03:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  03:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  03:16:16] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  03:16:16] INFO bot [mode=-] : [TPSL] off
+[20-08  03:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  03:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  03:16:16] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  03:16:20] INFO bot [mode=START] : ⏲️ Time offset set to -77 ms
+[20-08  03:16:20] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[20-08  03:16:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  03:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  03:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  03:16:23] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  03:16:24] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(short)=0.05@0.22285, hedge(long)=0.1@0.23655, tp_init=0.2161645, tp_hedge=0.25227909
+[20-08  03:16:25] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2789888075818418176'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2789888090347487232'}]
+[20-08  03:16:25] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(SDOGEUSDTSWAPOCO) @ 0.2161645
+[20-08  03:16:25] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(LDOGEUSDTSWAPCOND) @ 0.25227909
+[20-08  03:16:38] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  03:17:55] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:27:00] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:34:09] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  03:34:15] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:48:45] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:50:11] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:50:21] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  03:51:18] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:06:22] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:06:32] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:07:34] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: BUY/short closed size=0.04@0.2154
+[20-08  04:07:34] DEBUG bot [mode=-] : [TPSL] on_fill_event: cid=SDOGEUSDTSWAPOCO side=buy posSide=short fillPx=0.2154(str) fillSz=0.04(str) 
+[20-08  04:07:34] INFO bot [mode=-] : [TPSL] TP-OCO matched: qty=0.04 hedge_side=long
+[20-08  04:07:34] INFO bot [mode=-] : [TPSL] Filled TP size < reinvest treshold -> skip reinvest
+[20-08  04:07:34] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  04:07:34] INFO bot [mode=-] : [TPSL] off
+[20-08  04:07:36] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[20-08  04:07:36] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2365500000000000102584607475364464335143566131591796875, side=long, qty=0.1
+[20-08  04:07:36] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[20-08  04:07:36] INFO bot [mode=-] : 🚨 [PreHEDGE] Достигнут порог убытка: pnl=-0.0821 (threshold=0.0020)
+[20-08  04:07:36] DEBUG bot [mode=-] : 🚨 [PreHEDGE] событие_убытка=True
+[20-08  04:07:37] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.24364650
+[20-08  04:07:37] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.20%
+[20-08  04:07:37] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[20-08  04:07:37] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[20-08  04:07:37] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.1000,0.0000)
+[20-08  04:07:37] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.2000
+[20-08  04:07:37] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2790039541722173440
+[20-08  04:07:37] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[20-08  04:07:38] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.2@0.214
+[20-08  04:07:43] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  04:07:50] INFO bot [mode=-] : 🛠️ [TPSL] mismatch detected → reinstall all algos
+[20-08  04:07:50] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.1@0.23655, hedge(short)=0.2@0.214, tp_init=0.2436465, tp_hedge=0.1902027
+[20-08  04:07:51] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2790039527404683264'}]
+[20-08  04:07:51] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAPOCO) @ 0.2436465
+[20-08  04:07:52] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAPCOND) @ 0.1902027
+[20-08  04:08:26] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:08:37] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:22:23] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:22:30] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:26:33] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:34:06] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:45:25] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:47:52] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[20-08  04:48:48] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  04:50:54] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:51:47] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  04:53:39] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  04:53:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  04:53:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  05:04:19] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:04:29] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:04:40] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:08:52] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:35:13] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  05:47:54] INFO bot [mode=REST] : Time offset updated -77 → -1120 ms
+[20-08  05:48:05] INFO bot [mode=REST] : Time offset updated -1120 → -81 ms
+[20-08  05:49:20] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:51:26] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  05:51:36] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:00:09] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  06:03:00] INFO bot [mode=REST] : Time offset updated -81 → -1096 ms
+[20-08  06:03:10] INFO bot [mode=REST] : Time offset updated -1096 → -81 ms
+[20-08  06:04:25] INFO bot [mode=REST] : Time offset updated -81 → -2339 ms
+[20-08  06:04:35] INFO bot [mode=REST] : Time offset updated -2339 → -200 ms
+[20-08  06:08:14] INFO bot [mode=REST] : Time offset updated -200 → -2322 ms
+[20-08  06:08:25] INFO bot [mode=REST] : Time offset updated -2322 → -194 ms
+[20-08  06:10:02] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:27:39] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:27:50] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:30:52] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  06:40:03] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:55:54] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  06:56:04] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  07:10:41] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  07:18:01] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  07:18:11] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  07:31:46] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  07:35:14] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  07:44:44] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  07:45:36] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  07:49:06] INFO bot [mode=REST] : Time offset updated -194 → -1239 ms
+[20-08  07:49:17] INFO bot [mode=REST] : Time offset updated -1239 → -85 ms
+[20-08  08:01:03] INFO bot [mode=REST] : Time offset updated -85 → -1139 ms
+[20-08  08:01:13] INFO bot [mode=REST] : Time offset updated -1139 → -84 ms
+[20-08  08:02:06] INFO bot [mode=REST] : Time offset updated -84 → -1156 ms
+[20-08  08:02:17] INFO bot [mode=REST] : Time offset updated -1156 → -85 ms
+[20-08  08:08:50] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  08:08:56] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:10:30] INFO bot [mode=REST] : Time offset updated -85 → -5056 ms
+[20-08  08:10:41] INFO bot [mode=REST] : Time offset updated -5056 → -506 ms
+[20-08  08:28:13] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:28:23] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:30:24] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:30:58] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:31:09] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  08:39:49] INFO bot [mode=REST] : Time offset updated -506 → -4563 ms
+[20-08  08:40:00] INFO bot [mode=REST] : Time offset updated -4563 → -83 ms
+[20-08  09:04:58] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  09:05:26] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  09:09:17] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  09:14:16] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  09:18:58] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  09:18:59] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 110, in wait
-    task = self._tasks.get(name)
-        ^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-During handling of the above exception, another exception occurred:
-
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  09:18:59] INFO bot [mode=-] : [TPSL] off
+[20-08  09:19:04] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  09:23:32] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  09:46:30] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  09:53:05] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  09:53:49] INFO bot [mode=REST] : Time offset updated -83 → -1191 ms
+[20-08  09:53:59] INFO bot [mode=REST] : Time offset updated -1191 → -98 ms
+[20-08  09:57:19] INFO bot [mode=REST] : Time offset updated -98 → -1136 ms
+[20-08  09:57:39] INFO bot [mode=REST] : Time offset updated -1136 → -109 ms
+[20-08  10:03:35] INFO bot [mode=REST] : Time offset updated -109 → -1220 ms
+[20-08  10:03:45] INFO bot [mode=REST] : Time offset updated -1220 → -213 ms
+[20-08  10:10:05] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  10:44:24] INFO bot [mode=REST] : Time offset updated -213 → -2336 ms
+[20-08  10:44:35] INFO bot [mode=REST] : Time offset updated -2336 → -204 ms
+[20-08  10:53:11] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  10:53:21] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  10:58:49] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  11:04:07] INFO bot [mode=REST] : Time offset updated -204 → -1661 ms
+[20-08  11:04:17] INFO bot [mode=REST] : Time offset updated -1661 → -88 ms
+[20-08  11:04:51] INFO bot [mode=REST] : Time offset updated -88 → -2724 ms
+[20-08  11:05:01] INFO bot [mode=REST] : Time offset updated -2724 → -110 ms
+[20-08  11:16:09] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:17:26] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  11:21:20] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:21:31] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:24:10] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  11:24:11] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  12:10:57] INFO bot [mode=START] : ⏲️ Time offset set to -920 ms
-[17-08  12:10:57] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  12:10:58] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  12:10:59] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  12:10:59] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  12:10:59] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  12:11:00] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  12:11:02] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.23725, hedge(short)=0.4@0.235465, tp_init=0.2396225, tp_hedge=0.23271844
-[17-08  12:11:03] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2782208800692715520'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2782208811732123648'}]
-[17-08  12:11:03] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2396225
-[17-08  12:11:03] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  12:11:03] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23271844
-[17-08  12:14:28] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  12:14:28] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  12:14:28] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  12:14:28] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  12:14:28] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  12:14:28] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  12:14:28] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  12:14:28] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  12:14:28] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  12:14:28] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  12:14:28] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  12:14:28] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  11:24:11] INFO bot [mode=-] : [TPSL] off
+[20-08  11:24:17] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  11:25:49] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:34:35] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  11:43:36] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  11:45:32] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  11:46:19] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:46:30] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:51:40] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  11:54:24] INFO bot [mode=REST] : Time offset updated -110 → -1220 ms
+[20-08  11:54:35] INFO bot [mode=REST] : Time offset updated -1220 → -108 ms
+[20-08  11:57:48] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  11:57:49] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
 Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 112, in wait
-    await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-During handling of the above exception, another exception occurred:
-
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  11:57:49] INFO bot [mode=-] : [TPSL] off
+[20-08  11:57:55] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  12:01:16] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:01:26] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:05:43] INFO bot [mode=REST] : Time offset updated -108 → -1599 ms
+[20-08  12:05:55] INFO bot [mode=REST] : Time offset updated -1599 → -201 ms
+[20-08  12:06:30] INFO bot [mode=REST] : Time offset updated -201 → -2026 ms
+[20-08  12:06:41] INFO bot [mode=REST] : Time offset updated -2026 → -233 ms
+[20-08  12:07:13] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:07:24] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:07:34] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:08:03] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:08:13] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:08:24] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:08:35] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:10:48] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:22:01] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:22:11] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:24:47] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:28:52] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:29:03] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:29:25] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:30:06] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:30:16] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:34:04] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  12:42:25] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  12:49:45] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  13:01:25] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  13:14:52] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  13:15:02] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  13:23:50] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  13:27:02] INFO bot [mode=REST] : Time offset updated -233 → -2320 ms
+[20-08  13:27:12] INFO bot [mode=REST] : Time offset updated -2320 → -111 ms
+[20-08  13:28:06] INFO bot [mode=REST] : Time offset updated -111 → -1613 ms
+[20-08  13:28:17] INFO bot [mode=REST] : Time offset updated -1613 → -247 ms
+[20-08  13:29:50] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  13:38:47] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  13:39:55] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  13:41:35] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  13:41:45] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  13:52:27] INFO bot [mode=REST] : Time offset updated -247 → -2328 ms
+[20-08  13:52:37] INFO bot [mode=REST] : Time offset updated -2328 → -95 ms
+[20-08  13:55:18] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  13:55:19] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
 Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  12:14:31] INFO bot [mode=START] : ⏲️ Time offset set to -939 ms
-[17-08  12:14:32] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  12:14:32] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  12:14:33] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  12:14:33] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  12:14:34] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  12:14:34] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  12:14:36] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.23725, hedge(short)=0.4@0.235465, tp_init=0.2396225, tp_hedge=0.23271844
-[17-08  12:14:37] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2782315469628063744'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2782315480801689600'}]
-[17-08  12:14:37] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2396225
-[17-08  12:14:37] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  12:14:38] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23271844
-[17-08  12:16:16] INFO bot [mode=SHUTDOWN] : Shutdown initiated
-[17-08  12:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
-[17-08  12:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
-[17-08  12:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
-[17-08  12:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
-[17-08  12:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
-[17-08  12:16:16] INFO bot [mode=-] : [TPSL] loop cancelled
-[17-08  12:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'reinvest_loop'
-[17-08  12:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'reinvest_loop' завершена с CancelledError
-[17-08  12:16:16] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
-[17-08  12:16:16] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
-[17-08  12:16:16] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
-Traceback (most recent call last):
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
-    return runner.run(main)
-           ^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
-    return self._loop.run_until_complete(task)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
-    return future.result()
-           ^^^^^^^^^^^^^^^
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 117, in main
-    await task_manager.wait("orchestrator")
-  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 112, in wait
-    await task
-  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 154, in run
-    await asyncio.sleep(self.poll_interval)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
-    return await future
-           ^^^^^^^^^^^^
-asyncio.exceptions.CancelledError
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 175, in <module>
-    asyncio.run(main())
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
-    with Runner(debug=debug, loop_factory=loop_factory) as runner:
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
-    self.close()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
-    _cancel_all_tasks(loop)
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
-    task.cancel()
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
-    if child.cancel(msg=msg):
-       ^^^^^^^^^^^^^^^^^^^^^
-  [Previous line repeated 992 more times]
-RecursionError: maximum recursion depth exceeded
-[17-08  12:16:19] INFO bot [mode=START] : ⏲️ Time offset set to -917 ms
-[17-08  12:16:20] INFO bot [mode=START] : 📈 Initial snapshot fetched
-[17-08  12:16:20] INFO bot [mode=-] : [REINVEST-LOOP] вход в цикл, жду tp_filled_evt
-[17-08  12:16:21] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
-[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
-[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
-[17-08  12:16:22] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
-[17-08  12:16:24] DEBUG bot [mode=-] : 🔄 [TPSL] reinstall_all → init(long)=0.2@0.23725, hedge(short)=0.4@0.235465, tp_init=0.2396225, tp_hedge=0.23271844
-[17-08  12:16:25] INFO bot [mode=-] : 🧹 [TPSL] cancelled algos: [{'instId': 'DOGE-USDT-SWAP', 'algoId': '2782322656819625984'}, {'instId': 'DOGE-USDT-SWAP', 'algoId': '2782322667892588544'}]
-[17-08  12:16:25] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
-[17-08  12:16:26] INFO bot [mode=-] : 🎯 [TPSL] placed OCO(LDOGEUSDTSWAP) @ 0.2396225
-[17-08  12:16:26] INFO bot [mode=-] : 🎯 [TPSL] placed Conditional(SDOGEUSDTSWAP) @ 0.23271844
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  13:55:19] INFO bot [mode=-] : [TPSL] off
+[20-08  13:55:25] DEBUG bot [mode=-] : 🔄 [TPSL] initial sync pass
+[20-08  13:58:34] INFO bot [mode=REST] : Time offset updated -95 → -1261 ms
+[20-08  13:58:45] INFO bot [mode=REST] : Time offset updated -1261 → -107 ms
+[20-08  13:59:32] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:01:29] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:05:42] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[20-08  14:05:42] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[20-08  14:05:42] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[20-08  14:21:12] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  14:21:42] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:33:31] WARNING bot [mode=REST] :   ⚠ Time sync attempt #1 timed out
+[20-08  14:34:19] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:36:04] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:36:14] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:36:53] INFO bot [mode=REST] : Time offset updated -107 → -1802 ms
+[20-08  14:37:03] INFO bot [mode=REST] : Time offset updated -1802 → -115 ms
+[20-08  14:38:53] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:39:03] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:39:13] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:40:23] INFO bot [mode=REST] : Time offset updated -115 → -1195 ms
+[20-08  14:40:33] INFO bot [mode=REST] : Time offset updated -1195 → -96 ms
+[20-08  14:43:46] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:43:57] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  14:47:44] INFO bot [mode=REST] : Time offset updated -96 → -1720 ms
+[20-08  14:47:55] INFO bot [mode=REST] : Time offset updated -1720 → -110 ms
+[20-08  15:01:49] INFO bot [mode=REST] : Time offset updated -110 → -1457 ms
+[20-08  15:01:59] INFO bot [mode=REST] : Time offset updated -1457 → -247 ms
+[20-08  15:03:26] WARNING bot [mode=TPSL] : [TPSL] fetch_pending_algos timed out after 5.0s
+[20-08  15:07:30] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[20-08  15:07:30] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[20-08  15:07:30] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[20-08  15:07:30] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[20-08  15:07:30] INFO bot [mode=-] : [TPSL] loop cancelled
+[20-08  15:07:30] INFO bot [mode=-] : [TPSL] off
+[20-08  15:07:30] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[20-08  15:07:30] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[20-08  15:07:30] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[20-08  15:07:30] ERROR bot [mode=-] : 💥 Fatal error: 

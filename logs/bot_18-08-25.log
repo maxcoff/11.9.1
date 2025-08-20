@@ -1,0 +1,879 @@
+[18-08  00:01:35] INFO bot [mode=START] : ⏲️ Time offset set to -952 ms
+[18-08  00:01:36] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:01:37] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:01:38] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:01:38] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:01:38] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:01:42] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[18-08  00:01:43] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2783746223853850624@0.23356575, SELL 2783746226135552000@0.23828425
+[18-08  00:01:46] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.05@0.2358
+[18-08  00:01:47] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2783746223853850624
+[18-08  00:01:47] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:01:47] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:01:47] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[18-08  00:01:48] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23344200
+[18-08  00:01:48] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:01:48] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[18-08  00:02:27] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:02:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:02:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:02:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:02:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:02:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[18-08  00:02:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:02:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:02:27] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:02:27] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:02:27] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:15:09] INFO bot [mode=START] : ⏲️ Time offset set to -955 ms
+[18-08  00:15:10] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:15:11] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:15:12] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:15:12] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:15:12] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:15:14] DEBUG bot [mode=-] : [PreHEDGE]1 loss_evt.is_set() at start: False
+[18-08  00:15:14] DEBUG bot [mode=-] : [PreHEDGE]2 loss_evt.is_set() at start: False
+[18-08  00:15:14] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:15:14] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:15:15] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23344200
+[18-08  00:15:15] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:15:15] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[18-08  00:18:06] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:18:06] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:18:06] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:18:06] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:18:06] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:18:06] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:18:06] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:18:06] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:18:06] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:18:06] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:18:10] INFO bot [mode=START] : ⏲️ Time offset set to -950 ms
+[18-08  00:18:10] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:18:11] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:18:12] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:18:12] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:18:12] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:18:14] DEBUG bot [mode=-] : [PreHEDGE]1 loss_evt.is_set() at start: False
+[18-08  00:18:14] DEBUG bot [mode=-] : [PreHEDGE]2 loss_evt.is_set() at start: False
+[18-08  00:18:14] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:18:14] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:18:15] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23344200
+[18-08  00:18:15] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:18:15] DEBUG bot [mode=-] : [PreHEDGE] loss_task alive? True
+[18-08  00:18:15] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:20:53] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:20:53] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:20:53] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:20:53] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:20:53] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:20:53] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:20:53] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:20:53] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:20:53] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:20:53] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:20:56] INFO bot [mode=START] : ⏲️ Time offset set to -951 ms
+[18-08  00:20:56] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:20:58] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:20:58] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:20:58] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:20:58] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:21:00] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:21:00] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:21:00] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:00] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:01] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23344200
+[18-08  00:21:01] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:21:01] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:02] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23314, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23314, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23315, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:03] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:04] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:04] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:04] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23311, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:04] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:21:04] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:21:04] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23312, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:21:04] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:21:04] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:21:04] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:21:04] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:21:04] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:21:04] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:21:04] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:21:04] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 108, in run
+    await asyncio.sleep(self.poll_interval * 5)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:27:14] INFO bot [mode=START] : ⏲️ Time offset set to -949 ms
+[18-08  00:27:14] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:27:16] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:27:16] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:27:16] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:27:16] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:27:18] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:27:18] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2358000000000000095923269327613525092601776123046875, side=short, qty=0.05
+[18-08  00:27:18] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:27:18] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23299, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:18] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23299, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23299, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23299, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.233, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23344200
+[18-08  00:27:19] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.233, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23302, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:19] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23302, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:20] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23302, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:20] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23302, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:20] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:27:20] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:27:20] DEBUG bot [mode=-] : [PreHEDGE] on_ticker got price=0.23302, entry=0.2358000000000000095923269327613525092601776123046875, side=short
+[18-08  00:27:20] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:27:20] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:27:20] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:27:20] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:27:20] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:27:20] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:27:20] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:27:20] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 108, in run
+    await asyncio.sleep(self.poll_interval * 5)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:30:04] INFO bot [mode=START] : ⏲️ Time offset set to -951 ms
+[18-08  00:30:04] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:30:06] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:30:06] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:30:07] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:30:07] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:30:11] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[18-08  00:30:12] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2783803570458513408@0.23406075, SELL 2783803570525622272@0.23878925
+[18-08  00:30:13] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:30:13] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:30:13] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:30:13] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:30:13] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:30:13] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'order_mode'
+[18-08  00:30:13] DEBUG bot [mode=TASK_MANAGER] : Задача 'order_mode' завершена с CancelledError
+[18-08  00:30:13] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:30:13] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:30:13] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 135, in run
+    await asyncio.sleep(self.poll_interval * 3)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:30:22] INFO bot [mode=START] : ⏲️ Time offset set to -955 ms
+[18-08  00:30:22] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:30:24] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:30:24] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:30:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:30:24] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:30:26] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:30:26] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2365500000000000102584607475364464335143566131591796875, side=long, qty=0.05
+[18-08  00:30:26] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:30:26] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[18-08  00:30:26] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=False
+[18-08  00:30:26] INFO bot [mode=-] : [PreHEDGE] loss trigger hit: pnl=-0.0156 (threshold=0.00015)
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23891550
+[18-08  00:30:27] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:30:27] INFO bot [mode=-] : 🚨 [PreHEDGE] loss trigger hit → запускаю hedge
+[18-08  00:30:27] INFO bot [mode=HEDGE] : ▶️ [HEDGE] run start: WS pos (L,S)=(0.0500,0.0000)
+[18-08  00:30:27] INFO bot [mode=HEDGE] : 🔧 [HEDGE] placing market hedge: side=sell, size=0.1000
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] INFO bot [mode=HEDGE] : 🎯 [HEDGE] placed hedge ordId=2783804080787869696
+[18-08  00:30:27] DEBUG bot [mode=HEDGE] : [HEDGE] waiting for fill up to +5.0s
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.1@0.23605
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:27] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0156, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0157, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:28] DEBUG bot [mode=HEDGE] : [HEDGE] WS(L,S)=(0.0500,0.1000), REST(L,S)=(0.0500,0.1000)
+[18-08  00:30:28] INFO bot [mode=HEDGE] : ✅ [HEDGE] hedge confirmed
+[18-08  00:30:28] INFO bot [mode=HEDGE] : → HEDGE.run() done, идем в TPSL
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:29] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:30] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:30] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:30] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:30] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:30] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:31] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:31] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:31] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:31] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:32] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:32] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:32] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:32] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:32] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0159, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0161, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:33] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:34] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:34] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0160, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:34] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0161, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:34] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0161, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0161, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0161, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0163, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0163, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0163, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] DEBUG bot [mode=-] : [PreHEDGE] ticker: pnl=-0.0163, threshold=-0.0001, loss_evt_set=True
+[18-08  00:30:35] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:30:35] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:30:35] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:30:35] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:30:35] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:30:35] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tpsl'
+[18-08  00:30:35] INFO bot [mode=-] : [TPSL] loop cancelled
+[18-08  00:30:35] INFO bot [mode=-] : [TPSL] off
+[18-08  00:30:35] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:30:35] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:30:35] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:31:16] INFO bot [mode=START] : ⏲️ Time offset set to -952 ms
+[18-08  00:31:16] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:31:18] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:31:18] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:31:18] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:31:19] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:31:22] INFO bot [mode=ORDER] : 🔄 [OrderMode] starting order loop
+[18-08  00:31:23] INFO bot [mode=ORDER] : 🎯 [OrderMode] placed FOK: BUY 2783805969835282432@0.23361525, SELL 2783805970003054592@0.23833475
+[18-08  00:31:26] INFO bot [mode=FILL] : ⚡ [FILL] DOGE-USDT-SWAP: SELL/short closed size=0.01@0.236
+[18-08  00:31:27] INFO bot [mode=ORDER] : 🛑 [OrderMode] cancelled 2783805969835282432
+[18-08  00:31:27] INFO bot [mode=ORDER] : ✅ [OrderMode] filled 2783805970003054592, ORDER mode turn off
+[18-08  00:31:27] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:31:27] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2359999999999999875655021241982467472553253173828125, side=short, qty=0.05
+[18-08  00:31:27] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:31:28] DEBUG bot [mode=-] : [PreHEDGE] этот TP не conditional либо его вообще нет => пропускаем отмену
+[18-08  00:31:28] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23364000
+[18-08  00:31:28] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:31:28] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:31:38] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:31:38] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:31:38] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:31:38] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:31:38] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:31:38] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:31:38] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:31:38] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:31:38] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:31:38] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:38:36] INFO bot [mode=START] : ⏲️ Time offset set to -961 ms
+[18-08  00:38:37] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:38:38] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:38:38] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:38:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:38:39] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:38:41] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:38:41] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2359999999999999875655021241982467472553253173828125, side=short, qty=0.05
+[18-08  00:38:41] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:38:41] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:41] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:41] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:42] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:42] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23364000
+[18-08  00:38:42] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:38:42] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:38:42] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:43] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:44] DEBUG bot [mode=-] : pnl=0.0124, threshold=-0.0001, cond=False
+[18-08  00:38:44] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:44] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:44] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:44] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:45] DEBUG bot [mode=-] : pnl=0.0125, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:46] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:47] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:48] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:48] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:48] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:48] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:49] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:49] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:49] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:50] DEBUG bot [mode=-] : pnl=0.0126, threshold=-0.0001, cond=False
+[18-08  00:38:50] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:38:50] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:38:50] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:38:50] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:38:50] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:38:50] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:38:50] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:38:50] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:38:50] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:38:50] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[18-08  00:43:32] INFO bot [mode=START] : ⏲️ Time offset set to -951 ms
+[18-08  00:43:32] INFO bot [mode=START] : 📈 Initial snapshot fetched
+[18-08  00:43:34] INFO bot [mode=WS] : ✅ [WS-PUB] subscribed to tickers
+[18-08  00:43:34] INFO bot [mode=WS] : ✅ [WS-PRIV] login successful
+[18-08  00:43:34] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to orders
+[18-08  00:43:35] INFO bot [mode=WS] : ✅ [WS-PRIV] subscribed to positions
+[18-08  00:43:37] INFO bot [mode=-] : 🔄 [PreHEDGE] новый запуск tp_watcher
+[18-08  00:43:37] DEBUG bot [mode=-] : [PreHEDGE] after _wait_for_position: entry_price=0.2359999999999999875655021241982467472553253173828125, side=short, qty=0.05
+[18-08  00:43:37] INFO bot [mode=-] : 🎯 [PreHEDGE] заходим в not self.tp_active 
+[18-08  00:43:37] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:37] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:37] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:37] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] INFO bot [mode=-] : 🎯 [PreHEDGE] TP placed @ 0.23364000
+[18-08  00:43:38] INFO bot [mode=-] : ⏳ [PreHEDGE] waiting for loss ≤ −0.01%
+[18-08  00:43:38] DEBUG bot [mode=-] : [PreHEDGE]_loss_task alive? False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:38] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:39] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:40] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:41] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:42] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:43] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:44] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:44] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:44] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:44] INFO bot [mode=SHUTDOWN] : Shutdown initiated
+[18-08  00:43:44] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'orchestrator'
+[18-08  00:43:44] DEBUG bot [mode=-] : pnl=0.0119, threshold=-0.0001, cond=False
+[18-08  00:43:44] DEBUG bot [mode=TASK_MANAGER] : Задача 'orchestrator' завершена с CancelledError
+[18-08  00:43:44] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'snapshot'
+[18-08  00:43:44] DEBUG bot [mode=TASK_MANAGER] : Задача 'snapshot' завершена с CancelledError
+[18-08  00:43:44] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'tp_watcher'
+[18-08  00:43:44] DEBUG bot [mode=TASK_MANAGER] : Задача 'tp_watcher' завершена с CancelledError
+[18-08  00:43:44] INFO bot [mode=TASK_MANAGER] : 🛑 Отмена задачи 'shutdown'
+[18-08  00:43:44] DEBUG bot [mode=TASK_MANAGER] : Задача 'shutdown' завершена с CancelledError
+[18-08  00:43:44] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 135, in run
+    await asyncio.sleep(self.poll_interval * 3)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
