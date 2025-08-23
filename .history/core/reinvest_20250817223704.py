@@ -18,7 +18,6 @@ class ReinvestManager:
         self.ws     = ws_monitor
         self.orders = order_client
         self.tpsl   = tpsl_monitor
-#        self.min_lot = 
 
         # чтобы не запускать несколько ре-инвестов одновременно
         self._lock = asyncio.Lock()

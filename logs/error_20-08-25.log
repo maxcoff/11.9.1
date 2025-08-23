@@ -1,0 +1,692 @@
+[20-08  02:11:25] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  02:17:08] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  02:19:19] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  02:27:45] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  02:29:12] ERROR bot [mode=REST] : [TimeoutError] POST https://www.okx.com/api/v5/trade/order, attempt 1/4, sleeping 1.1s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 989, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[20-08  02:30:02] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/trade/orders-algo-pending, attempt 1/4, sleeping 1.0s before retry
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 663, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 538, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1050, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 1335, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\connector.py", line 964, in _resolve_host
+    await future
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 578, in _request
+    with timer:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\helpers.py", line 749, in __exit__
+    raise asyncio.TimeoutError from exc_val
+TimeoutError
+[20-08  02:52:15] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  02:59:16] ERROR bot [mode=MAIN] : 💥 Fatal error: maximum recursion depth exceeded
+Traceback (most recent call last):
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 174, in run
+    await asyncio.sleep(self.poll_interval)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 665, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 180, in <module>
+    asyncio.run(main())
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 193, in run
+    with Runner(debug=debug, loop_factory=loop_factory) as runner:
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 62, in __exit__
+    self.close()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 70, in close
+    _cancel_all_tasks(loop)
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\runners.py", line 203, in _cancel_all_tasks
+    task.cancel()
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\asyncio\tasks.py", line 721, in cancel
+    if child.cancel(msg=msg):
+       ^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 992 more times]
+RecursionError: maximum recursion depth exceeded
+[20-08  03:16:16] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  09:18:58] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  09:18:59] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  11:24:10] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  11:24:11] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  11:57:48] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  11:57:49] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  13:55:18] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  13:55:19] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 161, in _loop
+    lq, lp, sq, sp = await self._get_state()
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 224, in _get_state
+    resp = await self.rest.request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 246, in request
+    raise Exception(f"Timeout on {method} {url}") from None
+Exception: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  15:07:30] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  15:17:47] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  15:17:48] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  15:18:08] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  15:18:08] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  19:30:14] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  19:30:14] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  19:30:21] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  19:30:21] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  19:30:26] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  19:30:26] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  19:35:01] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  19:35:01] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  19:35:07] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  19:35:07] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  19:45:05] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  19:45:05] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:03:11] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  20:03:12] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:03:22] ERROR bot [mode=REST] : ❌ Time sync permanently failed after 3 attempts
+[20-08  20:03:38] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  20:03:39] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:04:05] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  20:04:06] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:04:09] ERROR bot [mode=REST] : ❌ Time sync permanently failed after 3 attempts
+[20-08  20:04:32] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  20:04:33] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:04:56] ERROR bot [mode=REST] : ❌ Time sync permanently failed after 3 attempts
+[20-08  20:05:00] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  20:05:01] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:05:27] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.0s before retry
+[20-08  20:05:28] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:05:44] ERROR bot [mode=REST] : ❌ Time sync permanently failed after 3 attempts
+[20-08  20:09:50] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  20:09:51] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:10:06] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:06] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:14] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:14] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:21] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:21] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:31] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:31] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:40] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:40] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:52] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:52] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:10:59] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:10:59] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:11:04] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:11:04] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:11:14] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:11:14] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:13:22] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:13:22] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:13:32] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:13:32] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:14:28] ERROR bot [mode=-] : 💥 Критическая ошибка в оркестраторе: Session is closed
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\main.py", line 122, in main
+    await task_manager.wait("orchestrator")
+  File "d:\Develop\Python\trade_bot\11.9.1\core\task_manager.py", line 114, in wait
+    await task
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 96, in run
+    long_q, short_q = await self.get_positions_rest()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\orchestrator.py", line 186, in get_positions_rest
+    resp   = await self.rest.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 206, in request
+    async with self.session.request(
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 1360, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Professional\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiohttp\client.py", line 493, in _request
+    raise RuntimeError("Session is closed")
+RuntimeError: Session is closed
+[20-08  20:15:15] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 90, in run
+    await self._place_tp()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 169, in _place_tp
+    raise ValueError("entry_price is None in _place_tp()")
+ValueError: entry_price is None in _place_tp()
+[20-08  20:16:57] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:16:58] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:26:18] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:26:18] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:26:40] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 92, in run
+    await self._place_tp()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 171, in _place_tp
+    raise ValueError("entry_price is None in _place_tp()")
+ValueError: entry_price is None in _place_tp()
+[20-08  20:27:16] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:27:16] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:27:36] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 92, in run
+    await self._place_tp()
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 171, in _place_tp
+    raise ValueError("entry_price is None in _place_tp()")
+ValueError: entry_price is None in _place_tp()
+[20-08  20:35:36] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:35:36] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:45:32] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:33] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:34] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:35] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:36] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:38] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:42] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:43] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:44] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:46] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:47] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:48] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:49] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:50] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:52] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:53] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:54] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:55] ERROR bot [mode=LOOP] : Loop-level exception
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\prehedge_watcher.py", line 294, in _delayed_loss_check
+    raw_px = await self.ws.get_mark_price(self.inst)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object float can't be used in 'await' expression
+[20-08  20:45:55] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  20:45:56] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:45:56] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  20:55:37] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'clOrdId': '', 'ordId': '', 'sCode': '51169', 'sMsg': "Order failed because you don't have any positions in this direction for this contract to reduce or close. ", 'tag': '', 'ts': '1755712537165'}], 'inTime': '1755712537164546', 'msg': 'All operations failed', 'outTime': '1755712537167734'}
+[20-08  20:55:37] ERROR bot [mode=TPSL] : [TPSL] reinvest task failed
+Traceback (most recent call last):
+  File "d:\Develop\Python\trade_bot\11.9.1\core\tpsl_monitor.py", line 120, in _done
+    res = t.result()
+          ^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\reinvest.py", line 34, in handle_tp_fill
+    resp = await self.orders.place_order(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\order_mode.py", line 231, in place_order
+    resp = await self.rest.request("POST", "/api/v5/trade/order", data=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Develop\Python\trade_bot\11.9.1\core\rest_client.py", line 294, in request
+    raise RuntimeError(f"API error {code}")
+RuntimeError: API error 1
+[20-08  20:56:19] ERROR bot [mode=REST] : [TimeoutError] GET https://www.okx.com/api/v5/account/positions, attempt 1/4, sleeping 1.1s before retry
+[20-08  20:56:20] ERROR bot [mode=-] : ❌ [TPSL] loop error: Timeout on GET https://www.okx.com/api/v5/account/positions
+[20-08  20:56:38] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:56:38] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:56:46] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:56:46] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:56:54] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:56:54] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:57:00] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:57:00] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:57:09] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:57:09] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:57:52] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:57:52] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:02] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:02] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:09] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:09] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:16] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:16] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:25] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:25] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:35] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:35] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:58:44] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:58:44] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:01] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:01] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:08] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:08] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:16] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:16] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:24] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:24] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:30] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:30] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:38] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:38] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:44] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:44] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  20:59:53] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  20:59:53] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:01] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:01] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:10] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:10] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:17] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:17] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:24] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:24] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:31] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:31] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:38] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:38] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:46] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:46] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:00:55] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:00:55] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:01:02] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:01:02] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:01:09] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:01:09] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:01:17] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:01:17] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:01:24] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51279', 'sMsg': 'TP trigger price cannot be lower than the last price ', 'tag': ''}], 'msg': ''}
+[20-08  21:01:24] ERROR bot [mode=-] : ❌ [TPSL] conditional failed for LINJUSDTSWAPCOND: API error 1
+[20-08  21:02:02] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  21:02:02] ERROR bot [mode=LOOP] : Loop-level exception
+[20-08  21:16:52] ERROR bot [mode=REST] : API error code=1 response={'code': '1', 'data': [{'algoClOrdId': '', 'algoId': '', 'clOrdId': '', 'sCode': '51023', 'sMsg': "Position doesn't exist. ", 'tag': ''}], 'msg': ''}
+[20-08  21:16:52] ERROR bot [mode=-] : ❌ [TPSL] OCO(init) failed for SINJUSDTSWAPOCO: API error 1
+[20-08  21:22:05] ERROR bot [mode=-] : 💥 Fatal error: 
+[20-08  21:22:05] ERROR bot [mode=LOOP] : Loop-level exception

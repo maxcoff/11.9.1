@@ -21,8 +21,7 @@ class TpslMonitor:
         self.inst_type = get("INST_TYPE", "SWAP")
         self.td_mode = get("TD_MODE", "cross")
         self.rei_thres   = float(get("REINVEST_TRESHOLD", "0.8") or "0.8")
-        self.rei_thres   = float(get("REINVEST_TRESHOLD", "0.8") or "0.8")
-        #MIN_LOT
+        
 
         self.reinvest_manager = ReinvestManager(rest, ws_monitor, order_client, self, task_manager)
 
@@ -315,7 +314,7 @@ class TpslMonitor:
         }
         try:
             await self.rest.request("POST", "/api/v5/trade/order-algo", data=oco)
-            logger.info(f"🎯 [TPSL] placed OCO({init_cid}) @ TP{tp_init}, SL{tp_hedge}")
+            logger.info(f"🎯 [TPSL] placed OCO({init_cid}) @ {tp_init}")
         except Exception as e:
             logger.error(f"❌ [TPSL] OCO(init) failed for {init_cid}: {e}")
 

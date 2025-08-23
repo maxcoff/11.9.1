@@ -68,10 +68,10 @@ class PreHedgeWatcher:
         self.tp_active = False # сброс флага
         
         # сброс перед запуском
-        if not hasattr(self, "_loss_evt") or self._loss_evt is None:
-            self._loss_evt = asyncio.Event()
-        else:
-            self._loss_evt.clear()
+        #if not hasattr(self, "_loss_evt") or self._loss_evt is None:
+        #    self._loss_evt = asyncio.Event()
+        #else:
+        #    self._loss_evt.clear()
 
         
         #debug
@@ -271,9 +271,9 @@ class PreHedgeWatcher:
         #    threshold_dec
         #    )
         
-        #if pnl != self.old_pnl :
-            #logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={-threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
-            #self.old_pnl = pnl
+        if pnl != self.old_pnl :
+            logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={-threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
+            self.old_pnl = pnl
 
         # триггер по убытку
         if pnl < -threshold_dec:

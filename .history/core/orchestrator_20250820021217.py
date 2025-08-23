@@ -51,14 +51,8 @@ class Orchestrator:
         # 1) WS connect
         try:
             await self.ws_monitor.connect()
-            try:
-                await asyncio.wait_for(self.ws_monitor.ws_ready.wait(), timeout=25)
-                logger.info("✅ Все приватные каналы подписаны, стартуем стратегию")
-            except asyncio.TimeoutError:
-                logger.error("❌ WS подписки не подтвердились за время ожидания")
-                return
         except Exception as e:
-            self.logger.error("❌ WS подписки провалены, проверьте соединение", extra={"mode": "START"}, exc_info=e)
+            self.logger.error("WebSocket connect failed", extra={"mode": "START"}, exc_info=e)
             raise
 
         # 2) Регистрируем все задачи в менеджере

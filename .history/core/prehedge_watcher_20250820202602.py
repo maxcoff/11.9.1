@@ -68,10 +68,10 @@ class PreHedgeWatcher:
         self.tp_active = False # сброс флага
         
         # сброс перед запуском
-        if not hasattr(self, "_loss_evt") or self._loss_evt is None:
-            self._loss_evt = asyncio.Event()
-        else:
-            self._loss_evt.clear()
+        #if not hasattr(self, "_loss_evt") or self._loss_evt is None:
+        #    self._loss_evt = asyncio.Event()
+        #else:
+        #    self._loss_evt.clear()
 
         
         #debug
@@ -100,7 +100,6 @@ class PreHedgeWatcher:
         logger.debug("[PreHEDGE]_loss_task alive? %s",   self._loss_task is not None and not self._loss_task.done())
         
         await self._loss_evt.wait()        
-        
         logger.info("🚨 [PreHEDGE] loss trigger hit → запускаю hedge")        
         await self.hedge_manager.run()
         # 5) ws отписка нах!
@@ -271,9 +270,9 @@ class PreHedgeWatcher:
         #    threshold_dec
         #    )
         
-        #if pnl != self.old_pnl :
-            #logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={-threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
-            #self.old_pnl = pnl
+        if pnl != self.old_pnl :
+            logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={-threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
+            self.old_pnl = pnl
 
         # триггер по убытку
         if pnl < -threshold_dec:
@@ -292,7 +291,7 @@ class PreHedgeWatcher:
     async def _delayed_loss_check(self):
         await asyncio.sleep(self.spike_filter_delay)        
         # получаем актуальную цену (WS или REST)
-        raw_px = self.ws.get_mark_price(self.inst)
+        raw_px = await self.ws.get_mark_price(self.inst)
         # теперь уже можно в Decimal       
         
         last_px = Decimal(str(raw_px))        

@@ -44,8 +44,6 @@ class PreHedgeWatcher:
         # где-то в init подписываемся
         self.last_trade_px = None
         self.ws.subscribe(channel="trades",inst_id=self.inst_id,callback=self._on_trade)
-
-        self.old_pnl = 0
         
 
 
@@ -68,10 +66,10 @@ class PreHedgeWatcher:
         self.tp_active = False # сброс флага
         
         # сброс перед запуском
-        if not hasattr(self, "_loss_evt") or self._loss_evt is None:
-            self._loss_evt = asyncio.Event()
-        else:
-            self._loss_evt.clear()
+        #if not hasattr(self, "_loss_evt") or self._loss_evt is None:
+        #    self._loss_evt = asyncio.Event()
+        #else:
+        #    self._loss_evt.clear()
 
         
         #debug
@@ -100,7 +98,6 @@ class PreHedgeWatcher:
         logger.debug("[PreHEDGE]_loss_task alive? %s",   self._loss_task is not None and not self._loss_task.done())
         
         await self._loss_evt.wait()        
-        
         logger.info("🚨 [PreHEDGE] loss trigger hit → запускаю hedge")        
         await self.hedge_manager.run()
         # 5) ws отписка нах!
@@ -262,18 +259,16 @@ class PreHedgeWatcher:
         
         #logger.debug(
         #    "[PNL DEBUG] side=%s | entry_price=%s | mark_px=%s  "
-        #   "| direction=%s |  pnl=%s | threshold=%s",
-        #   self.side,
-        #   self.entry_price,
-        #   mark_px,            
+        #    "| direction=%s |  pnl=%s | threshold=%s",
+        #    self.side,
+        #    self.entry_price,
+        #    mark_px,            
         #    direction,            
-        #   pnl,
+        #    pnl,
         #    threshold_dec
         #    )
-        
-        #if pnl != self.old_pnl :
-            #logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={-threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
-            #self.old_pnl = pnl
+
+        #logger.debug(f"[PreHEDGE] PnL={pnl:.4f}, порог={threshold_dec:.4f}, событие_убытка={self._loss_evt.is_set()}"    )
 
         # триггер по убытку
         if pnl < -threshold_dec:
@@ -284,7 +279,7 @@ class PreHedgeWatcher:
                     self._loss_task = asyncio.create_task(self._delayed_loss_check())
             else:
                 if not self._loss_evt.is_set():
-                    logger.info(f"🚨 [PreHEDGE] Достигнут порог убытка: pnl={pnl:.4f} (threshold={-threshold_dec:.4f})")
+                    logger.info(f"🚨 [PreHEDGE] Достигнут порог убытка: pnl={pnl:.4f} (threshold={threshold_dec:.4f})")
                     self._loss_evt.set ()
                     logger.debug(f"🚨 [PreHEDGE] событие_убытка={self._loss_evt.is_set()}"    )
                 
@@ -292,7 +287,7 @@ class PreHedgeWatcher:
     async def _delayed_loss_check(self):
         await asyncio.sleep(self.spike_filter_delay)        
         # получаем актуальную цену (WS или REST)
-        raw_px = self.ws.get_mark_price(self.inst)
+        raw_px = await self.ws.get_mark_price(self.inst)
         # теперь уже можно в Decimal       
         
         last_px = Decimal(str(raw_px))        
@@ -305,26 +300,14 @@ class PreHedgeWatcher:
         assert isinstance(self.entry_price, Decimal)
 
         pnl = (Decimal(last_px) - self.entry_price) / self.entry_price
-        logger.debug(
-            "[ПРЕХЕДЖ] Проверка убытка с задержкой | последняя_цена=%s | цена_входа=%s | pnl=%.4f",
-            last_px, self.entry_price, pnl,
-            extra={"режим": "ХЕДЖ"}
-        )
-
+        #debug
+        logger.debug(f"[PreHEDGE] delayed loss check: last_px={last_px}, entry_price={self.entry_price}, pnl={pnl:.4f}")    
         if self.side == "short":
             pnl = -pnl
-
         if pnl < -self.threshold:
-            logger.info(
-                "⏱ [ПРЕХЕДЖ] Убыток подтверждён после задержки | pnl=%.4f | порог=%.4f",
-                pnl, self.threshold,
-                extra={"режим": "ХЕДЖ"}
-            )
+            logger.info( f"⏱ [PREHEDGE] confirmed loss after delay: pnl={pnl:.4f}", extra={"mode":"HEDGE"} )
             self._loss_evt.set()
+            #self._loss_evt = None
         else:
-            logger.info(
-                "⏱ [ПРЕХЕДЖ] Шип отфильтрован | pnl восстановился до %.4f | порог=%.4f",
-                pnl, self.threshold,
-                extra={"режим": "ХЕДЖ"}
-            )
+            logger.info( f"⏱ [PREHEDGE] spike filtered: pnl back to {pnl:.4f}", extra={"mode":"HEDGE"} )
         

@@ -102,7 +102,6 @@ class WSMonitor:
         self._ext_listeners: dict[tuple[str, str], Callable[[dict], Awaitable[None]]] = {}
 
         self.ws_ready = asyncio.Event()
-        self._subs_confirmed = set()
 
     async def connect(self) -> None:
         """Start private and public WS tasks."""
@@ -138,9 +137,6 @@ class WSMonitor:
         if self._session_pub:
             await self._session_pub.close()
             self._session_pub = None
-
-        
-  
 
     # -- Private WS: orders, positions --
 
@@ -225,13 +221,6 @@ class WSMonitor:
                 if evt == "subscribe" and arg.get("channel") == ch:
                     tag = "WS-PUB" if public else "WS-PRIV"
                     logger.info(f"✅ [{tag}] subscribed to {ch}", extra={"mode":"WS"})
-                    
-                    if not public:  # если это приватная WS
-                        self._subs_confirmed.add(ch)
-                        # проверяем, всё ли получили
-                        if self._subs_confirmed.issuperset({"orders", "positions"}):
-                            self.ws_ready.set()
-                            
                     break
                 if evt == "error":
                     raise RuntimeError(f"WS subscribe {ch} failed: {msg}")
